@@ -846,6 +846,14 @@ html[lang="ko"] .eyebrow {
   font-size: 1rem;
 }
 
+.career-card.is-active .career-summary {
+  min-height: 5.125rem;
+}
+
+.career-card.product-track.is-active .career-summary {
+  min-height: 3.4rem;
+}
+
 .career-proof {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -884,6 +892,10 @@ html[lang="ko"] .eyebrow {
   color: rgba(255, 255, 255, 0.65);
 }
 
+.career-card.is-active .career-points li {
+  min-height: 4.08rem;
+}
+
 .career-points li::before {
   content: none;
 }
@@ -914,6 +926,22 @@ html[lang="ko"] .eyebrow {
     border-color 220ms ease,
     background 220ms ease,
     box-shadow 220ms ease;
+}
+
+.data-track .career-actions .panel-cta:first-child {
+  min-width: 15.3rem;
+}
+
+.data-track .career-actions .panel-cta:nth-child(2) {
+  min-width: 16.95rem;
+}
+
+.product-track .career-actions .panel-cta:first-child {
+  min-width: 16.7rem;
+}
+
+.product-track .career-actions .panel-cta:nth-child(2) {
+  min-width: 18.3rem;
 }
 
 .panel-cta.is-primary {
@@ -1556,6 +1584,10 @@ html[lang="ko"] .editorial-hero-copy h1 {
   border-top: 1px solid var(--profile-line);
 }
 
+.role-proof-board > div {
+  min-width: 0;
+}
+
 .role-proof-board h2,
 .feature-copy h2,
 .selected-work-section h2,
@@ -1566,6 +1598,48 @@ html[lang="ko"] .editorial-hero-copy h1 {
   font-size: clamp(2.55rem, 5vw, 4.7rem);
   overflow-wrap: normal;
   word-break: normal;
+}
+
+html[lang="ko"] .role-proof-board {
+  align-items: start;
+}
+
+html[lang="ko"] .role-proof-board h2 {
+  max-width: 8.7em;
+  font-size: clamp(3rem, 4.3vw, 4.4rem);
+  line-height: 1.13;
+  text-wrap: balance;
+}
+
+html[lang="ko"] .proof-card-grid {
+  align-self: start;
+  padding-top: 0.35rem;
+}
+
+html[lang="ko"] .product-editorial .role-proof-board {
+  align-items: center;
+}
+
+html[lang="ko"] .product-editorial .role-proof-board h2 {
+  max-width: 9.4em;
+  font-size: clamp(2.85rem, 4vw, 4.05rem);
+  line-height: 1.18;
+}
+
+html[lang="ko"] .product-editorial .proof-card-grid {
+  align-self: center;
+  padding-top: 0;
+}
+
+html[lang="ko"] .product-editorial .proof-card-grid strong {
+  font-size: clamp(1.28rem, 1.3vw, 1.46rem);
+  line-height: 1.18;
+}
+
+html[lang="ko"] .product-editorial .role-method-section h2,
+html[lang="ko"] .product-editorial .role-capability-section h2 {
+  max-width: min(100%, 10.2em);
+  line-height: 1.18;
 }
 
 .role-method-section h2,
@@ -1644,6 +1718,33 @@ html[lang="ko"] .editorial-hero-copy h1 {
 .feature-copy h2 {
   font-size: clamp(2.45rem, 4.2vw, 4.15rem);
   line-height: 0.95;
+}
+
+html[lang="ko"] .feature-copy h2,
+html[lang="ko"] .selected-work-section h2,
+html[lang="ko"] .role-method-section h2,
+html[lang="ko"] .role-capability-section h2,
+html[lang="ko"] .role-education-section h2,
+html[lang="ko"] .experience-section-head h2 {
+  max-width: min(100%, 12.5em);
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+html[lang="ko"] .feature-copy h2,
+html[lang="ko"] .role-method-section h2 {
+  max-width: min(100%, 10.8em);
+}
+
+html[lang="ko"] .proof-card-grid strong,
+html[lang="ko"] .editorial-project-card h3,
+html[lang="ko"] .role-capability-grid h3,
+html[lang="ko"] .role-education-card h3 {
+  line-height: 1.14;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 
 .feature-copy p {
@@ -2058,6 +2159,19 @@ html[lang="ko"] .editorial-hero-copy h1 {
   margin: 0;
   font-size: clamp(1.55rem, 2.6vw, 2.2rem);
   align-self: start;
+}
+
+html[lang="ko"] .editorial-project-card h3,
+html[lang="ko"] .role-capability-grid h3,
+html[lang="ko"] .role-education-card h3 {
+  line-height: 1.14;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+html[lang="ko"] .role-capability-grid h3 {
+  max-width: min(100%, 9.5em);
+  min-height: 5.25rem;
 }
 
 .role-education-card span,
@@ -2715,6 +2829,13 @@ body.profile-page .contact-card .section-title {
   font-weight: 750;
   line-height: 0.92;
   text-wrap: balance;
+}
+
+html[lang="ko"] body.profile-page .contact-card .section-title {
+  max-width: min(100%, 12em);
+  line-height: 1.14;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 
 body.profile-page .contact-card .section-copy {
@@ -3695,6 +3816,35 @@ body.reduce-motion *::after {
     font-size: clamp(2.15rem, 10.5vw, 3.25rem);
   }
 
+  html[lang="ko"] .role-proof-board h2 {
+    max-width: 10.5em;
+    font-size: clamp(2.35rem, 11vw, 3.35rem);
+    line-height: 1.16;
+  }
+
+  html[lang="ko"] .product-editorial .role-proof-board h2 {
+    max-width: 100%;
+    font-size: clamp(2.18rem, 9.8vw, 3rem);
+    line-height: 1.2;
+  }
+
+  html[lang="ko"] .product-editorial .proof-card-grid strong {
+    font-size: clamp(1.15rem, 5.2vw, 1.45rem);
+    line-height: 1.18;
+  }
+
+  html[lang="ko"] .feature-copy h2,
+  html[lang="ko"] .selected-work-section h2,
+  html[lang="ko"] .role-method-section h2,
+  html[lang="ko"] .role-capability-section h2,
+  html[lang="ko"] .role-education-section h2,
+  html[lang="ko"] .experience-section-head h2,
+  html[lang="ko"] body.profile-page .contact-card .section-title {
+    max-width: 100%;
+    font-size: clamp(2.05rem, 9.6vw, 3rem);
+    line-height: 1.18;
+  }
+
   .proof-card-grid strong {
     font-size: clamp(1.2rem, 5.6vw, 1.55rem);
   }
@@ -3830,6 +3980,19 @@ body.reduce-motion *::after {
     line-height: 1.48;
   }
 
+  .career-card.is-active .career-summary,
+  .career-card.product-track.is-active .career-summary {
+    min-height: 4.1rem;
+  }
+
+  .data-track.is-active .career-summary {
+    min-height: 5.45rem;
+  }
+
+  .product-track.is-active .career-summary {
+    min-height: 4.1rem;
+  }
+
   .career-proof {
     display: flex;
     flex-wrap: wrap;
@@ -3852,6 +4015,18 @@ body.reduce-motion *::after {
 
   .career-actions {
     margin-top: 1rem;
+  }
+
+  .panel-cta {
+    min-width: 0;
+  }
+
+  .data-track.is-active .career-proof span {
+    flex: 1 1 calc(50% - 0.25rem);
+  }
+
+  .data-track.is-active .career-proof span:last-child {
+    flex-basis: 100%;
   }
 
   .career-card-head p,

@@ -97,24 +97,24 @@ const roleText = (site, role) => {
   return {
     back: isKo ? "역할 선택으로 돌아가기" : "Back to role selector",
     path: isKo ? "선택한 프로필" : "Selected profile",
-    proof: isKo ? "역할별 증거" : "Role proof",
-    selectedWork: isKo ? "선별된 작업" : "Selected work",
+    proof: isKo ? "역량 근거" : "Role proof",
+    selectedWork: isKo ? "주요 작업" : "Selected work",
     method: isKo ? "작업 방식" : "How I work",
     capability: isKo ? "기술 스택" : "Capability map",
     experience: isKo ? "경력 흐름" : "Experience thread",
     resume: isKo ? "이력서" : "Resume",
-    featureLabel: isKo ? "데이터 사례" : "Data case",
+    featureLabel: isKo ? "데이터 엔지니어링 사례" : "Data case",
     featureTitle: isKo ? "Snowflake 컬럼 계보 자동화" : "Snowflake Column Lineage",
     featureBody: isKo
-      ? "9,000개 이상 Snowflake 객체를 대상으로 컬럼 단위 계보를 자동화하고, 사람이 검토할 수 있는 문서화 흐름으로 바꾼 작업입니다."
+      ? "9,000개 이상의 Snowflake 객체를 대상으로 컬럼 단위 계보를 자동화하고, 사람이 검토할 수 있는 문서화 흐름으로 전환한 작업입니다."
       : "A lineage automation effort across 9,000+ Snowflake objects, turning warehouse complexity into reviewable documentation and operating proof.",
     featurePoints,
     heroNote: isProduct
       ? isKo
-        ? "모호한 문제를 팀이 범위화하고, 만들고, 검증하고, 출시할 수 있는 기술 제품 작업으로 바꿉니다."
+        ? "모호한 요구를 팀이 바로 범위를 정하고, 구현하고, 검증하고, 출시할 수 있는 제품 실행 흐름으로 정리합니다."
         : "I turn ambiguity into technical product work teams can scope, build, QA, and ship."
       : isKo
-        ? "엔터프라이즈 데이터 시스템을 운영하고, 설명하고, 이어받을 수 있는 신뢰 가능한 구조로 만듭니다."
+        ? "엔터프라이즈 데이터 시스템을 안정적으로 운영하고, 설명하고, 인수인계할 수 있는 구조로 만듭니다."
         : "I make enterprise data systems reliable enough to run, explain, and hand off.",
   };
 };
@@ -390,7 +390,7 @@ const renderRoleEditorialPage = (site, shared, role) => {
           <p class="editorial-summary">${role.profile.summary}</p>
           ${renderRoleActions(role.profile.actions)}
         </div>
-        <aside class="editorial-hero-proof reveal reveal-delay-1" aria-label="${site.languageCode === "ko" ? `${role.title} 프로필 증거` : `${role.title} profile proof`}">
+        <aside class="editorial-hero-proof reveal reveal-delay-1" aria-label="${site.languageCode === "ko" ? `${role.profile.eyebrow} 증거` : `${role.title} profile proof`}">
           ${renderRoleHeroVisual(site, role, copy)}
           <div class="editorial-proof-list">
             ${role.profile.proof.map((item) => `<div><span>${item.label}</span><strong>${item.value}</strong></div>`).join("")}
@@ -573,7 +573,7 @@ const renderHero = (site, shared, { selectorOnly = false } = {}) => `
           : `<div class="selector-hud reveal reveal-delay-2" aria-hidden="true">
         <div>
           <span>${site.languageCode === "ko" ? "모드" : "Mode"}</span>
-          <strong>${site.languageCode === "ko" ? "프로필 선택" : "Role selector"}</strong>
+          <strong>${site.languageCode === "ko" ? "역할 선택" : "Role selector"}</strong>
         </div>
         <div>
           <span>${site.languageCode === "ko" ? "사용자" : "User"}</span>
@@ -623,6 +623,16 @@ const renderHero = (site, shared, { selectorOnly = false } = {}) => `
     }
   </section>`;
 
+const roleContactTitle = (site, role) => {
+  if (site.languageCode !== "ko") {
+    return `Let's talk about ${role.title} roles.`;
+  }
+
+  return role.id === "product-manager"
+    ? "프로덕트 매니저 포지션에 대해 이야기 나누고 싶습니다."
+    : "데이터 엔지니어 포지션에 대해 이야기 나누고 싶습니다.";
+};
+
 const renderContact = (site, role = null) => {
   const roleResumeAction = role?.profile.actions.find((action) => action.download && action.href);
   const actions = role
@@ -631,11 +641,7 @@ const renderContact = (site, role = null) => {
         roleResumeAction ? { label: role.profile.resumeLabel, href: roleResumeAction.href, download: true } : null,
       ].filter(Boolean)
     : site.contact.actions;
-  const title = role
-    ? site.languageCode === "ko"
-      ? `${role.title} 역할에 대해 이야기 나누고 싶습니다.`
-      : `Let's talk about ${role.title} roles.`
-    : site.contact.title;
+  const title = role ? roleContactTitle(site, role) : site.contact.title;
   const body = role ? role.profile.summary : site.contact.body;
 
   return `
@@ -776,7 +782,7 @@ const navLabels = {
     contact: "Contact",
   },
   ko: {
-    choose: "프로필 선택",
+    choose: "역할 선택",
     profile: "프로필",
     projects: "프로젝트",
     archive: "아카이브",
