@@ -490,6 +490,27 @@ html[lang="ko"] .eyebrow {
   top: clamp(4.1rem, 5vw, 5.1rem);
 }
 
+.selector-lang-pill {
+  position: absolute;
+  top: clamp(1.05rem, 1.7vw, 1.65rem);
+  right: clamp(1.15rem, 2vw, 2.25rem);
+  z-index: 6;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(5, 7, 10, 0.74);
+  color: #f8fbff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+.selector-lang-pill:hover,
+.selector-lang-pill:focus-visible {
+  border-color: rgba(255, 255, 255, 0.46);
+  background: rgba(16, 20, 24, 0.9);
+}
+
 .hero-section::before,
 .hero-section::after {
   content: "";
@@ -3509,10 +3530,11 @@ body.reduce-motion *::after {
     align-items: stretch;
     padding: 1rem;
     gap: 0.95rem;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: var(--radius-lg);
-    background: var(--nav-mobile-bg);
-    box-shadow: var(--nav-shadow);
+    background: rgba(7, 10, 15, 0.96);
+    color: #f8fbff;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
     max-height: calc(100vh - 5.75rem);
     overflow-y: auto;
   }
@@ -3531,7 +3553,7 @@ body.reduce-motion *::after {
 
   .nav-utilities {
     padding-top: 0.75rem;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .nav-links a,
@@ -3539,10 +3561,20 @@ body.reduce-motion *::after {
     display: flex;
     align-items: center;
     min-height: 2.75rem;
+    color: rgba(248, 251, 255, 0.82);
   }
 
   .nav-links a {
-    padding: 0.1rem 0;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-links a:hover,
+  .nav-links a.is-active {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
   }
 
   .nav-socials {
@@ -3561,6 +3593,38 @@ body.reduce-motion *::after {
   .theme-option {
     min-width: 0;
     width: 100%;
+  }
+
+  body.profile-page .site-nav {
+    border-color: rgba(255, 248, 236, 0.16);
+    background: color-mix(in srgb, var(--profile-pine), black 8%);
+    color: #fff8ec;
+    box-shadow: 0 24px 60px rgba(17, 18, 15, 0.28);
+  }
+
+  body.profile-page .site-nav .nav-utilities {
+    border-top-color: rgba(255, 248, 236, 0.14);
+  }
+
+  body.profile-page .site-nav .nav-links a,
+  body.profile-page .site-nav .lang-pill,
+  body.profile-page .site-nav .theme-option,
+  body.profile-page .site-nav .social-icon-link {
+    color: rgba(255, 248, 236, 0.84);
+  }
+
+  body.profile-page .site-nav .nav-links a:hover,
+  body.profile-page .site-nav .nav-links a.is-active,
+  body.profile-page .site-nav .lang-pill:hover,
+  body.profile-page .site-nav .social-icon-link:hover {
+    border-color: rgba(255, 248, 236, 0.16);
+    background: rgba(255, 248, 236, 0.1);
+    color: #fff8ec;
+  }
+
+  body.profile-page .site-nav .theme-option.is-active {
+    background: #fff8ec;
+    color: #11120f;
   }
 
   .principle-rail,
@@ -3710,7 +3774,7 @@ body.reduce-motion *::after {
 
   .panel-inner {
     min-height: 500px;
-    padding: 3.6rem 1.25rem 1.2rem;
+    padding: 4.55rem 1.25rem 1.2rem;
   }
 
   .product-track .panel-media {
@@ -3721,6 +3785,7 @@ body.reduce-motion *::after {
     top: 1.05rem;
     left: 1.25rem;
     right: 1.25rem;
+    align-items: flex-start;
     font-size: 0.64rem;
   }
 
@@ -3739,6 +3804,11 @@ body.reduce-motion *::after {
 
   .career-card:not(.is-active) .panel-inner {
     min-height: 214px;
+    padding-top: 4.35rem;
+  }
+
+  body.landing-page .selector-landing-hero .career-card:not(.is-active) .panel-topline {
+    top: 1.05rem;
   }
 
   .career-card:not(.is-active) .career-summary,
@@ -3751,7 +3821,7 @@ body.reduce-motion *::after {
 
   .career-card:not(.is-active) h2 {
     max-width: 15rem;
-    font-size: 2rem;
+    font-size: clamp(1.82rem, 9vw, 2rem);
   }
 
   .career-summary {
@@ -3788,6 +3858,14 @@ body.reduce-motion *::after {
   .career-subtitle,
   .career-points {
     display: none;
+  }
+
+  .selector-lang-pill {
+    top: 0.95rem;
+    right: 1rem;
+    min-height: 38px;
+    padding: 0.5rem 0.72rem;
+    font-size: 0.76rem;
   }
 
   .selector-hud {

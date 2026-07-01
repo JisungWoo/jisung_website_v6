@@ -6,7 +6,7 @@ export const enSite = {
   title: "Jisung Woo | Data Engineer + Technical Product Manager",
   description:
     "AI-focused data engineer and technical product manager building enterprise data systems, internal tools, and responsible AI products.",
-  localeSwitch: { label: "KR", text: "Korean", href: "index_kr.html" },
+  localeSwitch: { label: "한국어", text: "Korean", href: "index_kr.html" },
   nav: [
     { label: "Paths", href: "#paths" },
     { label: "About", href: "#about" },
@@ -51,7 +51,7 @@ export const enSite = {
         destination: "data-engineer.html",
         openLabel: "Explore the Data Engineer profile",
         eyebrow: "",
-        activeStatus: "Active profile",
+        activeStatus: "Selected",
         idleStatus: "Open profile",
         mode: "Enterprise data systems",
         media: "Files/Hero_Cinematic/data-engineer-panel.jpg",
@@ -198,7 +198,7 @@ export const enSite = {
         destination: "product-manager.html",
         openLabel: "Explore the Product Manager profile",
         eyebrow: "",
-        activeStatus: "Active profile",
+        activeStatus: "Selected",
         idleStatus: "Open profile",
         mode: "Product delivery",
         media: "Files/Hero_Cinematic/product-manager-panel.jpg",

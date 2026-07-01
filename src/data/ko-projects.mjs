@@ -6,17 +6,17 @@ export const koProjects = [
     title: "MelodyMap",
     meta: "제품 개발 · 2026년 4월 - 현재",
     summary:
-      "치료사를 위한 실무 운영 플랫폼입니다. 일정, 기관 정보, 세션 준비, 계획 작성, 이동 기록처럼 현장에서 반복되는 업무를 하나의 흐름으로 정리하는 데 초점을 맞추고 있습니다.",
+      "음악치료사의 반복 업무를 줄이기 위한 실무형 운영 플랫폼입니다. 일정, 기관 정보, 세션 준비, 계획 작성, 이동 기록처럼 현장에서 흩어지기 쉬운 업무를 하나의 흐름으로 묶는 데 초점을 맞추고 있습니다.",
     tags: ["Healthtech SaaS", "Practice workflow", "AI planning"],
     imagePair: ["Files/MelodyMap.ai/Dashboard.png", "Files/MelodyMap.ai/PlanSutdio-Plan.png"],
     imagePairLabels: ["운영 대시보드", "Plan Studio 출력"],
     screenshots: melodyMapScreenshots,
     bullets: [
-      "MelodyMap을 단순 챗봇이나 기록 도구가 아니라, 치료사를 위한 준비, 세션 운영, 후속 정리를 하나로 묶는 워크플로 제품으로 정의했습니다.",
-      "캘린더를 한 번 연동하면 방문 일정, 기관 정보, 준비해야 할 내용, 이동 기록이 자연스럽게 연결되도록 설계했고, 기관별로 쌓인 맥락을 다음 방문에도 이어서 활용할 수 있게 만들고 있습니다.",
-      "프론트엔드는 TypeScript 기반 Next.js 15, 백엔드는 FastAPI로 구성했으며, 서비스 계층과 리포지토리 계층을 분리하고 PostgreSQL, async SQLAlchemy, Alembic을 기준으로 운영 구조를 잡았습니다.",
-      "세션 계획은 도입, 활동, 스크립트, 변형, 마무리 같은 블록 단위로 생성되며, PostgreSQL + pgvector에 저장한 과거 디브리프를 유사도 검색해 기관별 맥락에 맞는 계획을 만들도록 설계했습니다.",
-      "프롬프트에는 연령대, 진단 태그, 이동성 정보, 악기, 효과가 있었던 접근만 넣고 이름, 정확한 기관명, 주소, 차트 번호 같은 PHI는 제외합니다. 원문 프롬프트 대신 해시만 audit log에 남기는 HIPAA 고려 구조로 설계했고, AI 에이전트 하네스를 활용해 구독형 SaaS 출시를 전제로 개발하고 있습니다.",
+      "MelodyMap을 단순 챗봇이나 기록 도구가 아니라, 세션 준비와 진행, 후속 정리를 하나로 이어 주는 음악치료사용 워크플로 제품으로 정의했습니다.",
+      "캘린더를 연동하면 방문 일정, 기관 정보, 준비 항목, 이동 기록이 자연스럽게 이어지고, 기관별로 쌓인 맥락을 다음 방문에도 활용할 수 있도록 설계하고 있습니다.",
+      "프론트엔드는 TypeScript 기반 Next.js 15, 백엔드는 FastAPI로 구성했으며, 서비스 계층과 리포지토리 계층을 분리해 PostgreSQL, async SQLAlchemy, Alembic 중심의 운영 구조를 잡았습니다.",
+      "세션 계획은 도입, 활동, 스크립트, 변형, 마무리 같은 블록 단위로 생성되며, PostgreSQL + pgvector에 저장한 과거 디브리프를 유사도 검색해 기관별 맥락을 반영하도록 설계했습니다.",
+      "프롬프트에는 연령대, 진단 태그, 이동성 정보, 악기, 효과가 있었던 접근만 포함하고 이름, 정확한 기관명, 주소, 차트 번호 같은 PHI는 제외합니다. 원문 프롬프트 대신 해시만 audit log에 남기는 구조로 개인정보 리스크를 낮추고, 구독형 SaaS 출시를 전제로 제품을 다듬고 있습니다.",
     ],
     links: [],
   },
@@ -25,7 +25,7 @@ export const koProjects = [
     title: "AI 에이전트 오케스트레이션 플랫폼",
     meta: "개인 프로젝트 · 2026년 3월 - 현재",
     summary:
-      "장기 실행 작업을 위한 멀티 에이전트 오케스트레이션 시스템으로, 승인 흐름, 대시보드, 상태 관리, 신뢰성 장치를 직접 설계한 프로젝트입니다.",
+      "장기 실행 작업을 위한 멀티 에이전트 오케스트레이션 시스템입니다. 승인 흐름, 운영 대시보드, 상태 관리, 안정성 장치를 직접 설계했습니다.",
     tags: ["멀티 에이전트", "LLM", "운영 UI", "Supabase", "Next.js"],
     imagePair: ["Files/Project_Icons/AI_Team1.jpg", "Files/Project_Icons/AI_Team2.jpg"],
     containFirstImage: true,
@@ -42,9 +42,9 @@ export const koProjects = [
       "Files/AI_Project_Screenshot/20260325_Memory.jpg",
     ],
     bullets: [
-      "Planner, Builder, Reviewer 역할을 분리한 개인용 멀티 에이전트 워크플로를 설계해 인수인계와 품질 관리 구조를 명확히 했습니다.",
-      "태스크, 체크포인트, 리뷰, 승인, 일일 메모리를 파일 중심 상태 레이어로 관리해 terminal, cron, Telegram, Discord 등 다양한 실행 환경에서 작업을 이어갈 수 있게 했습니다.",
-      "체크포인트, sanity-check 산출물, task lease, heartbeat, stale task 감지, 제한된 백그라운드 워커 세션 등 장기 실행 안정성 장치를 구현했습니다.",
+      "Planner, Builder, Reviewer 역할을 분리한 개인용 멀티 에이전트 워크플로를 설계해 인수인계와 품질 관리 기준을 명확히 했습니다.",
+      "태스크, 체크포인트, 리뷰, 승인, 일일 메모리를 파일 중심 상태 레이어로 관리해 terminal, cron, Telegram, Discord 등 다양한 실행 환경에서도 작업 맥락이 이어지도록 했습니다.",
+      "체크포인트, sanity-check 산출물, task lease, heartbeat, stale task 감지, 제한된 백그라운드 워커 세션 등 장기 실행을 위한 안정성 장치를 구현했습니다.",
       "로컬 파일을 원본으로 유지하면서 Supabase를 검색과 대시보드 계층으로 연결해 운영 가시성을 높였습니다.",
       "실제 시스템 데이터를 기반으로 태스크, 승인, 활동 로그, 런 상태, 메모리, 팀 역할을 보는 Next.js 대시보드를 재구성했습니다.",
     ],
@@ -55,7 +55,7 @@ export const koProjects = [
     title: "MS-BA 캡스톤: 테니스 퍼포먼스 분석",
     meta: "Arizona State University · 2024년 6월 - 2024년 12월",
     summary:
-      "YOLOv8과 OpenCV를 활용해 경기 영상에서 선수 퍼포먼스 지표를 추출하는 컴퓨터 비전 프로젝트입니다.",
+      "YOLOv8과 OpenCV를 활용해 경기 영상에서 선수 퍼포먼스 지표를 추출한 컴퓨터 비전 프로젝트입니다.",
     tags: ["머신러닝", "Python", "YOLOv8", "OpenCV"],
     imagePair: ["Files/Project_Icons/Capstone_Title_Page.jpg", "Files/Project_Icons/Capstone_Agenda.jpg"],
     containFirstImage: true,
@@ -64,7 +64,7 @@ export const koProjects = [
     bullets: [
       "YOLOv8과 OpenCV 기반으로 경기 영상에서 선수 퍼포먼스를 추출하는 파이프라인을 구축했습니다.",
       "공 속도와 라켓 움직임을 추적하고 Python, Jupyter로 CSV 기반 결과를 자동 생성했습니다.",
-      "영상 트리밍 최적화와 AI 기반 탐지를 통해 20,000건 이상 경기 분석 시간을 약 90% 줄였습니다.",
+      "영상 트리밍 최적화와 AI 기반 탐지를 통해 20,000건 이상 규모의 경기 분석 시간을 약 90% 줄였습니다.",
     ],
     links: [
       {
@@ -79,7 +79,7 @@ export const koProjects = [
     title: "ASU 한인학생회 웹사이트",
     meta: "Arizona State University 한인학생회 · 2020년 9월 - 2021년 3월",
     summary:
-      "팀 리딩과 프론트엔드 구현, GitHub 협업 정리를 함께 맡아 구축한 학생 단체 웹사이트입니다.",
+      "팀 리딩, 프론트엔드 구현, GitHub 협업 체계 정리를 함께 맡아 구축한 학생 단체 웹사이트입니다.",
     tags: ["HTML/CSS/JS", "팀 리드", "GitHub"],
     imagePair: ["Files/Project_Icons/ksa_logo.jpg", "Files/Project_Icons/ASUforksa.png"],
     containFirstImage: true,
@@ -87,7 +87,7 @@ export const koProjects = [
     screenshots: [],
     bullets: [
       "7인 팀을 공동 리드하며 ASU 한인학생회 사이트의 기획, 개발, 출시를 이끌었습니다.",
-      "마일스톤과 마감 일정을 기준으로 역할을 배분하고 프로젝트 진행을 관리했습니다.",
+      "마일스톤과 마감 일정을 기준으로 역할을 나누고 진행 상황을 관리했습니다.",
       "HTML, CSS, JavaScript 기반 프론트엔드를 주도하며 반응형 UI를 구현했습니다.",
       "GitHub 협업 방식과 웹 개발 기본기를 팀원들과 공유해 이후 유지보수가 가능하도록 했습니다.",
     ],
@@ -98,15 +98,15 @@ export const koProjects = [
     title: "개인 포트폴리오 웹사이트",
     meta: "개인 프로젝트 · 2024년 7월 - 현재",
     summary:
-      "여러 버전으로 발전시켜 온 반응형 포트폴리오 사이트로, AI 보조 편집과 반복적인 디자인 개선을 함께 진행했습니다.",
+      "여러 버전으로 발전시켜 온 반응형 포트폴리오 사이트입니다. AI 보조 편집을 활용하면서도 정보 구조와 시각적 완성도를 계속 다듬었습니다.",
     tags: ["HTML/CSS/JS", "GitHub Pages", "포트폴리오 디자인"],
     imagePair: ["Files/Project_Icons/Personal_Portfolio_V1_2.jpg", "Files/Project_Icons/Personal_Portfolio_V3.jpg"],
     containFirstImage: true,
     screenshots: [],
     bullets: [
       "반응형 포트폴리오를 직접 구축하고 정보 구조, 인터랙션, 시각적 위계를 계속 개선했습니다.",
-      "AI 보조 편집을 활용해 문구와 레이아웃 방향을 빠르게 실험하면서도 작업의 저작권과 의도를 유지했습니다.",
-      "GitHub Pages로 여러 버전을 실제 배포해 디자인 변경을 실제 환경에서 검증했습니다.",
+      "AI 보조 편집으로 문구와 레이아웃 방향을 빠르게 실험하면서도 포트폴리오의 의도와 소유권은 직접 유지했습니다.",
+      "GitHub Pages로 여러 버전을 실제 배포하며 디자인 변경을 실제 환경에서 검증했습니다.",
     ],
     links: [
       { label: "버전 1", url: "https://jisungwoo.github.io/jisung_website/" },
@@ -120,7 +120,7 @@ export const koProjects = [
     title: "PayPal Opportunity Hackathon - 1위",
     meta: "해커톤 프로젝트 · 2016년 10월",
     summary:
-      "3인 팀으로 비영리단체를 위한 기부자 소통 도구를 구축해 1위를 수상한 프로젝트입니다.",
+      "3인 팀으로 비영리단체를 위한 기부자 소통 도구를 구축해 1위를 수상한 해커톤 프로젝트입니다.",
     tags: ["해커톤", "1위", "HTML/CSS/JS"],
     imagePair: ["Files/Project_Icons/Paypal_Opportunity_Hackathon.jpg", "Files/Project_Icons/Paypal_Opportunity_Hackathon_2.jpg"],
     containFirstImage: true,
@@ -129,7 +129,7 @@ export const koProjects = [
     bullets: [
       "3인 팀으로 Matthew's Crossing을 위한 웹 기반 기부자 소통 도구를 개발했습니다.",
       "HTML, CSS, JavaScript로 맞춤형 인터페이스와 자동 이메일 발송 기능을 구현했습니다.",
-      "직원의 수작업 커뮤니케이션 부담을 줄이고 기부자 소통 흐름을 개선했습니다.",
+      "직원의 수작업 커뮤니케이션 부담을 줄이고 기부자 관리 흐름을 개선했습니다.",
       "완성도 높은 결과물을 발표해 PayPal Opportunity Hackathon에서 1위를 수상했습니다.",
     ],
     links: [{ label: "Devpost 보기", url: "https://devpost.com/software/matthews-crossing-data-manager" }],

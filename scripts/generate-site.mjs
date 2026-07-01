@@ -540,6 +540,13 @@ const renderCareerTrack = (track, index, languageCode = "en") => `
 
 const renderHero = (site, shared, { selectorOnly = false } = {}) => `
   <section id="top" class="hero-section cinematic-hero ${selectorOnly ? "selector-landing-hero" : ""}">
+    ${
+      selectorOnly
+        ? `<a class="selector-lang-pill lang-pill" href="${site.localeSwitch.href}" hreflang="${
+            site.localeSwitch.href.endsWith("_kr.html") || site.localeSwitch.href.endsWith("index_kr.html") ? "ko" : "en"
+          }" lang="${site.localeSwitch.href.endsWith("_kr.html") || site.localeSwitch.href.endsWith("index_kr.html") ? "ko" : "en"}" aria-label="${site.localeSwitch.text}">${site.localeSwitch.label}</a>`
+        : ""
+    }
     <div class="hero-shell cinematic-shell">
       ${
         selectorOnly

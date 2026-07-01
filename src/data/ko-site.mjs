@@ -5,8 +5,8 @@ export const koSite = {
   pagePath: "data-engineer_kr.html",
   title: "Jisung Woo | 데이터 엔지니어 · 테크니컬 프로덕트 매니저",
   description:
-    "엔터프라이즈 데이터 시스템, 내부 툴, 책임 있는 AI 제품을 만드는 데이터 엔지니어이자 테크니컬 프로덕트 매니저 Jisung Woo의 포트폴리오입니다.",
-  localeSwitch: { label: "EN", text: "English", href: "index.html" },
+    "엔터프라이즈 데이터 플랫폼, AI 워크플로 제품, 실무형 실행 경험을 한곳에 정리한 Jisung Woo의 포트폴리오입니다.",
+  localeSwitch: { label: "English", text: "English", href: "index.html" },
   nav: [
     { label: "커리어 경로", href: "#paths" },
     { label: "소개", href: "#about" },
@@ -19,15 +19,15 @@ export const koSite = {
   hero: {
     role: "데이터 엔지니어 · 테크니컬 프로덕트 매니저 · AI 시스템 빌더",
     name: "Jisung Woo",
-    thesis: "복잡한 데이터 일을 쓰이고, 배포되고, 책임질 수 있는 시스템으로 만듭니다.",
+    thesis: "복잡한 데이터 작업을 운영 가능하고, 설명 가능하며, 책임질 수 있는 시스템으로 만듭니다.",
     summary:
-      "제 기반은 데이터 엔지니어링입니다. 그 기반을 요구사항, 우선순위, 실행 계획, 그리고 사람들이 실제로 운영할 수 있는 워크플로로 연결하는 것이 제가 확장하고 있는 제품 역량입니다.",
-    primaryCta: { label: "데이터 이력서", href: dataResumeHref, download: true },
+      "제 출발점은 데이터 엔지니어링입니다. 그 기반 위에서 요구사항 정리, 우선순위 판단, 실행 계획, 실제 운영 가능한 워크플로까지 연결합니다.",
+    primaryCta: { label: "데이터 엔지니어 이력서", href: dataResumeHref, download: true },
     secondaryCta: { label: "Product Manager 이력서", href: productResumeHref, download: true },
     metrics: [
       { value: "4년+", label: "데이터 엔지니어링 경력" },
       { value: "PB급", label: "엔터프라이즈 데이터 환경" },
-      { value: "분산형", label: "오프쇼어 전달 조율" },
+      { value: "분산형", label: "글로벌 개발팀 협업" },
       { value: "70%", label: "MelodyMap 데모 완성도" },
     ],
     visualTags: ["Snowflake EDW", "테크니컬 제품", "AI 오케스트레이션", "창업자 관점"],
@@ -36,44 +36,44 @@ export const koSite = {
   },
   roleProfiles: {
     eyebrow: "직무별 프로필",
-    title: "검토하고 싶은 전문 프로필을 선택하세요.",
+    title: "평가하려는 역할에 맞춰 프로필을 선택하세요.",
     body:
-      "엔터프라이즈 데이터 시스템을 검토하는 경로와 제품 전달 역량을 검토하는 경로를 분리했습니다. 각 경로는 해당 이력서, 프로젝트, 기술, 증거만 보여 줍니다.",
+      "엔터프라이즈 데이터 시스템을 평가하는 경로와 제품 실행 역량을 평가하는 경로를 분리했습니다. 각 경로에는 해당 역할에서 바로 확인해야 할 이력서, 프로젝트, 역량, 근거만 담았습니다.",
   },
   career: {
-    bridgeTitle: "한 사람, 두 가지 채용 경로.",
+    bridgeTitle: "한 사람, 두 개의 명확한 평가 경로.",
     bridgeCopy:
-      "두 역량이 만나는 지점은 강점이지만, 검토 경로는 명확해야 합니다. Data Engineer는 웨어하우스와 파이프라인 깊이를, Product는 제품 전달과 창업자 관점, 테크니컬 제품 실행을 보여 줍니다.",
+      "두 역량이 만나는 지점은 강점이지만, 평가 기준은 명확해야 합니다. Data Engineer 경로는 웨어하우스와 파이프라인 깊이를, Product Manager 경로는 제품 실행, 창업자 관점, 테크니컬 판단력을 보여 줍니다.",
     tracks: [
       {
         id: "data-engineer",
         tone: "data",
         destination: "data-engineer_kr.html",
-        openLabel: "데이터 엔지니어 프로필 보기",
+        openLabel: "데이터 엔지니어 프로필 열기",
         eyebrow: "",
-        activeStatus: "활성 프로필",
-        idleStatus: "프로필 보기",
-        mode: "엔터프라이즈 데이터 시스템",
+        activeStatus: "선택됨",
+        idleStatus: "열기",
+        mode: "엔터프라이즈 데이터 플랫폼",
         media: "Files/Hero_Cinematic/data-engineer-panel.jpg",
         title: "Data Engineer",
         subtitle: "Senior Data Engineer",
         summary:
-          "컴플라이언스가 중요한 환경에서 Snowflake 데이터 시스템을 설계·운영하며 SQL 변환 로직, 시맨틱 레이어 기반, 컬럼 계보 자동화, QA 가능한 릴리스를 연결합니다.",
+          "컴플라이언스가 중요한 환경에서 Snowflake 데이터 플랫폼을 설계·운영하며 SQL 변환 로직, 시맨틱 레이어 기반, 컬럼 계보 자동화, QA 가능한 릴리스를 연결합니다.",
         proof: ["10만+ 직원", "PB급 데이터", "1,000만+ 행 데이터셋"],
         points: [
-          "이해관계자 요구를 데이터 로직 변경, 일정, 데이터 품질 판단으로 번역해 리더십과 엔지니어링 팀에 전달합니다.",
-          "여러 오프쇼어 엔지니어링 팀과 코드 리뷰, 제한된 정부 데이터 QA, 스프린트 실행을 포함한 SDLC 전달을 조율합니다.",
+          "이해관계자 요구를 데이터 로직 변경, 일정, 데이터 품질 판단으로 정리해 리더십과 엔지니어링 팀에 공유합니다.",
+          "여러 지역의 엔지니어링 팀과 코드 리뷰, 제한된 정부 데이터 QA, 스프린트 실행을 포함한 SDLC 전 과정을 조율합니다.",
           "Snowflake LLM 기능과 Claude로 시맨틱 레이어 및 테이블/컬럼 계보 프레임워크를 이끌며 약 80% 자동 계보 정확도를 달성했습니다.",
         ],
         actions: [
-          { label: "데이터 엔지니어 프로필 보기", href: "data-engineer_kr.html", roleNav: true },
+          { label: "데이터 엔지니어 프로필 열기", href: "data-engineer_kr.html", roleNav: true },
           { label: "데이터 엔지니어 이력서 다운로드", href: dataResumeHref, download: true },
         ],
         profile: {
           eyebrow: "데이터 엔지니어 프로필",
-          title: "엔터프라이즈 규모의 웨어하우스 신뢰성, 계보, 데이터 전달.",
+          title: "엔터프라이즈 규모에서 데이터웨어하우스를 안정적으로 운영하고, 흐름을 설명 가능하게 만듭니다.",
           summary:
-            "Snowflake EDW 운영, SQL 중심 변환 로직, PB급 데이터 모델, 계보 자동화, ETL/ELT 전달, 운영 데이터 품질을 검토하는 팀을 위한 프로필입니다.",
+            "Snowflake EDW 운영, SQL 중심 변환 로직, PB급 데이터 모델, 계보 자동화, ETL/ELT 운영, 프로덕션 데이터 품질을 검토하는 팀을 위한 프로필입니다.",
           resumeLabel: "데이터 엔지니어 이력서",
           resumeNote: "Senior Data Engineer, Data Engineer II, Analytics Engineer, 데이터 플랫폼 역할에 맞춘 이력서입니다.",
           actions: [
@@ -81,26 +81,26 @@ export const koSite = {
             { label: "데이터 엔지니어 이력서 다운로드", href: dataResumeHref, download: true },
           ],
           proof: [
-            { label: "현재 범위", value: "Snowflake EDW" },
-            { label: "규모", value: "PB급 데이터" },
-            { label: "전문 영역", value: "계보 + ETL/ELT" },
+            { label: "현재 담당", value: "Snowflake EDW" },
+            { label: "데이터 규모", value: "PB급 데이터" },
+            { label: "핵심 영역", value: "계보 + ETL/ELT" },
           ],
           roleProof: [
-            { label: "현재 플랫폼", value: "Snowflake EDW" },
-            { label: "엔터프라이즈 규모", value: "PB급 데이터" },
-            { label: "변환 로직", value: "SQL 로직 오너십" },
-            { label: "AI 문서화", value: "9,000+ 오브젝트 계보" },
+            { label: "현 운영 플랫폼", value: "Snowflake EDW" },
+            { label: "데이터 규모", value: "PB급 데이터" },
+            { label: "핵심 책임", value: "SQL 로직 오너십" },
+            { label: "AI 문서화", value: "9,000+ 객체 계보" },
             { label: "거버넌스 기반", value: "시맨틱 레이어 설계" },
-            { label: "오프쇼어 SDLC 조율", value: "분산 전달 리더십" },
+            { label: "분산 협업", value: "글로벌 SDLC 조율" },
           ],
           highlights: [
-            "컴플라이언스가 중요한 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 개발합니다.",
+            "컴플라이언스가 중요한 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 설계하고 운영합니다.",
             "Snowflake 네이티브 LLM 기능과 Claude 보조 개발로 컬럼 계보 문서화를 자동화했습니다.",
-            "매핑, QA 검증, 릴리스 준비, 기술 문서화까지 데이터 전달의 세부 과정을 맡습니다.",
+            "매핑, QA 검증, 릴리스 준비, 기술 문서화까지 데이터 업무가 실제 운영에 반영되는 과정을 끝까지 책임집니다.",
           ],
-          methodTitle: "일하는 방식의 핵심 패턴.",
+          methodTitle: "데이터 작업을 운영 가능한 형태로 만드는 방식.",
           archiveEyebrow: "초기 프로젝트 증거",
-          archiveTitle: "초기 웹/전달 프로젝트.",
+          archiveTitle: "초기 웹/실행 프로젝트.",
           archiveSummary:
             "단순한 과거 프로젝트가 아니라, 책임지고 정리하고 만들고 실제로 배포하는 패턴이 이미 있었음을 보여 주는 작업들입니다.",
           archiveProjectIds: ["ksa", "portfolio", "paypal"],
@@ -157,14 +157,14 @@ export const koSite = {
           },
           skillsTitle: "데이터 엔지니어 역량",
           capabilitiesSummary:
-            "웨어하우스 로직, 파이프라인 전달, 거버넌스, 문서화, AI 보조 도구까지 실제로 맡을 수 있는 기술 범위를 더 명확하게 정리했습니다.",
+            "웨어하우스 로직, 파이프라인 운영, 거버넌스, 문서화, AI 보조 도구까지 실제로 맡을 수 있는 기술 범위를 더 명확하게 정리했습니다.",
           capabilityGroups: [
             {
               title: "웨어하우스 시스템",
               items: ["Snowflake EDW", "SQL 변환 로직", "PB급 데이터 모델", "SQL Server", "데이터 모델링"],
             },
             {
-              title: "파이프라인 전달",
+              title: "파이프라인 운영",
               items: ["ETL / ELT", "Informatica", "Control-M", "Azure Data Factory", "SSIS", "릴리스 준비"],
             },
             {
@@ -196,31 +196,31 @@ export const koSite = {
         id: "product-manager",
         tone: "product",
         destination: "product-manager_kr.html",
-        openLabel: "Product Manager 프로필 보기",
+        openLabel: "Product Manager 프로필 열기",
         eyebrow: "",
-        activeStatus: "활성 프로필",
-        idleStatus: "프로필 보기",
-        mode: "제품 전달",
+        activeStatus: "선택됨",
+        idleStatus: "열기",
+        mode: "제품 실행",
         media: "Files/Hero_Cinematic/product-manager-panel.jpg",
         title: "Product Manager",
         subtitle: "Technical Product Manager",
         summary:
-          "모호한 비즈니스와 AI 워크플로 문제를 제품 요구사항, 아키텍처 선택, Jira 실행 계획, QA 게이트, 릴리스 가능한 전달로 바꿉니다.",
-        proof: ["MelodyMap.ai 창업", "풀스택 아키텍처", "Jira + QA 전달"],
+          "모호한 비즈니스 요구와 AI 워크플로 문제를 제품 요구사항, 아키텍처 선택, Jira 실행 계획, QA 기준, 릴리스 가능한 산출물로 바꿉니다.",
+        proof: ["MelodyMap.ai 창업", "풀스택 아키텍처", "Jira + QA 실행"],
         points: [
           "MelodyMap.ai 창업자로서 사용자 탐색, MVP 범위, 풀스택 아키텍처, 안전한 AI 워크플로 경계를 직접 설계합니다.",
-          "디렉터 레벨 요구를 제품 요구사항, Jira 스토리, 수용 기준, QA 검증, 릴리스 가능한 산출물로 전환합니다.",
-          "데이터 모델, API, 비동기 워크플로, AI 게이트웨이, 엔지니어링 의존성의 기술 트레이드오프를 판단합니다.",
+          "디렉터 레벨 요구를 제품 요구사항, Jira 스토리, 수용 기준, QA 검증, 릴리스 가능한 산출물로 구체화합니다.",
+          "데이터 모델, API, 비동기 워크플로, AI 게이트웨이, 엔지니어링 의존성 사이의 기술 트레이드오프를 판단합니다.",
         ],
         actions: [
-          { label: "Product Manager 프로필 보기", href: "product-manager_kr.html", roleNav: true },
+          { label: "Product Manager 프로필 열기", href: "product-manager_kr.html", roleNav: true },
           { label: "Product Manager 이력서 다운로드", href: productResumeHref, download: true },
         ],
         profile: {
           eyebrow: "Product Manager 프로필",
-          title: "모호한 요구를 범위가 명확한 제품 워크플로로 바꿉니다.",
+          title: "모호한 요구를 팀이 바로 실행할 수 있는 제품 범위로 정리합니다.",
           summary:
-            "테크니컬 제품 관리, AI 워크플로 아키텍처, 로드맵 트레이드오프, Jira/QA 전달, 이해관계자 번역, 창업자 수준 실행력을 검토하는 프로필입니다.",
+            "테크니컬 제품 관리, AI 워크플로 아키텍처, 로드맵 트레이드오프, Jira/QA 실행, 이해관계자 커뮤니케이션, 창업자 수준 실행력을 평가하기 위한 프로필입니다.",
           resumeLabel: "Product Manager 이력서",
           resumeNote: "Product Manager, Technical Product Manager, Senior Product Manager, AI Product 역할에 맞춘 이력서입니다.",
           actions: [
@@ -229,27 +229,27 @@ export const koSite = {
           ],
           proof: [
             { label: "창업자 경험", value: "MelodyMap.ai" },
-            { label: "기술 깊이", value: "풀스택 AI 아키텍처" },
-            { label: "전달 방식", value: "Jira + QA 실행" },
+            { label: "기술 기반", value: "풀스택 AI 아키텍처" },
+            { label: "실행 방식", value: "Jira + QA 실행" },
           ],
           roleProof: [
             { label: "창업자 제품", value: "MelodyMap.ai" },
             { label: "PM 번역", value: "요구사항을 스토리로" },
-            { label: "기술 깊이", value: "풀스택 AI 아키텍처" },
-            { label: "전달 시스템", value: "Jira + QA 실행" },
-            { label: "리더십", value: "이해관계자 번역" },
+            { label: "기술 기반", value: "풀스택 AI 아키텍처" },
+            { label: "실행 체계", value: "Jira + QA 실행" },
+            { label: "리더십", value: "이해관계자 조율" },
             { label: "AI 제품 판단", value: "안전한 AI 워크플로" },
           ],
           highlights: [
-            "디렉터 레벨 요구를 제품 요구사항, 수용 기준, QA 검증, 릴리스 가능한 작업으로 바꿉니다.",
+            "디렉터 레벨 비즈니스 요구를 제품 요구사항, 수용 기준, QA 검증, 릴리스 가능한 작업으로 구체화합니다.",
             "Next.js, FastAPI, PostgreSQL, Celery, Redis, Stripe, Gemini, 백엔드 전용 모델 게이트웨이를 포함한 풀스택 AI 제품 아키텍처를 설계합니다.",
-            "MelodyMap.ai를 만들며 사용자 문제, MVP 범위, 로드맵 선택, 안전한 AI 경계, 출시 기준을 연결하는 창업자 루프를 경험하고 있습니다.",
+            "MelodyMap.ai를 만들며 사용자 문제, MVP 범위, 로드맵 선택, 안전한 AI 경계, 출시 기준을 하나의 실행 루프로 연결하고 있습니다.",
           ],
           methodTitle: "모호한 요구를 출시 가능한 작업으로 바꾸는 방식.",
-          archiveEyebrow: "초기 전달 증거",
+          archiveEyebrow: "초기 실행 증거",
           archiveTitle: "초기 제품, 웹, 팀 프로젝트.",
           archiveSummary:
-            "팀 리딩, 포트폴리오 반복, 해커톤 전달, 실제 사용 가능한 웹 경험을 만들었던 v4 포트폴리오의 증거를 다시 살렸습니다.",
+            "팀 리딩, 포트폴리오 반복, 해커톤 출시처럼 실제 사용 가능한 웹 경험을 만들었던 초기 증거를 다시 정리했습니다.",
           archiveProjectIds: ["ksa", "portfolio", "paypal"],
           experienceItems: [
             {
@@ -259,7 +259,7 @@ export const koSite = {
               period: "2026년 4월 - 현재",
               location: "Phoenix, AZ",
               summary:
-                "음악치료사를 위한 AI SaaS 제품을 창업자 관점에서 사용자 탐색, MVP 범위, 워크플로 설계, 풀스택 아키텍처, 책임 있는 AI 기획까지 직접 설계하고 있습니다.",
+                "음악치료사를 위한 AI SaaS 제품을 창업자 관점에서 사용자 탐색, MVP 범위, 워크플로 설계, 풀스택 아키텍처, 책임 있는 AI 기준까지 직접 설계하고 있습니다.",
               chips: ["창업자", "AI SaaS", "로드맵", "풀스택 아키텍처", "사용자 탐색"],
               bullets: [
                 "음악치료사가 반복 세션을 계획하고, 디브리프를 남기고, 보고서용 문서를 생성하며, 기억 기반 워크플로로 다음 계획을 개선할 수 있는 AI 지원 SaaS 플랫폼 MelodyMap.ai를 창업했습니다.",
@@ -277,14 +277,14 @@ export const koSite = {
               period: "2024년 8월 - 현재",
               location: "Phoenix, AZ",
               summary:
-                "디렉터 레벨 요구사항, Jira 실행, 오프쇼어 조율, SQL 개발, QA 검증, AI 계보 자동화, 릴리스 가능한 산출물을 연결하는 엔터프라이즈 데이터 제품 전달을 수행하고 있습니다.",
-              chips: ["Jira", "이해관계자", "오프쇼어 전달", "AI 계보", "릴리스 준비"],
+                "디렉터 레벨 요구사항, Jira 실행, 글로벌 개발팀 조율, SQL 개발, QA 검증, AI 계보 자동화, 릴리스 가능한 산출물을 연결하는 엔터프라이즈 데이터 제품 실행을 맡고 있습니다.",
+              chips: ["Jira", "이해관계자", "글로벌 협업", "AI 계보", "릴리스 준비"],
               bullets: [
-                "각각 6개월 이상 지속되고 SQL 로직, QA 검증, 이해관계자 리뷰, 프로덕션 릴리스를 포함한 10개 이상 개발 항목으로 구성된 주요 비즈니스 스토리의 엔터프라이즈 데이터 제품 전달을 리드했습니다.",
-                "디렉터, 시니어 이해관계자, 매니저, 기술 리드와 협업해 비즈니스 요구를 명확히 하고, 요구사항을 매핑 문서와 개발 작업으로 전환하며, 규모가 변동되는 오프쇼어 엔지니어링 팀에 작업을 배분했습니다.",
-                "Jira와 Excel로 팀 리드와 함께 작업을 배정하고, 전체/세부 진행 상황을 추적하고, 이슈를 해소하며, 전달 상태와 리스크, 블로커, 일정을 리더십에 보고했습니다.",
-                "3개월 동안 진척이 제한적이던 주요 데이터 모델 이니셔티브를 맡아 3명의 오프쇼어 개발자를 관리하고 직접 SQL 개발에도 참여해 원래 기한 안에 프로젝트를 회복해 전달했습니다.",
-                "비즈니스 이해관계자와 엔지니어링 팀 사이의 주요 브리지로서 요구사항을 데이터 로직 변경, 수용 기대치, QA 검증 단계, 릴리스 가능한 산출물로 전환했습니다.",
+                "각각 6개월 이상 지속되고 SQL 로직, QA 검증, 이해관계자 리뷰, 프로덕션 릴리스를 포함한 10개 이상 개발 항목으로 구성된 주요 비즈니스 스토리의 실행을 리드했습니다.",
+                "디렉터, 시니어 이해관계자, 매니저, 기술 리드와 협업해 비즈니스 요구를 명확히 하고, 요구사항을 매핑 문서와 개발 작업으로 전환하며, 규모가 변동되는 글로벌 엔지니어링 팀에 작업을 배분했습니다.",
+                "Jira와 Excel로 팀 리드와 함께 작업을 배정하고, 전체/세부 진행 상황을 추적하고, 이슈를 해소하며, 실행 상태와 리스크, 블로커, 일정을 리더십에 보고했습니다.",
+                "3개월 동안 진척이 제한적이던 주요 데이터 모델 이니셔티브를 맡아 3명의 외부 개발자를 조율하고 직접 SQL 개발에도 참여해 원래 기한 안에 프로젝트를 정상 궤도로 되돌렸습니다.",
+                "비즈니스 이해관계자와 엔지니어링 팀 사이의 주요 연결 창구로서 요구사항을 데이터 로직 변경, 수용 기준, QA 검증 단계, 릴리스 가능한 산출물로 전환했습니다.",
                 "Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude를 활용해 9,000개 이상 Snowflake 객체의 AI 기반 컬럼 계보 이니셔티브를 주도했고, 약 80% 자동 계보 정확도로 수개월짜리 수작업 문서화를 수주 단위로 줄였습니다.",
                 "엔터프라이즈 사용자가 상하위 의존성, 데이터 흐름, 비즈니스 영향을 이해할 수 있도록 Atlan과 유사한 React 기반 내부 데이터 계보 시각화 도구를 프로토타이핑했습니다.",
                 "Enterprise Data Warehouse의 시맨틱 레이어와 테이블/컬럼 계보 프레임워크 설계를 지원해 데이터 탐색성, 거버넌스, 셀프서비스 분석 기반을 개선했습니다.",
@@ -297,10 +297,10 @@ export const koSite = {
               period: "2022년 3월 - 2024년 7월",
               location: "Tempe, AZ",
               summary:
-                "이해관계자 요구사항, SQL 기반 데이터 솔루션, 리포팅 로직, ETL 현대화, 검증, 릴리스 지원을 연결한 린 프로덕션 전달 경험입니다.",
-              chips: ["요구사항", "SQL 전달", "ETL 현대화", "Power BI", "릴리스 지원"],
+                "이해관계자 요구사항, SQL 기반 데이터 솔루션, 리포팅 로직, ETL 현대화, 검증, 릴리스 지원을 연결한 실무형 운영 경험입니다.",
+              chips: ["요구사항", "SQL 실행", "ETL 현대화", "Power BI", "릴리스 지원"],
               bullets: [
-                "비즈니스 이해관계자와 직접 요구사항을 파악하고, 로직 변경을 정의하고, 솔루션을 개발하고, 산출물을 검증하고, 릴리스를 지원하며 데이터 모델 업데이트와 리포팅 로직 전달을 끝까지 소유했습니다.",
+                "비즈니스 이해관계자와 직접 요구사항을 파악하고, 로직 변경을 정의하고, 솔루션을 개발하고, 산출물을 검증하고, 릴리스를 지원하며 데이터 모델 업데이트와 리포팅 로직 변경을 끝까지 책임졌습니다.",
                 "비즈니스 팀과 긴밀히 협업해 신규 모델을 식별하고, 기존 비즈니스 로직을 업데이트하고, 리포팅 공백을 해결하며, 이해관계자 요구를 분석/운영 리포팅용 SQL 기반 데이터 솔루션으로 전환했습니다.",
                 "SSIS, Azure Data Factory, SQL Server를 활용해 ETL/ELT 파이프라인을 자동화하고 이전하며 Salesforce, Workday, Azure Blob Storage 데이터를 엔터프라이즈 데이터웨어하우스에 통합했습니다.",
                 "Power BI 대시보드 업데이트를 자동화하는 SQL Server 저장 프로시저와 데이터 중복 제거 루틴을 개발해 리포팅 정확도를 높이고 DAX 복잡도를 줄였습니다.",
@@ -343,16 +343,16 @@ export const koSite = {
               actions: [{ label: "프로젝트 자세히 보기", kind: "modal", projectId: "ai" }],
             },
             {
-              title: "엔터프라이즈 전달 번역",
-              meta: "Honeywell · 부서 간 전달",
+              title: "엔터프라이즈 요구사항 실행화",
+              meta: "Honeywell · 크로스펑셔널 실행",
               body:
-                "이해관계자 요청을 매핑 문서, Jira 작업, QA 단계, 블로커 보고, 릴리스 노트로 전환해 분산 기술팀과 전달했습니다.",
+                "이해관계자 요청을 매핑 문서, Jira 작업, QA 단계, 블로커 보고, 릴리스 노트로 구체화해 분산 기술팀이 실행할 수 있게 정리했습니다.",
               tags: ["요구사항", "Jira", "릴리스 조율"],
             },
           ],
-          skillsTitle: "Product Manager 역량",
+          skillsTitle: "Product Manager 실행 역량",
           capabilitiesSummary:
-            "PM 프로필에서는 사용자 탐색, 기술 번역, 스프린트 전달, QA 계획, 이해관계자 커뮤니케이션, AI 워크플로 판단을 더 명확히 보여 주는 것이 중요합니다.",
+            "이 PM 프로필에서 강점이 분명해지는 지점은 사용자 탐색, 기술 번역, 스프린트 운영, QA 계획, 이해관계자 커뮤니케이션, AI 워크플로 판단을 하나의 실행 흐름으로 묶는 능력입니다.",
           capabilityGroups: [
             {
               title: "제품 전략",
@@ -363,8 +363,8 @@ export const koSite = {
               items: ["기술 요구사항", "Jira 스토리", "수용 기준", "아키텍처 트레이드오프", "API/데이터 모델 판단"],
             },
             {
-              title: "전달 + QA",
-              items: ["스프린트 추적", "오프쇼어 팀 조율", "QA 검증 계획", "리스크와 블로커 보고", "릴리스 준비"],
+              title: "실행 + QA",
+              items: ["스프린트 추적", "분산 팀 조율", "QA 검증 계획", "리스크와 블로커 보고", "릴리스 준비"],
             },
             {
               title: "AI 제품 시스템",
@@ -377,7 +377,7 @@ export const koSite = {
               items: ["사용자 워크플로 매핑", "문제 정의", "로드맵 정리", "MVP 범위 설정"],
             },
             {
-              title: "기술 전달",
+              title: "기술 실행",
               items: ["기술 요구사항", "실현 가능성 판단", "수용 기준", "QA 검증", "리스크와 블로커 보고"],
             },
             {
@@ -400,9 +400,9 @@ export const koSite = {
     title: "제품 감각을 가진 데이터 엔지니어.",
     body: [
       "저는 데이터 엔지니어로 커리어를 쌓아 왔지만, 실제 업무에서는 점점 더 제품에 가까운 역할을 맡아 왔습니다. 모호한 요구를 정리하고, 이해관계자와 기술팀 사이를 연결하고, 비즈니스 요구를 매핑 문서와 개발 항목으로 나누고, 리더십에 리스크와 진행 상황을 공유하는 일입니다. 그래서 이 포트폴리오는 하나의 직무명으로 모든 것을 설명하려고 하기보다 두 가지 커리어 경로를 명확히 보여 주도록 구성했습니다.",
-      "Honeywell에서는 PB급 규모의 Snowflake Enterprise Data Warehouse 변환 로직을 개발하고, 규제가 엄격한 환경의 대규모 정부 데이터를 다루며, 오프쇼어 팀과 협업해 촉박한 일정 안에서도 결과를 만들어 왔습니다. 주로 Snowflake, Informatica, Control-M, SQL Server, Python, Jira, React 프로토타입을 다룹니다.",
-      "제 강점은 전통적인 데이터 엔지니어링과 AI 활용, 그리고 제품 전달을 실제 업무에 자연스럽게 연결한다는 점입니다. Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude를 활용해 EDW 전반의 컬럼 단위 계보 문서화를 자동화했고, 수개월이 걸릴 작업을 훨씬 짧은 기간 안에 약 80% 정확도로 끌어올렸습니다. 또한 React 기반 내부 데이터 카탈로그 프로토타입을 만들며 시맨틱 레이어와 메타데이터 거버넌스 방향도 함께 고민해 왔습니다.",
-      "저는 단순히 데이터를 옮기는 것보다, 그 데이터가 어떤 의미를 가지는지 그리고 다른 사람이 얼마나 쉽게 이해하고 이어받을 수 있는지를 더 중요하게 봅니다. 그래서 구조, 문서화, 전달 방식을 중요하게 생각합니다. 엔터프라이즈 파이프라인이든 자율형 AI 워크플로든 기준은 같습니다. 정확하고 설명 가능한 시스템이어야 합니다.",
+      "Honeywell에서는 PB급 규모의 Snowflake Enterprise Data Warehouse 변환 로직을 개발하고, 규제가 엄격한 환경의 대규모 정부 데이터를 다루며, 여러 지역의 개발팀과 협업해 촉박한 일정 안에서도 결과를 만들어 왔습니다. 주로 Snowflake, Informatica, Control-M, SQL Server, Python, Jira, React 프로토타입을 다룹니다.",
+      "제 강점은 전통적인 데이터 엔지니어링과 AI 활용, 그리고 제품 실행을 실제 업무에 자연스럽게 연결한다는 점입니다. Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude를 활용해 EDW 전반의 컬럼 단위 계보 문서화를 자동화했고, 수개월이 걸릴 작업을 훨씬 짧은 기간 안에 약 80% 정확도로 끌어올렸습니다. 또한 React 기반 내부 데이터 카탈로그 프로토타입을 만들며 시맨틱 레이어와 메타데이터 거버넌스 방향도 함께 고민해 왔습니다.",
+      "저는 단순히 데이터를 옮기는 것보다, 그 데이터가 어떤 의미를 가지는지 그리고 다른 사람이 얼마나 쉽게 이해하고 이어받을 수 있는지를 더 중요하게 봅니다. 그래서 구조, 문서화, 실행 방식을 중요하게 생각합니다. 엔터프라이즈 파이프라인이든 자율형 AI 워크플로든 기준은 같습니다. 정확하고 설명 가능한 시스템이어야 합니다.",
       "개인적으로는 음악치료사를 위한 AI 보조 SaaS 제품 MelodyMap.ai를 만들고 있습니다. 사용자 인터뷰, MVP 범위, 백엔드 아키텍처, 안전한 AI 경계, 실제 워크플로 설계를 직접 경험하는 창업자 관점의 제품 루프입니다.",
     ],
     actions: [
@@ -441,7 +441,7 @@ export const koSite = {
   work: {
     eyebrow: "프로젝트",
     title: "겉으로만 정리된 화면보다, 실제 문제를 해결하는 구조와 흐름에 더 집중한 프로젝트들입니다.",
-    body: "인프라, 인터페이스, 전달 방식이 어떻게 맞물리는지 보여 줄 수 있는 대표 작업들만 골랐습니다.",
+    body: "인프라, 인터페이스, 실행 방식이 어떻게 맞물리는지 보여 줄 수 있는 대표 작업들만 골랐습니다.",
     primaryProjects: [
       {
         id: "melodymap",
@@ -561,12 +561,12 @@ export const koSite = {
         role: "Data Engineer II",
         period: "2024년 8월 - 현재",
         location: "Phoenix, AZ",
-        summary: "컴플라이언스가 중요한 환경에서 Snowflake EDW 변환 로직, PB급 데이터 모델, 제한된 데이터 QA, AI 컬럼 계보 자동화, 시맨틱 레이어 설계, 부서 간 전달을 맡는 Senior Data Engineer 역할을 수행하고 있습니다.",
-        chips: ["Snowflake", "AI / LLM", "컬럼 계보", "Jira", "제품 전달"],
+        summary: "컴플라이언스가 중요한 환경에서 Snowflake EDW 변환 로직, PB급 데이터 모델, 제한된 데이터 QA, AI 컬럼 계보 자동화, 시맨틱 레이어 설계, 부서 간 실행 조율을 맡는 Senior Data Engineer 역할을 수행하고 있습니다.",
+        chips: ["Snowflake", "AI / LLM", "컬럼 계보", "Jira", "제품 실행"],
         detailLink: { label: "기술 상세 보기", href: deepDiveHref.replace("column_lineage_portfolio.html", "column_lineage_portfolio_kr.html") },
         bullets: [
           "10만 명 이상이 활용하는 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 설계하고 운영하며, PB급 데이터 모델과 1,000만 행 이상 정부 데이터셋을 엄격한 컴플라이언스 요구사항 아래 처리하고 있습니다.",
-          "변화하는 비즈니스 요구사항에 맞춰 SQL 정의를 개발, 검증, 배포하고 규모가 변동되는 오프쇼어 엔지니어링 팀과 코드 리뷰, 제한된 정부 데이터 QA, 스프린트 전달을 포함한 전체 SDLC를 조율합니다.",
+          "변화하는 비즈니스 요구사항에 맞춰 SQL 정의를 개발, 검증, 배포하고 규모가 변동되는 글로벌 엔지니어링 팀과 코드 리뷰, 제한된 정부 데이터 QA, 스프린트 실행을 포함한 전체 SDLC를 조율합니다.",
           "비즈니스 클라이언트와 엔지니어링 사이의 주요 기술 연락 창구로서 이해관계자 요청을 데이터 로직 변경으로 번역하고, 디렉터와 산출물, 일정, 데이터 품질에 대해 직접 커뮤니케이션합니다.",
           "Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude Opus 4.6을 결합해 9,000개 이상 Snowflake 객체의 AI 기반 컬럼 계보 자동화를 주도했고, 약 80% 정확도의 자동 컬럼 단위 계보 매핑으로 수개월짜리 수작업 문서화를 수주 단위로 줄였습니다.",
           "React로 내부 데이터 계보 시각화 도구를 설계하고 프로토타이핑해 Atlan과 유사한 인터랙티브 플로우 다이어그램을 제공하고, 엔터프라이즈 리더십에 자체 데이터 카탈로그 도구의 가능성을 보여주었습니다.",
@@ -624,8 +624,8 @@ export const koSite = {
         items: ["멀티 에이전트 오케스트레이션", "프롬프트 설계", "LLM 기반 개발 보조", "Codex", "Claude", "GitHub Copilot", "Ollama", "컬럼 계보 자동화"],
       },
       {
-        title: "전달 리더십",
-        items: ["오프쇼어 팀 조율", "기술 문서화", "릴리스 준비", "React 프로토타입", "창업자 사용자 탐색", "영어 (원어민)", "한국어 (원어민)"],
+        title: "실행 리더십",
+        items: ["분산 팀 조율", "기술 문서화", "릴리스 준비", "React 프로토타입", "창업자 사용자 탐색", "영어 (원어민)", "한국어 (원어민)"],
       },
     ],
   },
