@@ -1,3 +1,5 @@
+import { melodyMapScreenshots } from "./shared.mjs";
+
 export const koProjects = [
   {
     id: "melodymap",
@@ -5,8 +7,10 @@ export const koProjects = [
     meta: "제품 개발 · 2026년 4월 - 현재",
     summary:
       "치료사를 위한 실무 운영 플랫폼입니다. 일정, 기관 정보, 세션 준비, 계획 작성, 이동 기록처럼 현장에서 반복되는 업무를 하나의 흐름으로 정리하는 데 초점을 맞추고 있습니다.",
-    tags: ["Healthtech SaaS", "Workflow OS", "AI planning"],
-    screenshots: [],
+    tags: ["Healthtech SaaS", "Practice workflow", "AI planning"],
+    imagePair: ["Files/MelodyMap.ai/Dashboard.png", "Files/MelodyMap.ai/PlanSutdio-Plan.png"],
+    imagePairLabels: ["운영 대시보드", "Plan Studio 출력"],
+    screenshots: melodyMapScreenshots,
     bullets: [
       "MelodyMap을 단순 챗봇이나 기록 도구가 아니라, 치료사를 위한 준비, 세션 운영, 후속 정리를 하나로 묶는 워크플로 제품으로 정의했습니다.",
       "캘린더를 한 번 연동하면 방문 일정, 기관 정보, 준비해야 할 내용, 이동 기록이 자연스럽게 연결되도록 설계했고, 기관별로 쌓인 맥락을 다음 방문에도 이어서 활용할 수 있게 만들고 있습니다.",
@@ -78,6 +82,7 @@ export const koProjects = [
       "팀 리딩과 프론트엔드 구현, GitHub 협업 정리를 함께 맡아 구축한 학생 단체 웹사이트입니다.",
     tags: ["HTML/CSS/JS", "팀 리드", "GitHub"],
     imagePair: ["Files/Project_Icons/ksa_logo.jpg", "Files/Project_Icons/ASUforksa.png"],
+    containFirstImage: true,
     containSecondImage: true,
     screenshots: [],
     bullets: [
@@ -107,6 +112,7 @@ export const koProjects = [
       { label: "버전 1", url: "https://jisungwoo.github.io/jisung_website/" },
       { label: "버전 2", url: "https://jisungwoo.github.io/jisung_website_v2/" },
       { label: "버전 3", url: "https://jisungwoo.github.io/jisung_website_v3/" },
+      { label: "버전 4", url: "https://jisungwoo.github.io/jisung_website_v4/" },
     ],
   },
   {

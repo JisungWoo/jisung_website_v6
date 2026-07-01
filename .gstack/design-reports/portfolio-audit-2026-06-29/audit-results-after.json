@@ -1,0 +1,786 @@
+[
+  {
+    "pageName": "index.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Choose Data Engineer or Product Manager",
+    "h1": "Jisung WooChoose your path",
+    "scrollWidth": 1440,
+    "scrollHeight": 1000,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 1440,
+    "scrollHeight": 5287,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "Choose Path",
+        "width": 77,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "Profile",
+        "width": 40,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "Contact",
+        "width": 48,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 1440,
+    "scrollHeight": 5119,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "Choose Path",
+        "width": 77,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "Profile",
+        "width": 40,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "Contact",
+        "width": 48,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index_kr.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index_kr-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer 또는 Product Manager 선택",
+    "h1": "Jisung Woo역할 선택",
+    "scrollWidth": 1440,
+    "scrollHeight": 1000,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer_kr.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer_kr-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 1440,
+    "scrollHeight": 5125,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "경로 선택",
+        "width": 58,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "프로필",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "연락처",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager_kr.html",
+    "viewport": "desktop",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager_kr-desktop.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 1440,
+    "scrollHeight": 4771,
+    "viewportWidth": 1440,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "경로 선택",
+        "width": 58,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "프로필",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "연락처",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Choose Data Engineer or Product Manager",
+    "h1": "Jisung WooChoose your path",
+    "scrollWidth": 820,
+    "scrollHeight": 1180,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 820,
+    "scrollHeight": 6658,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "Choose Path",
+        "width": 77,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "Profile",
+        "width": 40,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "Contact",
+        "width": 48,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 820,
+    "scrollHeight": 5715,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "Choose Path",
+        "width": 77,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "Profile",
+        "width": 40,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "Contact",
+        "width": 48,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index_kr.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index_kr-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer 또는 Product Manager 선택",
+    "h1": "Jisung Woo역할 선택",
+    "scrollWidth": 820,
+    "scrollHeight": 1180,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer_kr.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer_kr-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 820,
+    "scrollHeight": 6623,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "경로 선택",
+        "width": 58,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "프로필",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "연락처",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager_kr.html",
+    "viewport": "tablet",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager_kr-tablet.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 820,
+    "scrollHeight": 5638,
+    "viewportWidth": 820,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a",
+        "text": "경로 선택",
+        "width": 58,
+        "height": 25
+      },
+      {
+        "selector": "a.is-active",
+        "text": "프로필",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a",
+        "text": "연락처",
+        "width": 41,
+        "height": 25
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Choose Data Engineer or Product Manager",
+    "h1": "Jisung WooChoose your path",
+    "scrollWidth": 390,
+    "scrollHeight": 844,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 390,
+    "scrollHeight": 8620,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 390,
+    "scrollHeight": 8660,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index_kr.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index_kr-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer 또는 Product Manager 선택",
+    "h1": "Jisung Woo역할 선택",
+    "scrollWidth": 390,
+    "scrollHeight": 844,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer_kr.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer_kr-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 390,
+    "scrollHeight": 8219,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager_kr.html",
+    "viewport": "mobile",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager_kr-mobile.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 390,
+    "scrollHeight": 8326,
+    "viewportWidth": 390,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Choose Data Engineer or Product Manager",
+    "h1": "Jisung WooChoose your path",
+    "scrollWidth": 320,
+    "scrollHeight": 740,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 320,
+    "scrollHeight": 9016,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 320,
+    "scrollHeight": 9188,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "Back to role selector",
+        "width": 229,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "index_kr.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\index_kr-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer 또는 Product Manager 선택",
+    "h1": "Jisung Woo역할 선택",
+    "scrollWidth": 320,
+    "scrollHeight": 740,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "data-engineer_kr.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\data-engineer_kr-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Data Engineer",
+    "h1": "Data Engineer",
+    "scrollWidth": 320,
+    "scrollHeight": 8660,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  },
+  {
+    "pageName": "product-manager_kr.html",
+    "viewport": "narrow",
+    "screenshot": "C:\\Users\\jisun\\Desktop\\Vibe_Coding\\DEV\\portfolio_website\\.gstack\\design-reports\\portfolio-audit-2026-06-29\\screenshots-after\\product-manager_kr-narrow.png",
+    "consoleErrors": [],
+    "title": "Jisung Woo | Product Manager",
+    "h1": "Product Manager",
+    "scrollWidth": 320,
+    "scrollHeight": 8754,
+    "viewportWidth": 320,
+    "overflowX": false,
+    "textOverflow": [],
+    "clippedText": [],
+    "outOfViewport": [],
+    "smallTargets": [
+      {
+        "selector": "a.brand-mark",
+        "text": "Jisung Woo",
+        "width": 103,
+        "height": 15
+      },
+      {
+        "selector": "a.path-return",
+        "text": "역할 선택으로 돌아가기",
+        "width": 217,
+        "height": 12
+      }
+    ],
+    "missingAnchors": [],
+    "brokenVisibleImages": []
+  }
+]

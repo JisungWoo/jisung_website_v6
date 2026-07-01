@@ -1,3 +1,5 @@
+import { melodyMapScreenshots } from "./shared.mjs";
+
 export const enProjects = [
   {
     id: "melodymap",
@@ -5,8 +7,10 @@ export const enProjects = [
     meta: "Independent product build · Apr 2026 - Present",
     summary:
       "A practice management platform for therapists, built around schedule-driven preparation, reusable facility context, structured session planning, and mileage tracking.",
-    tags: ["Healthtech SaaS", "Workflow OS", "AI planning"],
-    screenshots: [],
+    tags: ["Healthtech SaaS", "Practice workflow", "AI planning"],
+    imagePair: ["Files/MelodyMap.ai/Dashboard.png", "Files/MelodyMap.ai/PlanSutdio-Plan.png"],
+    imagePairLabels: ["Operations dashboard", "Plan Studio output"],
+    screenshots: melodyMapScreenshots,
     bullets: [
       "Defined MelodyMap as a workflow product for therapists rather than a generic chatbot or note-taking tool, centered on preparation, session delivery, and follow-up.",
       "Built the product around a calendar-native flow so imported schedules determine where the therapist is going, what location context to load, what to prepare, and what mileage to capture afterward.",
@@ -78,6 +82,7 @@ export const enProjects = [
       "A team-led website project for ASU's Korean Student Association with front-end ownership and contributor onboarding.",
     tags: ["HTML/CSS/JS", "Team lead", "GitHub"],
     imagePair: ["Files/Project_Icons/ksa_logo.jpg", "Files/Project_Icons/ASUforksa.png"],
+    containFirstImage: true,
     containSecondImage: true,
     screenshots: [],
     bullets: [
@@ -107,6 +112,7 @@ export const enProjects = [
       { label: "Version 1", url: "https://jisungwoo.github.io/jisung_website/" },
       { label: "Version 2", url: "https://jisungwoo.github.io/jisung_website_v2/" },
       { label: "Version 3", url: "https://jisungwoo.github.io/jisung_website_v3/" },
+      { label: "Version 4", url: "https://jisungwoo.github.io/jisung_website_v4/" },
     ],
   },
   {

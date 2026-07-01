@@ -1,53 +1,415 @@
-import { deepDiveHref, githubHref, linkedinHref, resumeHref } from "./shared.mjs";
+import { dataResumeHref, deepDiveHref, githubHref, linkedinHref, productResumeHref } from "./shared.mjs";
 
 export const enSite = {
   languageCode: "en",
-  pagePath: "index.html",
-  title: "Jisung Woo | Data Engineer + AI Systems Builder",
+  pagePath: "data-engineer.html",
+  title: "Jisung Woo | Data Engineer + Technical Product Manager",
   description:
-    "Data engineer and AI systems builder creating enterprise data platforms, orchestration workflows, and trustworthy analytics experiences.",
+    "AI-focused data engineer and technical product manager building enterprise data systems, internal tools, and responsible AI products.",
   localeSwitch: { label: "KR", text: "Korean", href: "index_kr.html" },
   nav: [
+    { label: "Paths", href: "#paths" },
     { label: "About", href: "#about" },
-    { label: "AI Philosophy", href: "#philosophy" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Capabilities", href: "#capabilities" },
-    { label: "Education", href: "#education" },
-    { label: "Journey", href: "#journey" },
+    { label: "AI Philosophy", href: "#philosophy" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    badge: "Open to opportunities",
-    role: "Data Engineer + AI Systems Builder",
+    role: "Data Engineer + Technical Product Manager + AI Systems Builder",
     name: "Jisung Woo",
-    thesis: "Building data systems people can trust and AI systems people can actually use.",
+    thesis: "I make complex data work usable, shippable, and accountable.",
     summary:
-      "I work at the intersection of enterprise data infrastructure, workflow automation, and AI orchestration - turning complex systems into tools that stay understandable under real-world pressure.",
-    primaryCta: { label: "Download Resume", href: resumeHref, download: true },
-    secondaryCta: { label: "Read AI Philosophy", href: "#philosophy" },
+      "Data engineering is my base. Product work is where it shows up: requirements, tradeoffs, delivery plans, and workflows people can actually operate.",
+    primaryCta: { label: "Download Data Resume", href: dataResumeHref, download: true },
+    secondaryCta: { label: "Download Product Manager Resume", href: productResumeHref, download: true },
     metrics: [
       { value: "4+", label: "Years in data engineering" },
-      { value: "9K+", label: "Snowflake objects managed" },
-      { value: "100K+", label: "Users impacted" },
-      { value: "4.0", label: "Graduate GPA" },
+      { value: "PB-scale", label: "Enterprise data environment" },
+      { value: "Distributed", label: "Offshore delivery coordination" },
+      { value: "70%", label: "MelodyMap demo complete" },
     ],
-    visualTags: ["Snowflake EDW", "AI orchestration", "Column lineage", "Systems thinking"],
+    visualTags: ["Snowflake EDW", "Technical product", "AI orchestration", "Founder mindset"],
     photoAlt: "Portrait of Jisung Woo at Arizona State University.",
     logoLabel: "Worked at",
   },
+  roleProfiles: {
+    eyebrow: "Role Profiles",
+    title: "Choose the version of my work you need to evaluate.",
+    body:
+      "Two focused paths: one for enterprise data systems and one for product delivery. Each path keeps the resume, projects, skills, and proof points aligned to that role.",
+  },
+  career: {
+    bridgeTitle: "One operator, two hiring paths.",
+    bridgeCopy:
+      "The overlap is useful, but the evaluation path should be clean. Choose Data Engineer for warehouse and pipeline depth; choose Product for product delivery, founder work, and technical product execution.",
+    tracks: [
+      {
+        id: "data-engineer",
+        tone: "data",
+        destination: "data-engineer.html",
+        openLabel: "Explore the Data Engineer profile",
+        eyebrow: "",
+        activeStatus: "Active profile",
+        idleStatus: "Open profile",
+        mode: "Enterprise data systems",
+        media: "Files/Hero_Cinematic/data-engineer-panel.jpg",
+        title: "Data Engineer",
+        subtitle: "Senior Data Engineer",
+        summary:
+          "I design and operate governed Snowflake data systems for high-compliance environments: SQL transformation logic, semantic-layer foundations, lineage automation, and QA-ready releases.",
+        proof: ["100K+ employees", "PB-scale data", "10M+ row datasets"],
+        points: [
+          "Translate stakeholder requirements into data logic changes, timelines, and data quality decisions for directors and engineering teams.",
+          "Coordinate full-SDLC delivery with distributed offshore engineering teams, including code reviews, restricted-data QA, and sprint execution.",
+          "Lead semantic-layer and table/column-lineage work, using Snowflake LLM functions and Claude to reach 80% automated lineage accuracy.",
+        ],
+        actions: [
+          { label: "Explore Data Engineer Profile", href: "data-engineer.html", roleNav: true },
+          { label: "Download Data Engineer Resume", href: dataResumeHref, download: true },
+        ],
+        profile: {
+          eyebrow: "Data Engineer Profile",
+          title: "Warehouse reliability, lineage, and delivery at enterprise scale.",
+          summary:
+            "For teams evaluating Snowflake EDW ownership, SQL-heavy transformation logic, PB-scale data models, lineage automation, ETL/ELT delivery, and production data quality.",
+          resumeLabel: "Data Engineer Resume",
+          resumeNote: "Use this resume for Senior Data Engineer, Data Engineer II, analytics engineering, and warehouse/platform roles.",
+          actions: [
+            { label: "View Data Engineer Resume", href: dataResumeHref, newTab: true },
+            { label: "Download Data Engineer Resume", href: dataResumeHref, download: true },
+          ],
+          proof: [
+            { label: "Current scope", value: "Snowflake EDW" },
+            { label: "Scale", value: "PB-scale data" },
+            { label: "Specialty", value: "Lineage + ETL/ELT" },
+          ],
+          roleProof: [
+            { label: "Current platform", value: "Snowflake EDW" },
+            { label: "Enterprise scale", value: "PB-scale data" },
+            { label: "Transformation logic", value: "SQL logic ownership" },
+            { label: "AI documentation", value: "9,000+ object lineage" },
+            { label: "Governance foundation", value: "Semantic layer design" },
+            { label: "Offshore SDLC coordination", value: "Distributed delivery" },
+          ],
+          highlights: [
+            "Engineer SQL-based transformation logic inside a high-compliance Snowflake Enterprise Data Warehouse.",
+            "Automate lineage documentation with Snowflake native LLM functions and Claude-assisted development.",
+            "Own delivery details across mapping, QA validation, release readiness, and technical documentation.",
+          ],
+          methodTitle: "The operating pattern behind the work.",
+          archiveEyebrow: "Earlier build proof",
+          archiveTitle: "Earlier web and delivery projects.",
+          archiveSummary:
+            "These older projects are not filler. They show the early pattern: take ownership, organize people or requirements, build the interface, and ship something real.",
+          archiveProjectIds: ["ksa", "portfolio", "paypal"],
+          projectsTitle: "Data Engineering Projects",
+          projects: [
+            {
+              title: "Snowflake EDW + Column Lineage",
+              meta: "Honeywell · Enterprise warehouse work",
+              body:
+                "Transformation logic, column-level lineage, and documentation automation across a large Snowflake environment with strict delivery standards.",
+              tags: ["Snowflake", "SQL", "Lineage"],
+            },
+            {
+              title: "Enterprise ETL Modernization",
+              meta: "ASU Enterprise Partners · Data Engineer I",
+              body:
+                "SSIS and Azure Data Factory workflows, SQL Server procedures, Power BI refresh automation, and warehouse integrations across Salesforce, Workday, and Azure Blob Storage.",
+              tags: ["ADF", "SSIS", "SQL Server"],
+            },
+            {
+              title: "MS-BA Capstone: Tennis Performance Analytics",
+              meta: "Machine learning pipeline",
+              body:
+                "YOLOv8 and OpenCV pipeline that extracted player performance metrics from match footage and reduced large-scale analysis time.",
+              tags: ["Python", "YOLOv8", "OpenCV"],
+              actions: [{ label: "Open project details", kind: "modal", projectId: "capstone" }],
+            },
+          ],
+          aiWork: {
+            eyebrow: "AI Work",
+            title: "AI systems that make technical work inspectable and repeatable.",
+            summary:
+              "Separate from my warehouse work, these projects show how I use AI as an operator: building product workflows, orchestration surfaces, guardrails, and reviewable system outputs.",
+            projects: [
+              {
+                title: "MelodyMap.ai",
+                meta: "Founder AI product build",
+                body:
+                  "An AI-assisted workflow product for music therapists, built around calendar context, session planning, memory retrieval, and safe model boundaries.",
+                tags: ["Gemini", "Workflow SaaS", "Founder build"],
+                media: { src: "Files/MelodyMap.ai/PlanSutdio-Plan.png", alt: "MelodyMap plan studio screenshot" },
+                actions: [{ label: "Open project details", kind: "modal", projectId: "melodymap" }],
+              },
+              {
+                title: "AI Agent Orchestration Platform",
+                meta: "Multi-agent operations system",
+                body:
+                  "Planner-builder-reviewer roles, approvals, checkpoints, dashboards, and durable state for long-running AI agent work.",
+                tags: ["Multi-agent AI", "Approvals", "Operations UI"],
+                media: { src: "Files/AI_Project_Screenshot/20260325_Overview.jpg", alt: "AI Agent Orchestration Platform overview screenshot" },
+                actions: [{ label: "Open project details", kind: "modal", projectId: "ai" }],
+              },
+            ],
+          },
+          skillsTitle: "Data Engineer Capabilities",
+          capabilitiesSummary:
+            "A fuller map of the technical surfaces I can own: warehouse logic, pipeline delivery, governance, documentation, and AI-assisted tooling that makes enterprise data work easier to inspect.",
+          capabilityGroups: [
+            {
+              title: "Warehouse Systems",
+              items: ["Snowflake EDW", "SQL transformation logic", "PB-scale data models", "SQL Server", "Data modeling"],
+            },
+            {
+              title: "Pipeline Delivery",
+              items: ["ETL / ELT", "Informatica", "Control-M", "Azure Data Factory", "SSIS", "Release readiness"],
+            },
+            {
+              title: "Governance + Quality",
+              items: ["Column lineage", "Semantic layer design", "Restricted-data QA", "Data validation", "Technical documentation"],
+            },
+            {
+              title: "AI + Builder Tools",
+              items: ["Snowflake LLM functions", "Claude / GitHub Copilot", "React prototypes", "Multi-agent workflows", "Founder product building"],
+            },
+          ],
+          skills: [
+            {
+              title: "Warehouse + SQL",
+              items: ["Snowflake EDW", "SQL transformation logic", "Data modeling", "Query troubleshooting"],
+            },
+            {
+              title: "Pipelines",
+              items: ["ETL / ELT", "Informatica", "Control-M", "Azure Data Factory", "SSIS"],
+            },
+            {
+              title: "Reliability",
+              items: ["Lineage", "QA validation", "Release readiness", "Technical documentation"],
+            },
+          ],
+        },
+      },
+      {
+        id: "product-manager",
+        tone: "product",
+        destination: "product-manager.html",
+        openLabel: "Explore the Product Manager profile",
+        eyebrow: "",
+        activeStatus: "Active profile",
+        idleStatus: "Open profile",
+        mode: "Product delivery",
+        media: "Files/Hero_Cinematic/product-manager-panel.jpg",
+        title: "Product Manager",
+        subtitle: "Technical Product Manager",
+        summary:
+          "I turn ambiguous business and AI workflow problems into product requirements, architecture choices, Jira execution plans, QA gates, and release-ready delivery.",
+        proof: ["MelodyMap.ai founder", "Full-stack architecture", "Jira + QA delivery"],
+        points: [
+          "Founder of MelodyMap.ai, shaping user discovery, MVP scope, full-stack architecture, and safe AI workflow boundaries.",
+          "Translate director-level needs into product requirements, Jira stories, acceptance expectations, QA validation, and release-ready deliverables.",
+          "Evaluate technical tradeoffs across data models, APIs, async workflows, AI gateways, and engineering dependencies.",
+        ],
+        actions: [
+          { label: "Explore Product Manager Profile", href: "product-manager.html", roleNav: true },
+          { label: "Download Product Manager Resume", href: productResumeHref, download: true },
+        ],
+        profile: {
+          eyebrow: "Product Manager Profile",
+          title: "From ambiguous needs to scoped, buildable product workflows.",
+          summary:
+            "For teams evaluating technical product management, AI workflow architecture, roadmap tradeoffs, Jira/QA delivery, stakeholder translation, and founder-level execution.",
+          resumeLabel: "Product Manager Resume",
+          resumeNote:
+            "Use this resume for Product Manager, Technical Product Manager, Senior Product Manager, and AI product roles.",
+          actions: [
+            { label: "View Product Manager Resume", href: productResumeHref, newTab: true },
+            { label: "Download Product Manager Resume", href: productResumeHref, download: true },
+          ],
+          proof: [
+            { label: "Founder work", value: "MelodyMap.ai" },
+            { label: "Technical depth", value: "Full-stack AI architecture" },
+            { label: "Delivery", value: "Jira + QA execution" },
+          ],
+          roleProof: [
+            { label: "Founder product", value: "MelodyMap.ai" },
+            { label: "PM translation", value: "Requirements to stories" },
+            { label: "Technical depth", value: "Full-stack AI architecture" },
+            { label: "Delivery system", value: "Jira + QA execution" },
+            { label: "Leadership", value: "Stakeholder translation" },
+            { label: "AI product judgment", value: "Safe AI workflows" },
+          ],
+          highlights: [
+            "Translate director-level business needs into product requirements, acceptance expectations, QA validation, and release-ready work.",
+            "Shape full-stack AI product architecture across Next.js, FastAPI, PostgreSQL, Celery, Redis, Stripe, Gemini, and backend-only model gateway decisions.",
+            "Use founder discovery from MelodyMap.ai to connect user pain, MVP scope, roadmap choices, safe AI boundaries, and shipping discipline.",
+          ],
+          methodTitle: "How I turn ambiguity into shipped work.",
+          archiveEyebrow: "Earlier delivery proof",
+          archiveTitle: "Earlier product, web, and team projects.",
+          archiveSummary:
+            "These projects bring forward the v4 portfolio evidence: team leadership, portfolio iteration, hackathon delivery, and shipping usable web experiences before the current AI product work.",
+          archiveProjectIds: ["ksa", "portfolio", "paypal"],
+          experienceItems: [
+            {
+              id: "melodymap-founder",
+              company: "MelodyMap.ai",
+              role: "Founder / Technical Product Manager",
+              period: "Apr 2026 - Present",
+              location: "Phoenix, AZ",
+              summary:
+                "Founder-led AI SaaS product work across user discovery, MVP scope, workflow design, full-stack architecture, and responsible AI planning for music therapists.",
+              chips: ["Founder", "AI SaaS", "Roadmap", "Full-stack architecture", "User discovery"],
+              bullets: [
+                "Founded MelodyMap.ai, an AI-assisted SaaS platform for music therapists to plan recurring sessions, capture debriefs, generate report-ready documentation, and improve future planning through a memory-based workflow.",
+                "Defined the product vision, target user, MVP scope, and core workflows after interviewing an actively practicing music therapist and identifying pain points around recurring session planning, song selection, documentation, and follow-up.",
+                "Built a 70% complete demo while finalizing Gemini Flash architecture and the backend-only model gateway needed to customize LLM behavior for music therapy planning use cases.",
+                "Designed product workflows for sessions, locations, plans, songs, recommendations, debriefs, and reports with emphasis on therapist control, review states, confidence levels, caveats, and safe AI boundaries.",
+                "Architected the full-stack product with Next.js, TypeScript, FastAPI, PostgreSQL, Celery, Redis, Stripe, and Gemini, including APIs, database models, asynchronous workflows, and product-ready data structures.",
+                "Developed a song-aware recommendation system that considers location profile, population, theme, therapist repertoire, chart familiarity, and prior session outcomes to support therapist decision-making.",
+              ],
+            },
+            {
+              id: "honeywell-product",
+              company: "Honeywell",
+              role: "Data Engineer II / Technical Product Delivery",
+              period: "Aug 2024 - Present",
+              location: "Phoenix, AZ",
+              summary:
+                "Enterprise data product delivery across director-level requirements, Jira execution, offshore coordination, SQL delivery, QA validation, AI lineage automation, and release-ready stakeholder outcomes.",
+              chips: ["Jira", "Stakeholders", "Offshore delivery", "AI lineage", "Release readiness"],
+              bullets: [
+                "Led enterprise data product delivery across major business stories over 6+ months each, with each initiative spanning 10+ development items across SQL logic, QA validation, stakeholder review, and production release.",
+                "Partnered with directors, senior stakeholders, managers, and technical leads to clarify business needs, translate requirements into mapping documents and development tasks, and distribute work across variable offshore engineering teams.",
+                "Managed sprint execution using Jira and Excel by assigning work with team leads, tracking progress at macro and detail levels, unblocking issues, reviewing delivery status, and reporting risks, blockers, and timelines to leadership.",
+                "Took ownership of a delayed major data model initiative after 3 months of limited progress, managing 3 offshore developers while also contributing hands-on SQL development to recover the project and deliver by the original deadline.",
+                "Served as the primary bridge between business stakeholders and engineering teams, converting business requirements into data logic changes, acceptance expectations, QA validation steps, and release-ready deliverables.",
+                "Spearheaded an AI-driven column lineage initiative across 9,000+ Snowflake objects, using Snowflake native LLM functions and Claude through GitHub Copilot to reach approximately 80% automated lineage accuracy and reduce months of manual documentation into weeks.",
+                "Prototyped an internal React-based data lineage visualization tool to demonstrate how enterprise users could understand upstream/downstream dependencies, data flow, and business impact through an Atlan-like experience.",
+                "Supported the design of a semantic layer and table/column lineage framework for the Enterprise Data Warehouse, improving data discoverability, governance, and self-service analytics foundations.",
+              ],
+            },
+            {
+              id: "asuep-product",
+              company: "ASU Enterprise Partners",
+              role: "Data Engineer I / Data Product Delivery",
+              period: "Mar 2022 - Jul 2024",
+              location: "Tempe, AZ",
+              summary:
+                "Lean production delivery work across stakeholder requirements, SQL-based data solutions, reporting logic, ETL modernization, validation, and release support.",
+              chips: ["Requirements", "SQL delivery", "ETL modernization", "Power BI", "Release support"],
+              bullets: [
+                "Owned end-to-end delivery of data model updates and reporting logic in a lean production environment, working directly with business stakeholders to understand requirements, define logic changes, develop solutions, validate outputs, and support release.",
+                "Partnered closely with business teams to identify new models, update existing business logic, troubleshoot reporting gaps, and translate stakeholder needs into SQL-based data solutions for analytics and operational reporting.",
+                "Automated and migrated ETL/ELT pipelines using SSIS, Azure Data Factory, and SQL Server, integrating Salesforce, Workday, and Azure Blob Storage data into the enterprise data warehouse.",
+                "Developed SQL Server stored procedures to automate Power BI dashboard updates and implemented data deduplication routines, improving reporting accuracy and reducing DAX complexity.",
+                "Operated in a production-sensitive database environment with limited lower-tier infrastructure, applying careful change validation, impact review, and troubleshooting practices before and after deployment.",
+                "Provided task direction and support to an intern on selected data development work, clarifying requirements, reviewing progress, and helping ensure deliverables aligned with stakeholder needs.",
+              ],
+            },
+            {
+              id: "oracle-product",
+              company: "Oracle Cerner",
+              role: "Technical Solution Analyst",
+              period: "Feb 2021 - Mar 2022",
+              location: "Kansas City, MO",
+              summary:
+                "Client-facing enterprise application support across SQL investigation, data integrity, system troubleshooting, SLA-driven issue resolution, and cross-functional communication.",
+              chips: ["Client support", "SQL investigation", "SLA", "Healthcare systems", "On-call"],
+              bullets: [
+                "Investigated and resolved complex front-end and back-end data issues across enterprise applications using SQL, log analysis, and proactive Oracle-based monitoring while maintaining 90%+ client satisfaction and meeting SLAs.",
+                "Collaborated cross-functionally to troubleshoot data integrity problems, perform safe SQL updates, and stabilize data flows across systems and teams.",
+                "Drove investigations of Java-based front-end applications using SQL, troubleshooting tools, and end-user shadowing while providing 24/7 on-call support for priority issues impacting patient care and health information.",
+              ],
+            },
+          ],
+          projectsTitle: "Product Work",
+          projects: [
+            {
+              title: "MelodyMap.ai",
+              meta: "Founder product build",
+              body:
+                "A workflow product for music therapists that connects calendar context, session planning, facility memory, and mileage tracking into one operational flow.",
+              tags: ["Founder", "Workflow SaaS", "AI planning"],
+              actions: [{ label: "Open project details", kind: "modal", projectId: "melodymap" }],
+            },
+            {
+              title: "AI Agent Orchestration Platform",
+              meta: "AI workflow system",
+              body:
+                "Planner-builder-reviewer roles, approvals, checkpoints, dashboards, and durable state for long-running AI agent work.",
+              tags: ["Product systems", "AI workflow", "Operations UI"],
+              actions: [{ label: "Open project details", kind: "modal", projectId: "ai" }],
+            },
+            {
+              title: "Delivery Translation at Enterprise Scale",
+              meta: "Honeywell · Cross-functional delivery",
+              body:
+                "Converted stakeholder requests into mapping documents, Jira work, QA steps, blocker reporting, and release notes for a distributed technical team.",
+              tags: ["Requirements", "Jira", "Release coordination"],
+            },
+          ],
+          skillsTitle: "Product Manager Capabilities",
+          capabilitiesSummary:
+            "The PM case is strongest when the capabilities are explicit: discovery, technical translation, sprint delivery, QA planning, stakeholder communication, and AI workflow judgment.",
+          capabilityGroups: [
+            {
+              title: "Product Strategy",
+              items: ["User discovery", "Problem framing", "Roadmap shaping", "MVP scoping", "Prioritization judgment"],
+            },
+            {
+              title: "Technical Translation",
+              items: ["Technical requirements", "Jira stories", "Acceptance criteria", "Architecture tradeoffs", "API and data-model decisions"],
+            },
+            {
+              title: "Delivery + QA",
+              items: ["Sprint tracking", "Offshore team coordination", "QA validation plans", "Risk and blocker reporting", "Release readiness"],
+            },
+            {
+              title: "AI Product Systems",
+              items: ["AI workflow design", "Model gateway boundaries", "Human review states", "Prompt/context systems", "Founder execution"],
+            },
+          ],
+          skills: [
+            {
+              title: "Product Discovery",
+              items: ["User workflow mapping", "Problem framing", "Roadmap shaping", "MVP scoping"],
+            },
+            {
+              title: "Technical Delivery",
+              items: ["Technical requirements", "Feasibility tradeoffs", "Acceptance criteria", "QA validation", "Risk and blocker reporting"],
+            },
+            {
+              title: "Product Systems",
+              items: ["Full-stack architecture", "API workflow design", "AI model gateways", "Data models", "Founder execution"],
+            },
+          ],
+        },
+      },
+    ],
+    milestones: [
+      { label: "Foundation", title: "Enterprise data systems" },
+      { label: "Bridge", title: "Stakeholder to engineering translation" },
+      { label: "Leverage", title: "AI-assisted workflow design" },
+      { label: "Founder", title: "Product judgment from MelodyMap.ai" },
+    ],
+  },
   about: {
     eyebrow: "About Me",
-    title: "Turning data complexity into clarity.",
+    title: "A data engineer with product instincts.",
     body: [
-      "I'm a Data Engineer who builds reliable, scalable data systems - and increasingly, AI-powered ones. At Honeywell, I engineer transformation logic across a Snowflake Enterprise Data Warehouse spanning 9,000+ objects, manage government-scale datasets under strict compliance, and coordinate offshore teams to deliver against tight deadlines. My stack spans Snowflake, Informatica, Control-M, SQL Server, and Python.",
-      "What sets me apart is how I'm bridging traditional data engineering with AI. I led an initiative to automate column-level lineage across our entire EDW using Snowflake's native LLM functions and Claude Opus - reaching roughly 80% accuracy on work that would have taken months manually. I've also prototyped internal data catalog tooling in React and started shaping a semantic layer and metadata governance direction for the warehouse.",
+      "I'm a Data Engineer who has been pulled more and more into product-shaped work: clarifying ambiguous requirements, coordinating delivery, turning business needs into mapping documents, and keeping leadership aligned on risk, blockers, and timelines. That is why the portfolio now has two clear paths instead of forcing one title to explain everything.",
+      "At Honeywell, I engineer transformation logic across a Snowflake Enterprise Data Warehouse operating at PB scale, manage government-scale datasets under strict compliance, and coordinate offshore teams to deliver against tight deadlines. My stack spans Snowflake, Informatica, Control-M, SQL Server, Python, Jira, and React prototypes.",
+      "What sets me apart is how I bridge traditional data engineering with AI and product delivery. I led an initiative to automate column-level lineage across our EDW using Snowflake native LLM functions and Claude through GitHub Copilot, reaching roughly 80% accuracy on work that would have taken months manually. I also prototyped internal data catalog tooling in React and helped shape semantic layer and metadata governance direction.",
       "My approach starts with the meaning behind the data, not just the mechanics of moving it. I care about structure, documentation, and building systems other people can understand, maintain, and trust. Whether it's enterprise pipelines or autonomous AI workflows, the standard is the same: precision with thoughtful communication.",
-      "Outside of work, I build multi-agent systems and portfolio experiments that let me test orchestration, review loops, and human-in-the-loop AI design in a practical way.",
+      "Outside of work, I am building MelodyMap.ai, an AI-assisted SaaS product for music therapists. It gives me a founder-level product loop: user discovery, roadmap choices, backend architecture, safe AI boundaries, and real workflow design.",
     ],
     actions: [
       { label: "Technical deep dive", href: deepDiveHref },
-      { label: "Resume", href: resumeHref, download: true },
+      { label: "Data Resume", href: dataResumeHref, download: true },
+      { label: "Product Manager Resume", href: productResumeHref, download: true },
     ],
   },
   philosophy: {
@@ -85,7 +447,7 @@ export const enSite = {
       {
         id: "melodymap",
         tone: "signal",
-        tags: ["Healthtech SaaS", "Workflow OS", "AI planning"],
+        tags: ["Healthtech SaaS", "Practice workflow", "AI planning"],
         title: "MelodyMap",
         meta: "Independent product build · Apr 2026 - Present",
         summary:
@@ -189,9 +551,9 @@ export const enSite = {
   },
   experience: {
     eyebrow: "Experience",
-    title: "Enterprise systems, AI exploration, and delivery work that ships.",
+    title: "Enterprise systems, product translation, and delivery work that ships.",
     intro:
-      "I do my best work where the technical rigor is high, the stakeholder pressure is real, and the system still needs to stay legible.",
+      "I do my best work where the technical rigor is high, the stakeholder pressure is real, and the system still needs to stay legible from requirement through release.",
     deepDive: { label: "Technical deep dive", href: deepDiveHref },
     items: [
       {
@@ -200,14 +562,16 @@ export const enSite = {
         role: "Data Engineer II",
         period: "Aug 2024 - Present",
         location: "Phoenix, AZ",
-        summary: "Enterprise warehouse development, AI-driven lineage automation, and cross-functional delivery inside a high-compliance environment.",
-        chips: ["Snowflake", "AI / LLM", "Column lineage", "React", "SDLC"],
+        summary: "Senior data engineering work across Snowflake EDW transformation logic, PB-scale data models, restricted-data QA, AI lineage automation, semantic-layer design, and cross-functional delivery inside a high-compliance environment.",
+        chips: ["Snowflake", "AI / LLM", "Column lineage", "Jira", "Product delivery"],
         detailLink: { label: "Technical deep dive", href: deepDiveHref },
         bullets: [
-          "Engineer SQL-based transformation logic across a Snowflake EDW supporting 100K+ employees and 9,000+ tables/views.",
-          "Built an AI-driven column lineage initiative using Snowflake native LLM functions and Claude Opus, reaching roughly 80% mapping accuracy and compressing months of manual documentation into weeks.",
-          "Prototyped an internal React lineage visualization tool to demonstrate the feasibility of in-house data catalog capabilities.",
-          "Coordinate delivery across a 10-person offshore team while serving as a technical liaison for business stakeholders and engineering partners.",
+          "Engineer and maintain SQL-based transformation logic across a Snowflake Enterprise Data Warehouse serving 100K+ employees, managing PB-scale data models and processing 10M+ row government datasets under strict compliance requirements.",
+          "Develop, validate, and deploy SQL definitions based on evolving business requirements, coordinating with variable offshore engineering teams across the full SDLC, including code reviews, QA validation on restricted government data, and sprint delivery.",
+          "Serve as the primary technical liaison between business clients and engineering, translating stakeholder requests into data logic changes and directly communicating with directors on deliverables, timelines, and data quality.",
+          "Spearhead an AI-driven column lineage initiative across 9,000+ Snowflake objects by combining Snowflake native LLM functions with Claude Opus 4.6 via GitHub Copilot, achieving 80% accuracy on automated column-level lineage mapping and reducing months of manual documentation to weeks.",
+          "Architect and prototype an internal data lineage visualization tool using React, delivering an Atlan-like interactive flow diagram that demonstrates the feasibility of in-house data catalog tooling for enterprise leadership.",
+          "Lead the design of a semantic layer and table/column lineage framework for the Enterprise Data Warehouse.",
         ],
       },
       {
@@ -216,9 +580,10 @@ export const enSite = {
         role: "Data Engineer I",
         period: "Mar 2022 - Jul 2024",
         location: "Tempe, AZ",
-        summary: "Pipeline modernization, ETL/ELT automation, and warehouse integration across SQL Server, Azure, Salesforce, and Workday.",
-        chips: ["SSIS", "Azure Data Factory", "SQL Server", "Power BI", "ETL / ELT"],
+        summary: "Pipeline modernization, ETL/ELT automation, stakeholder-backed data model changes, and warehouse integration across SQL Server, Azure, Salesforce, and Workday.",
+        chips: ["SSIS", "Azure Data Factory", "SQL Server", "Power BI", "Requirements"],
         bullets: [
+          "Owned end-to-end updates to data models and reporting logic by gathering stakeholder requirements, defining logic changes, validating outputs, and supporting release.",
           "Automated data loading workflows with SSIS and Azure Data Factory to remove manual steps and reduce data-loading errors.",
           "Led migration of legacy SSIS jobs and stored procedures to Azure Data Factory, modernizing the pipeline architecture.",
           "Built SQL Server procedures that automated Power BI refreshes and reduced heavy DAX dependence.",
@@ -244,24 +609,24 @@ export const enSite = {
   },
   capabilities: {
     eyebrow: "Capabilities",
-    title: "A capability stack shaped by both data engineering and AI workflow design.",
-    body: "The mix is intentional: enterprise warehouse rigor, AI orchestration thinking, and enough front-end fluency to make systems inspectable.",
+    title: "What I can own.",
+    body: "The mix is intentional: enterprise warehouse rigor, technical product translation, AI orchestration thinking, and enough front-end fluency to make systems inspectable.",
     groups: [
       {
         title: "Data Engineering",
-        items: ["Snowflake", "ETL / ELT pipelines", "Data modeling", "Data warehousing", "SQL Server", "SSIS", "Informatica", "Control-M"],
+        items: ["Snowflake EDW", "SQL transformation logic", "ETL / ELT pipelines", "Data modeling", "Lineage", "SQL Server", "SSIS", "Informatica", "Control-M"],
       },
       {
-        title: "AI Workflows",
-        items: ["Multi-agent orchestration", "Prompt engineering", "LLM-assisted development", "OpenAI Codex", "Claude", "Ollama", "Column lineage automation"],
+        title: "Technical Product",
+        items: ["Technical requirements", "Jira sprint tracking", "Roadmap shaping", "Feasibility tradeoffs", "QA validation planning", "Risk and blocker reporting", "Stakeholder communication"],
       },
       {
-        title: "Prototyping",
-        items: ["React prototypes", "Next.js dashboards", "Supabase", "HTML / CSS / JavaScript", "GitHub", "Workflow tooling"],
+        title: "AI Systems",
+        items: ["Multi-agent orchestration", "Prompt engineering", "LLM-assisted development", "Codex", "Claude", "GitHub Copilot", "Ollama", "Column lineage automation"],
       },
       {
-        title: "Delivery",
-        items: ["Technical stakeholder communication", "Documentation", "SDLC coordination", "Offshore team collaboration", "English (fluent)", "Korean (fluent)"],
+        title: "Delivery Leadership",
+        items: ["Offshore team coordination", "Technical documentation", "Release readiness", "React prototypes", "Founder discovery", "English (native)", "Korean (native)"],
       },
     ],
   },
@@ -322,27 +687,31 @@ export const enSite = {
   },
   contact: {
     eyebrow: "Contact",
-    title: "Let's talk about data engineering, AI platforms, or the systems in between.",
-    body: "Open to opportunities where reliable data foundations and thoughtful AI integration both matter.",
+    title: "Let's talk about the role you need filled.",
+    body: "Open to Senior Data Engineer, Senior Product Manager, and Technical Product Manager opportunities where reliable data foundations and thoughtful AI integration both matter.",
     email: "jisungwoo9@gmail.com",
     copyLabel: "Copy email",
     copySuccess: "Copied to clipboard",
     actions: [
       { label: "LinkedIn", href: linkedinHref },
       { label: "GitHub", href: githubHref },
-      { label: "Resume", href: resumeHref, download: true },
+      { label: "Data Resume", href: dataResumeHref, download: true },
+      { label: "Product Manager Resume", href: productResumeHref, download: true },
     ],
   },
-  footer: "Built as a bilingual portfolio shaped around systems thinking, clear writing, and intentional motion.",
+  footer: "Built as a bilingual portfolio shaped around systems thinking, product judgment, clear writing, and intentional motion.",
   ui: {
     menu: "Open menu",
     close: "Close",
     openDetails: "Open details",
+    viewCredential: "View credential",
     closeDetails: "Close details",
     viewScreenshots: "View screenshots",
     previousImage: "Previous image",
     nextImage: "Next image",
     screenshot: "Screenshot",
+    zoomImage: "Zoom image",
+    fitImage: "Fit image to screen",
     primaryNav: "Primary navigation",
     themeGroup: "Theme",
     themeLight: "Light",

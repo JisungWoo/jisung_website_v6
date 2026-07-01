@@ -1,3 +1,3 @@
-﻿# jisung_website_v4
+﻿# jisung_website_v5
 
-Built portfolio v4 using claude code in less than 2 hours, improved design from v3
+Built portfolio v5 using claude code improved design from v4 and added Product Manager section as wel
