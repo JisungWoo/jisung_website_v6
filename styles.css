@@ -4124,6 +4124,52 @@ body.reduce-motion *::after {
     padding: 1.2rem;
   }
 
+  .data-editorial .feature-case-study {
+    gap: 1.35rem;
+    padding: 0.78rem 0.78rem 1.05rem;
+    margin-bottom: clamp(3rem, 10vw, 4.25rem);
+  }
+
+  .data-editorial .lineage-visual {
+    min-height: 0;
+    align-content: start;
+    gap: 0.8rem;
+    padding: 0.95rem;
+    background-size: 32px 32px;
+  }
+
+  .data-editorial .lineage-node {
+    gap: 0.32rem;
+    padding: 0.78rem 0.9rem 0.84rem;
+  }
+
+  .data-editorial .lineage-node + .lineage-node::before {
+    top: -0.8rem;
+    left: 1.8rem;
+    height: 0.8rem;
+  }
+
+  .data-editorial .lineage-node span {
+    font-size: 0.66rem;
+    line-height: 1.15;
+    letter-spacing: 0.08em;
+  }
+
+  .data-editorial .lineage-node strong {
+    max-width: 15rem;
+    font-size: clamp(1.28rem, 6.1vw, 1.58rem);
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+
+  .data-editorial .feature-copy {
+    padding: 0.1rem 0.35rem 0.2rem;
+  }
+
+  .data-editorial .feature-copy .editorial-kicker {
+    margin-bottom: 0.55rem;
+  }
+
   .logo-item {
     min-height: 76px;
     padding: 0.9rem 1rem;
