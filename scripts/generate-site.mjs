@@ -91,8 +91,8 @@ const roleText = (site, role) => {
   const isKo = site.languageCode === "ko";
   const isProduct = role.id === "product-manager";
   const featurePoints = isKo
-    ? ["Snowflake GET_LINEAGE 기반 추적", "LLM 기반 의미 보강", "최종 결과를 Snowflake 테이블로 게시"]
-    : ["Snowflake lineage traversal", "LLM-assisted semantic enrichment", "Published lineage outputs back into Snowflake"];
+    ? ["Cortex 기반 설계 뷰 SQL 파싱", "비즈니스·보안용 매핑 문서 자동 생성", "뷰당 3시간 이상의 수작업 추출 절감 목표"]
+    : ["Cortex-driven parsing of complex design-view SQL", "Auto-generated business- and security-facing mapping docs", "On track to save 3+ hours of manual extraction per view"];
 
   return {
     back: isKo ? "역할 선택으로 돌아가기" : "Back to role selector",
@@ -104,10 +104,10 @@ const roleText = (site, role) => {
     experience: isKo ? "경력 흐름" : "Experience thread",
     resume: isKo ? "이력서" : "Resume",
     featureLabel: isKo ? "데이터 엔지니어링 사례" : "Data case",
-    featureTitle: isKo ? "Snowflake 컬럼 계보 자동화" : "Snowflake Column Lineage",
+    featureTitle: isKo ? "Snowflake Cortex 매핑 문서화 자동화" : "Snowflake Cortex Mapping Documentation",
     featureBody: isKo
-      ? "9,000개 이상의 Snowflake 객체를 대상으로 컬럼 단위 계보를 자동화하고, 사람이 검토할 수 있는 문서화 흐름으로 전환한 작업입니다."
-      : "A lineage automation effort across 9,000+ Snowflake objects, turning warehouse complexity into reviewable documentation and operating proof.",
+      ? "뷰당 100-300개 컬럼에 달하는 복잡한 설계 뷰 SQL을 Snowflake Cortex로 파싱해, 비즈니스·보안 검토용 매핑 문서를 자동 생성하는 파이프라인입니다."
+      : "An automated pipeline that uses Snowflake Cortex to parse complex design-view SQL — often 100-300 columns per view — and generate business- and security-facing mapping documentation.",
     featurePoints,
     heroNote: isProduct
       ? isKo
@@ -160,16 +160,16 @@ const renderLineageVisual = (site) => {
   const isKo = site.languageCode === "ko";
   const rows = isKo
     ? [
-        ["Source", "SAP 원천 필드"],
-        ["Transform", "SQL 변환 로직"],
-        ["Classify", "LLM 의미 분류"],
-        ["Publish", "Snowflake 결과 테이블"],
+        ["Source", "설계 뷰 SQL (100-300 컬럼)"],
+        ["Parse", "Snowflake Cortex 파싱"],
+        ["Generate", "컬럼 매핑 로직 추출"],
+        ["Publish", "비즈니스·보안용 매핑 문서"],
       ]
     : [
-        ["Source", "SAP source fields"],
-        ["Transform", "SQL transformation logic"],
-        ["Classify", "LLM semantic mapping"],
-        ["Publish", "Snowflake output tables"],
+        ["Source", "Design-view SQL (100-300 columns)"],
+        ["Parse", "Snowflake Cortex parsing"],
+        ["Generate", "Column mapping extraction"],
+        ["Publish", "Business & security mapping docs"],
       ];
 
   return `

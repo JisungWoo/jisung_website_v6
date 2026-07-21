@@ -25,10 +25,10 @@ export const koSite = {
     primaryCta: { label: "데이터 엔지니어 이력서", href: dataResumeHref, download: true },
     secondaryCta: { label: "프로덕트 매니저 이력서", href: productResumeHref, download: true },
     metrics: [
-      { value: "4년+", label: "데이터 엔지니어링 경력" },
+      { value: "5년+", label: "데이터 엔지니어링 경력" },
       { value: "PB급", label: "엔터프라이즈 데이터 환경" },
-      { value: "분산형", label: "글로벌 개발팀 협업" },
-      { value: "70%", label: "MelodyMap 데모 완성도" },
+      { value: "10명+", label: "오프쇼어 엔지니어 리딩" },
+      { value: "AI 퍼스트", label: "MelodyMap.ai 창업자 개발" },
     ],
     visualTags: ["Snowflake EDW", "테크니컬 제품", "AI 오케스트레이션", "창업자 관점"],
     photoAlt: "Arizona State University에서 촬영한 Jisung Woo 프로필 사진.",
@@ -63,7 +63,7 @@ export const koSite = {
         points: [
           "이해관계자 요구를 데이터 로직, 일정, 품질 기준으로 정리합니다.",
           "분산 엔지니어링 팀의 코드 리뷰, 제한 데이터 QA, 스프린트를 조율합니다.",
-          "Snowflake LLM과 Claude로 약 80% 계보 자동화 정확도를 달성했습니다.",
+          "시맨틱 레이어·계보 프레임워크 설계를 리드하고, Snowflake Cortex로 복잡한 설계 뷰의 매핑 문서화를 자동화하고 있습니다.",
         ],
         actions: [
           { label: "데이터 프로필 열기", href: "data-engineer_kr.html", roleNav: true },
@@ -88,14 +88,14 @@ export const koSite = {
           roleProof: [
             { label: "운영 플랫폼", value: "Snowflake EDW" },
             { label: "데이터 규모", value: "PB급 데이터" },
-            { label: "핵심 담당", value: "SQL 로직 오너십" },
-            { label: "AI 기반 문서화", value: "9,000+ 객체 계보" },
+            { label: "파이프라인 최적화", value: "런타임 3배 단축" },
+            { label: "AI 기반 문서화", value: "Snowflake Cortex 자동화" },
             { label: "거버넌스 기반", value: "시맨틱 레이어 설계" },
             { label: "글로벌 협업", value: "SDLC 조율" },
           ],
           highlights: [
-            "컴플라이언스가 중요한 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 설계·운영합니다.",
-            "Snowflake 네이티브 LLM 기능과 Claude 기반 개발로 컬럼 계보 문서화를 자동화했습니다.",
+            "컴플라이언스가 중요한 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 설계·운영하며, 핵심 파이프라인을 단계형 구조로 재설계해 런타임을 3배 단축했습니다.",
+            "Snowflake Cortex로 100-300개 컬럼 규모의 설계 뷰 SQL을 파싱해 비즈니스·보안용 매핑 문서를 자동 생성하는 파이프라인을 개발하고 있습니다.",
             "매핑, QA 검증, 릴리스 준비, 기술 문서화까지 데이터 작업이 운영 환경에 반영되는 과정을 끝까지 책임집니다.",
           ],
           methodTitle: "데이터 작업을 운영 가능한 체계로 만드는 방식.",
@@ -107,11 +107,11 @@ export const koSite = {
           projectsTitle: "데이터 엔지니어링 프로젝트",
           projects: [
             {
-              title: "Snowflake EDW + 컬럼 계보",
+              title: "Snowflake EDW + AI 문서화",
               meta: "Honeywell · 엔터프라이즈 웨어하우스 업무",
               body:
-                "대규모 Snowflake 환경에서 변환 로직, 컬럼 단위 계보, 문서화 자동화를 다룬 작업입니다.",
-              tags: ["Snowflake", "SQL", "계보"],
+                "대규모 Snowflake 환경에서 변환 로직, 단계형 파이프라인 재설계, Cortex 기반 매핑 문서화 자동화를 다룬 작업입니다.",
+              tags: ["Snowflake", "SQL", "Cortex"],
             },
             {
               title: "엔터프라이즈 ETL 현대화",
@@ -173,7 +173,7 @@ export const koSite = {
             },
             {
               title: "AI + 빌더 도구",
-              items: ["Snowflake LLM 기능", "Claude / GitHub Copilot", "React 프로토타입", "멀티 에이전트 워크플로", "창업자 제품 개발"],
+              items: ["Snowflake Cortex", "벡터 검색 (pgvector)", "Claude / Codex / GitHub Copilot", "React 프로토타입", "멀티 에이전트 워크플로", "창업자 제품 개발"],
             },
           ],
           skills: [
@@ -242,7 +242,7 @@ export const koSite = {
           ],
           highlights: [
             "리더십 요청을 제품 요구사항, 수용 기준, QA 검증, 릴리스 가능한 작업 단위로 정리합니다.",
-            "Next.js, FastAPI, PostgreSQL, Celery, Redis, Stripe, Gemini, 백엔드 모델 게이트웨이를 기준으로 AI 제품 아키텍처를 판단합니다.",
+            "Next.js, FastAPI, PostgreSQL + pgvector, Stripe, 백엔드 전용 모델 게이트웨이를 기준으로 AI 제품 아키텍처를 판단합니다.",
             "MelodyMap.ai를 만들며 사용자 문제, MVP 범위, 로드맵 판단, 안전한 AI 경계, 출시 기준을 하나의 실행 흐름으로 연결합니다.",
           ],
           methodTitle: "모호한 요구를 출시 가능한 작업 단위로 정리하는 방식.",
@@ -262,12 +262,12 @@ export const koSite = {
                 "음악치료사를 위한 AI SaaS를 창업자 관점에서 만들며 사용자 문제, MVP 범위, 워크플로 설계, 풀스택 아키텍처, 책임 있는 AI 기준을 직접 정의하고 있습니다.",
               chips: ["창업자", "AI SaaS", "로드맵", "풀스택 아키텍처", "사용자 탐색"],
               bullets: [
-                "음악치료사가 반복 세션을 준비하고, 디브리프를 남기고, 보고서용 문서를 만들고, 누적된 기억을 다음 계획에 반영할 수 있는 AI SaaS 플랫폼 MelodyMap.ai를 만들고 있습니다.",
+                "음악치료사가 매일 1-5시간씩 무급으로 하던 세션 계획, 임상 보고서, 이동 기록 작업을 자동화하는 HIPAA 인접 AI SaaS 플랫폼 MelodyMap.ai를 창업했습니다.",
                 "현업 음악치료사 인터뷰를 통해 반복 세션 계획, 노래 선택, 문서화, 후속 작업의 병목을 파악하고 제품 비전, 타깃 사용자, MVP 범위, 핵심 워크플로를 정의했습니다.",
-                "음악치료 계획 사용 사례에 맞춰 Gemini Flash 기반 생성 흐름과 백엔드 전용 모델 게이트웨이를 설계하고, 약 70% 완성도의 데모를 구축했습니다.",
-                "세션, 장소, 플랜, 노래, 추천, 디브리프, 리포트 흐름을 설계하며 치료사의 통제권, 검토 단계, 신뢰도, 주의사항, 안전한 AI 경계를 제품 기준에 반영했습니다.",
-                "Next.js, TypeScript, FastAPI, PostgreSQL, Celery, Redis, Stripe, Gemini 기반으로 API, 데이터 모델, 비동기 처리, 제품 데이터 구조를 포함한 풀스택 아키텍처를 정리했습니다.",
-                "장소 프로필, 대상군, 테마, 치료사 레퍼토리, 악보 친숙도, 과거 세션 결과를 반영하는 노래 추천 흐름을 설계했습니다.",
+                "Next.js, TypeScript, FastAPI, PostgreSQL + pgvector, Stripe 기반으로 풀스택 아키텍처를 설계했고, 모든 LLM 호출은 백엔드 전용 모델 게이트웨이를 통해서만 이루어지도록 했습니다.",
+                "벡터 유사도와 도메인 신호(대상군 프로필, 치료사 레퍼토리, 과거 세션 결과)를 결합한 결정론적 추천 엔진을 진실의 원천으로 두고, LLM은 그 주변의 설명만 작성하게 하는 하이브리드 AI 시스템을 설계해 임상 사실 환각을 방지했습니다.",
+                "보호 대상 건강 정보(PHI)가 어떤 LLM 호출에도 포함되지 않도록 PHI 최소화 파이프라인을 구축했고, 세션 후 디브리프가 다음 추천에 반영되는 자기 개선형 메모리 루프를 설계했습니다.",
+                "AI 코딩 에이전트를 실행 엔진으로 삼아 제품 전체를 AI 퍼스트로 개발했으며, 독립 AI 리뷰어가 3단계 CI/CD 파이프라인(Dev, QA, Prod)과 의존성·보안 스캔(OWASP Top 10 감사 포함)을 거쳐 변경을 승인하도록 했습니다.",
               ],
             },
             {
@@ -277,15 +277,15 @@ export const koSite = {
               period: "2024년 8월 - 현재",
               location: "Phoenix, AZ",
               summary:
-                "리더십 요구사항, Jira 실행, 글로벌 개발팀 조율, SQL 개발, QA 검증, AI 계보 자동화, 릴리스 준비를 연결하는 엔터프라이즈 데이터 제품 실행을 맡고 있습니다.",
-              chips: ["Jira", "이해관계자", "글로벌 협업", "AI 계보", "릴리스 준비"],
+                "리더십 요구사항, Jira 실행, 글로벌 개발팀 조율, SQL 개발, QA 검증, Cortex 문서화 자동화, 릴리스 준비를 연결하는 엔터프라이즈 데이터 제품 실행을 맡고 있습니다.",
+              chips: ["Jira", "이해관계자", "글로벌 협업", "AI 문서화", "릴리스 준비"],
               bullets: [
                 "각각 6개월 이상 이어진 주요 비즈니스 요청을 10개 이상 개발 항목으로 나누고, SQL 로직, QA 검증, 이해관계자 리뷰, 프로덕션 릴리스까지 실행을 리드했습니다.",
                 "디렉터, 시니어 이해관계자, 매니저, 기술 리드와 협업해 비즈니스 요구를 명확히 하고, 매핑 문서와 개발 작업으로 정리한 뒤 글로벌 엔지니어링 팀에 배분했습니다.",
                 "Jira와 Excel로 작업 배정, 전체/세부 진행 상황, 이슈, 리스크, 블로커, 일정을 추적하고 리더십에 보고했습니다.",
                 "3개월 동안 진척이 제한적이던 주요 데이터 모델 이니셔티브를 맡아 3명의 외부 개발자를 조율하고 직접 SQL 개발에도 참여해 원래 기한 안에 정상 궤도로 되돌렸습니다.",
                 "비즈니스 이해관계자와 엔지니어링 팀 사이의 연결 창구로서 요구사항을 데이터 로직 변경, 수용 기준, QA 단계, 릴리스 산출물로 정리했습니다.",
-                "Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude를 활용해 9,000개 이상 Snowflake 객체의 AI 기반 컬럼 계보 이니셔티브를 주도했고, 약 80% 자동 계보 정확도로 수개월짜리 수작업 문서화를 수주 단위로 줄였습니다.",
+                "복잡한 설계 뷰 SQL을 파싱해 비즈니스·보안용 매핑 문서를 자동 생성하는 Snowflake Cortex 기반 문서화 파이프라인을 주도하고 있으며, 뷰당 3시간 이상 걸리던 수작업 추출을 줄이는 것을 목표로 하고 있습니다.",
                 "엔터프라이즈 사용자가 상하위 의존성, 데이터 흐름, 비즈니스 영향을 이해할 수 있도록 Atlan과 유사한 React 기반 내부 데이터 계보 시각화 도구를 프로토타입으로 만들었습니다.",
                 "Enterprise Data Warehouse의 시맨틱 레이어와 테이블/컬럼 계보 프레임워크 설계를 지원해 데이터 탐색성, 거버넌스, 셀프서비스 분석 기반을 개선했습니다.",
               ],
@@ -401,7 +401,7 @@ export const koSite = {
     body: [
       "저는 데이터 엔지니어로 커리어를 쌓아 왔지만, 실제 업무에서는 점점 더 제품에 가까운 역할을 맡아 왔습니다. 모호한 요구를 정리하고, 이해관계자와 기술팀 사이를 연결하고, 비즈니스 요구를 매핑 문서와 개발 항목으로 나누고, 리더십에 리스크와 진행 상황을 공유하는 일입니다. 그래서 이 포트폴리오는 하나의 직무명으로 모든 것을 설명하려고 하기보다 두 가지 커리어 경로를 명확히 보여 주도록 구성했습니다.",
       "Honeywell에서는 PB급 규모의 Snowflake Enterprise Data Warehouse 변환 로직을 개발하고, 규제가 엄격한 환경의 대규모 정부 데이터를 다루며, 여러 지역의 개발팀과 협업해 촉박한 일정 안에서도 결과를 만들어 왔습니다. 주로 Snowflake, Informatica, Control-M, SQL Server, Python, Jira, React 프로토타입을 다룹니다.",
-      "제 강점은 전통적인 데이터 엔지니어링과 AI 활용, 그리고 제품 실행을 실제 업무에 자연스럽게 연결한다는 점입니다. Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude를 활용해 EDW 전반의 컬럼 단위 계보 문서화를 자동화했고, 수개월이 걸릴 작업을 훨씬 짧은 기간 안에 약 80% 정확도로 끌어올렸습니다. 또한 React 기반 내부 데이터 카탈로그 프로토타입을 만들며 시맨틱 레이어와 메타데이터 거버넌스 방향도 함께 고민해 왔습니다.",
+      "제 강점은 전통적인 데이터 엔지니어링과 AI 활용, 그리고 제품 실행을 실제 업무에 자연스럽게 연결한다는 점입니다. 100-300개 컬럼 규모의 복잡한 설계 뷰 SQL을 파싱해 비즈니스·보안용 매핑 문서를 자동 생성하는 Snowflake Cortex 기반 문서화 파이프라인을 개발하고 있습니다. 또한 React 기반 내부 데이터 카탈로그 프로토타입을 만들며 시맨틱 레이어와 메타데이터 거버넌스 방향도 함께 고민해 왔습니다.",
       "저는 단순히 데이터를 옮기는 것보다, 그 데이터가 어떤 의미를 가지는지 그리고 다른 사람이 얼마나 쉽게 이해하고 이어받을 수 있는지를 더 중요하게 봅니다. 그래서 구조, 문서화, 실행 방식을 중요하게 생각합니다. 엔터프라이즈 파이프라인이든 자율형 AI 워크플로든 기준은 같습니다. 정확하고 설명 가능한 시스템이어야 합니다.",
       "개인적으로는 음악치료사를 위한 AI 보조 SaaS 제품 MelodyMap.ai를 만들고 있습니다. 사용자 인터뷰, MVP 범위, 백엔드 아키텍처, 안전한 AI 경계, 실제 워크플로 설계를 직접 경험하는 창업자 관점의 제품 루프입니다.",
     ],
@@ -455,8 +455,8 @@ export const koSite = {
           "핵심은 치료사의 실제 하루를 기준으로 설계하는 것입니다. 어디에 가는지, 어떤 기관인지, 이전에 무엇이 잘 맞았는지, 어떤 세션을 준비해야 하는지, 이동 기록까지 자연스럽게 이어지도록 만들고 있습니다.",
         highlights: [
           "캘린더를 중심으로 방문 일정, 준비 항목, 기관 맥락, 이동 기록이 연결되는 구조.",
-          "기관별 과거 디브리프를 pgvector로 검색해 다음 세션 계획에 반영하는 설계.",
-          "Next.js 15, FastAPI, PostgreSQL 기반으로 구독형 SaaS 출시를 전제로 개발 중인 제품.",
+          "PostgreSQL + pgvector 기반 결정론적 추천 엔진을 진실의 원천으로 두고, LLM은 설명만 작성하는 하이브리드 AI 계획 설계.",
+          "Next.js 15, FastAPI, async SQLAlchemy 기반 프로덕션급 SaaS 아키텍처와 PHI를 모든 LLM 호출에서 배제하는 PHI 최소화 파이프라인.",
         ],
         modalProjectId: "melodymap",
         actions: [{ label: "프로젝트 자세히 보기", kind: "modal", projectId: "melodymap" }],
@@ -561,14 +561,14 @@ export const koSite = {
         role: "Data Engineer II",
         period: "2024년 8월 - 현재",
         location: "Phoenix, AZ",
-        summary: "컴플라이언스가 중요한 환경에서 Snowflake EDW 변환 로직, PB급 데이터 모델, 제한된 데이터 QA, AI 컬럼 계보 자동화, 시맨틱 레이어 설계, 부서 간 실행 조율을 맡는 Senior Data Engineer 직무를 수행하고 있습니다.",
-        chips: ["Snowflake", "AI / LLM", "컬럼 계보", "Jira", "제품 실행"],
+        summary: "컴플라이언스가 중요한 환경에서 Snowflake EDW 데이터 제품 딜리버리, PB급 데이터 모델, 제한된 데이터 QA, 파이프라인 재설계, Cortex 문서화 자동화, 시맨틱 레이어 설계, 오프쇼어 팀 조율을 맡는 Senior Data Engineer 직무를 수행하고 있습니다.",
+        chips: ["Snowflake", "Snowflake Cortex", "파이프라인 최적화", "시맨틱 레이어", "오프쇼어 딜리버리"],
         detailLink: { label: "기술 상세 보기", href: deepDiveHref.replace("column_lineage_portfolio.html", "column_lineage_portfolio_kr.html") },
         bullets: [
-          "10만 명 이상이 활용하는 Snowflake Enterprise Data Warehouse에서 SQL 기반 변환 로직을 설계하고 운영하며, PB급 데이터 모델과 1,000만 행 이상 정부 데이터셋을 엄격한 컴플라이언스 요구사항 아래 처리하고 있습니다.",
-          "변화하는 비즈니스 요구사항에 맞춰 SQL 정의를 개발, 검증, 배포하고 규모가 변동되는 글로벌 엔지니어링 팀과 코드 리뷰, 제한된 정부 데이터 QA, 스프린트 실행을 포함한 전체 SDLC를 조율합니다.",
-          "비즈니스 클라이언트와 엔지니어링 사이의 주요 기술 연락 창구로서 이해관계자 요청을 데이터 로직 변경으로 전환하고, 디렉터와 산출물, 일정, 데이터 품질에 대해 직접 커뮤니케이션합니다.",
-          "Snowflake 네이티브 LLM 기능과 GitHub Copilot의 Claude Opus 4.6을 결합해 9,000개 이상 Snowflake 객체의 AI 기반 컬럼 계보 자동화를 주도했고, 약 80% 정확도의 자동 컬럼 단위 계보 매핑으로 수개월짜리 수작업 문서화를 수주 단위로 줄였습니다.",
+          "10만 명 이상이 활용하는 PB급 Snowflake 웨어하우스에서 EDW 데이터 제품의 엔드투엔드 딜리버리를 담당합니다 — 디렉터로부터 요구사항을 수집해 개발 스펙으로 전환하고, 10명 이상의 오프쇼어 엔지니어를 코드 리뷰, 제한된 정부 데이터 QA, 프로덕션 배포까지 이끕니다.",
+          "비즈니스와 엔지니어링 사이의 주요 기술 연락 창구로서 디렉터와 범위, 일정, 데이터 품질을 직접 커뮤니케이션하고, 변화하는 비즈니스 요구사항을 1,000만 행 이상 정부 데이터셋에 대한 SQL 변환 로직으로 전환합니다.",
+          "대규모 비즈니스 로직 확장 이후 핵심 변환 파이프라인의 런타임을 3배 단축했습니다(1.5시간 → 30분). 모놀리식 설계 뷰를 단계형 패턴(설계 뷰 → 스테이징 테이블 → 설계 뷰 → 데이터 모델)으로 재설계하면서 출력 데이터는 전혀 변경하지 않았습니다.",
+          "Snowflake Cortex 기반 매핑 문서화 자동화 파이프라인을 개발하고 있습니다. 뷰당 100-300개 컬럼에 달하는 복잡한 설계 뷰 SQL을 파싱해 비즈니스·보안용 매핑 문서를 생성하며, 오프쇼어 엔지니어가 뷰당 3시간 이상 들이던 수작업 추출을 줄이는 것이 목표입니다.",
           "React로 내부 데이터 계보 시각화 도구를 설계하고 프로토타이핑해 Atlan과 유사한 인터랙티브 플로우 다이어그램을 제공하고, 엔터프라이즈 리더십에 자체 데이터 카탈로그 도구의 가능성을 보여주었습니다.",
           "Enterprise Data Warehouse를 위한 시맨틱 레이어와 테이블/컬럼 계보 프레임워크 설계를 리드합니다.",
         ],
@@ -613,7 +613,7 @@ export const koSite = {
     groups: [
       {
         title: "데이터 엔지니어링",
-        items: ["Snowflake EDW", "SQL 변환 로직", "ETL / ELT 파이프라인", "데이터 모델링", "컬럼 계보", "SQL Server", "SSIS", "Informatica", "Control-M"],
+        items: ["Snowflake EDW", "SQL 변환 로직", "ETL / ELT 파이프라인", "데이터 모델링", "데이터 웨어하우징", "Power BI", "SQL Server", "SSIS", "Informatica", "Control-M"],
       },
       {
         title: "테크니컬 제품",
@@ -621,7 +621,7 @@ export const koSite = {
       },
       {
         title: "AI 시스템",
-        items: ["멀티 에이전트 오케스트레이션", "프롬프트 설계", "LLM 기반 개발 보조", "Codex", "Claude", "GitHub Copilot", "Ollama", "컬럼 계보 자동화"],
+        items: ["멀티 에이전트 오케스트레이션", "프롬프트·컨텍스트 엔지니어링", "LLM 기반 개발", "벡터 검색 (pgvector)", "Snowflake Cortex", "Claude", "Codex", "GitHub Copilot", "Ollama"],
       },
       {
         title: "실행 리더십",

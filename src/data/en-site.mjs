@@ -25,10 +25,10 @@ export const enSite = {
     primaryCta: { label: "Download Data Resume", href: dataResumeHref, download: true },
     secondaryCta: { label: "Download Product Manager Resume", href: productResumeHref, download: true },
     metrics: [
-      { value: "4+", label: "Years in data engineering" },
+      { value: "5+", label: "Years in data engineering" },
       { value: "PB-scale", label: "Enterprise data environment" },
-      { value: "Distributed", label: "Offshore delivery coordination" },
-      { value: "70%", label: "MelodyMap demo complete" },
+      { value: "10+", label: "Offshore engineers directed" },
+      { value: "AI-first", label: "MelodyMap.ai founder build" },
     ],
     visualTags: ["Snowflake EDW", "Technical product", "AI orchestration", "Founder mindset"],
     photoAlt: "Portrait of Jisung Woo at Arizona State University.",
@@ -63,7 +63,7 @@ export const enSite = {
         points: [
           "Translate stakeholder requirements into data logic changes, timelines, and data quality decisions for directors and engineering teams.",
           "Coordinate full-SDLC delivery with distributed offshore engineering teams, including code reviews, restricted-data QA, and sprint execution.",
-          "Lead semantic-layer and table/column-lineage work, using Snowflake LLM functions and Claude to reach 80% automated lineage accuracy.",
+          "Lead semantic-layer and lineage-framework design, and automate mapping documentation with Snowflake Cortex across complex, 100-300 column design views.",
         ],
         actions: [
           { label: "Explore Data Engineer Profile", href: "data-engineer.html", roleNav: true },
@@ -88,14 +88,14 @@ export const enSite = {
           roleProof: [
             { label: "Current platform", value: "Snowflake EDW" },
             { label: "Enterprise scale", value: "PB-scale data" },
-            { label: "Transformation logic", value: "SQL logic ownership" },
-            { label: "AI documentation", value: "9,000+ object lineage" },
+            { label: "Pipeline optimization", value: "3x runtime reduction" },
+            { label: "AI documentation", value: "Snowflake Cortex automation" },
             { label: "Governance foundation", value: "Semantic layer design" },
             { label: "Offshore SDLC coordination", value: "Distributed delivery" },
           ],
           highlights: [
-            "Engineer SQL-based transformation logic inside a high-compliance Snowflake Enterprise Data Warehouse.",
-            "Automate lineage documentation with Snowflake native LLM functions and Claude-assisted development.",
+            "Engineer SQL-based transformation logic inside a high-compliance Snowflake Enterprise Data Warehouse, including a 3x runtime cut on a critical pipeline through staged re-architecture.",
+            "Automate mapping documentation with Snowflake Cortex, parsing 100-300 column design views into business- and security-facing docs.",
             "Own delivery details across mapping, QA validation, release readiness, and technical documentation.",
           ],
           methodTitle: "The operating pattern behind the work.",
@@ -107,11 +107,11 @@ export const enSite = {
           projectsTitle: "Data Engineering Projects",
           projects: [
             {
-              title: "Snowflake EDW + Column Lineage",
+              title: "Snowflake EDW + AI Documentation",
               meta: "Honeywell · Enterprise warehouse work",
               body:
-                "Transformation logic, column-level lineage, and documentation automation across a large Snowflake environment with strict delivery standards.",
-              tags: ["Snowflake", "SQL", "Lineage"],
+                "Transformation logic, staged pipeline re-architecture, and Cortex-driven mapping-documentation automation across a large Snowflake environment with strict delivery standards.",
+              tags: ["Snowflake", "SQL", "Cortex"],
             },
             {
               title: "Enterprise ETL Modernization",
@@ -173,7 +173,7 @@ export const enSite = {
             },
             {
               title: "AI + Builder Tools",
-              items: ["Snowflake LLM functions", "Claude / GitHub Copilot", "React prototypes", "Multi-agent workflows", "Founder product building"],
+              items: ["Snowflake Cortex", "Vector search (pgvector)", "Claude / Codex / GitHub Copilot", "React prototypes", "Multi-agent workflows", "Founder product building"],
             },
           ],
           skills: [
@@ -243,7 +243,7 @@ export const enSite = {
           ],
           highlights: [
             "Translate director-level business needs into product requirements, acceptance expectations, QA validation, and release-ready work.",
-            "Shape full-stack AI product architecture across Next.js, FastAPI, PostgreSQL, Celery, Redis, Stripe, Gemini, and backend-only model gateway decisions.",
+            "Shape full-stack AI product architecture across Next.js, FastAPI, PostgreSQL + pgvector, Stripe, and backend-only model gateway decisions.",
             "Use founder discovery from MelodyMap.ai to connect user pain, MVP scope, roadmap choices, safe AI boundaries, and shipping discipline.",
           ],
           methodTitle: "How I turn ambiguity into shipped work.",
@@ -263,12 +263,12 @@ export const enSite = {
                 "Founder-led AI SaaS product work across user discovery, MVP scope, workflow design, full-stack architecture, and responsible AI planning for music therapists.",
               chips: ["Founder", "AI SaaS", "Roadmap", "Full-stack architecture", "User discovery"],
               bullets: [
-                "Founded MelodyMap.ai, an AI-assisted SaaS platform for music therapists to plan recurring sessions, capture debriefs, generate report-ready documentation, and improve future planning through a memory-based workflow.",
+                "Founded MelodyMap.ai, a HIPAA-adjacent AI SaaS platform that automates the 1-5 hours of daily unpaid planning music therapists do by hand — session plans, clinical reports, and mileage logs.",
                 "Defined the product vision, target user, MVP scope, and core workflows after interviewing an actively practicing music therapist and identifying pain points around recurring session planning, song selection, documentation, and follow-up.",
-                "Built a 70% complete demo while finalizing Gemini Flash architecture and the backend-only model gateway needed to customize LLM behavior for music therapy planning use cases.",
-                "Designed product workflows for sessions, locations, plans, songs, recommendations, debriefs, and reports with emphasis on therapist control, review states, confidence levels, caveats, and safe AI boundaries.",
-                "Architected the full-stack product with Next.js, TypeScript, FastAPI, PostgreSQL, Celery, Redis, Stripe, and Gemini, including APIs, database models, asynchronous workflows, and product-ready data structures.",
-                "Developed a song-aware recommendation system that considers location profile, population, theme, therapist repertoire, chart familiarity, and prior session outcomes to support therapist decision-making.",
+                "Architected the full-stack product with Next.js, TypeScript, FastAPI, PostgreSQL + pgvector, and Stripe, with every LLM call routed through a backend-only model gateway — no browser-to-model calls anywhere in the product.",
+                "Designed a hybrid AI system where a deterministic recommendation engine (vector similarity plus domain signals such as population profiles, therapist repertoire, and prior session outcomes) is the source of truth and the LLM only composes explanations around it — preventing hallucinated clinical facts.",
+                "Engineered a PHI-minimization pipeline that keeps protected health information out of all LLM calls, plus a self-improving memory loop where post-session debriefs feed future recommendations.",
+                "Built the entire product AI-first, directing AI coding agents as the execution engine with an independent AI reviewer gating changes through a 3-environment CI/CD pipeline (Dev, QA, Prod) with automated dependency and security scanning, including OWASP Top 10 audits.",
               ],
             },
             {
@@ -286,7 +286,7 @@ export const enSite = {
                 "Managed sprint execution using Jira and Excel by assigning work with team leads, tracking progress at macro and detail levels, unblocking issues, reviewing delivery status, and reporting risks, blockers, and timelines to leadership.",
                 "Took ownership of a delayed major data model initiative after 3 months of limited progress, managing 3 offshore developers while also contributing hands-on SQL development to recover the project and deliver by the original deadline.",
                 "Served as the primary bridge between business stakeholders and engineering teams, converting business requirements into data logic changes, acceptance expectations, QA validation steps, and release-ready deliverables.",
-                "Spearheaded an AI-driven column lineage initiative across 9,000+ Snowflake objects, using Snowflake native LLM functions and Claude through GitHub Copilot to reach approximately 80% automated lineage accuracy and reduce months of manual documentation into weeks.",
+                "Championed an automated mapping-documentation pipeline on Snowflake Cortex that parses complex design-view SQL and generates business- and security-facing documentation, on track to save 3+ hours of manual extraction per view for offshore engineers.",
                 "Prototyped an internal React-based data lineage visualization tool to demonstrate how enterprise users could understand upstream/downstream dependencies, data flow, and business impact through an Atlan-like experience.",
                 "Supported the design of a semantic layer and table/column lineage framework for the Enterprise Data Warehouse, improving data discoverability, governance, and self-service analytics foundations.",
               ],
@@ -402,7 +402,7 @@ export const enSite = {
     body: [
       "I'm a Data Engineer who has been pulled more and more into product-shaped work: clarifying ambiguous requirements, coordinating delivery, turning business needs into mapping documents, and keeping leadership aligned on risk, blockers, and timelines. That is why the portfolio now has two clear paths instead of forcing one title to explain everything.",
       "At Honeywell, I engineer transformation logic across a Snowflake Enterprise Data Warehouse operating at PB scale, manage government-scale datasets under strict compliance, and coordinate offshore teams to deliver against tight deadlines. My stack spans Snowflake, Informatica, Control-M, SQL Server, Python, Jira, and React prototypes.",
-      "What sets me apart is how I bridge traditional data engineering with AI and product delivery. I led an initiative to automate column-level lineage across our EDW using Snowflake native LLM functions and Claude through GitHub Copilot, reaching roughly 80% accuracy on work that would have taken months manually. I also prototyped internal data catalog tooling in React and helped shape semantic layer and metadata governance direction.",
+      "What sets me apart is how I bridge traditional data engineering with AI and product delivery. I'm building an automated mapping-documentation pipeline on Snowflake Cortex that parses complex design-view SQL — often 100-300 columns per view — into business- and security-facing documentation. I also prototyped internal data catalog tooling in React and help shape semantic layer and metadata governance direction.",
       "My approach starts with the meaning behind the data, not just the mechanics of moving it. I care about structure, documentation, and building systems other people can understand, maintain, and trust. Whether it's enterprise pipelines or autonomous AI workflows, the standard is the same: precision with thoughtful communication.",
       "Outside of work, I am building MelodyMap.ai, an AI-assisted SaaS product for music therapists. It gives me a founder-level product loop: user discovery, roadmap choices, backend architecture, safe AI boundaries, and real workflow design.",
     ],
@@ -456,8 +456,8 @@ export const enSite = {
           "I am building it around how therapists actually work: where they are going, which location they are serving, what has worked there before, what session plan to prepare, and what to log afterward.",
         highlights: [
           "Calendar-native workflow with location context, preparation cues, and one-click mileage capture.",
-          "Structured session plans informed by past debriefs at similar locations through PostgreSQL + pgvector retrieval.",
-          "Production-grade SaaS architecture using Next.js 15, FastAPI, async SQLAlchemy, Alembic, and HIPAA-minded prompt handling.",
+          "Hybrid AI planning: a deterministic recommendation engine backed by PostgreSQL + pgvector is the source of truth, with the LLM composing explanations around it.",
+          "Production-grade SaaS architecture using Next.js 15, FastAPI, async SQLAlchemy, Alembic, and a PHI-minimization pipeline that keeps protected health information out of all LLM calls.",
         ],
         modalProjectId: "melodymap",
         actions: [{ label: "Open project details", kind: "modal", projectId: "melodymap" }],
@@ -562,14 +562,14 @@ export const enSite = {
         role: "Data Engineer II",
         period: "Aug 2024 - Present",
         location: "Phoenix, AZ",
-        summary: "Senior data engineering work across Snowflake EDW transformation logic, PB-scale data models, restricted-data QA, AI lineage automation, semantic-layer design, and cross-functional delivery inside a high-compliance environment.",
-        chips: ["Snowflake", "AI / LLM", "Column lineage", "Jira", "Product delivery"],
+        summary: "Senior data engineering work across Snowflake EDW data products, PB-scale data models, restricted-data QA, pipeline re-architecture, Cortex documentation automation, semantic-layer design, and offshore delivery inside a high-compliance environment.",
+        chips: ["Snowflake", "Snowflake Cortex", "Pipeline optimization", "Semantic layer", "Offshore delivery"],
         detailLink: { label: "Technical deep dive", href: deepDiveHref },
         bullets: [
-          "Engineer and maintain SQL-based transformation logic across a Snowflake Enterprise Data Warehouse serving 100K+ employees, managing PB-scale data models and processing 10M+ row government datasets under strict compliance requirements.",
-          "Develop, validate, and deploy SQL definitions based on evolving business requirements, coordinating with variable offshore engineering teams across the full SDLC, including code reviews, QA validation on restricted government data, and sprint delivery.",
-          "Serve as the primary technical liaison between business clients and engineering, translating stakeholder requests into data logic changes and directly communicating with directors on deliverables, timelines, and data quality.",
-          "Spearhead an AI-driven column lineage initiative across 9,000+ Snowflake objects by combining Snowflake native LLM functions with Claude Opus 4.6 via GitHub Copilot, achieving 80% accuracy on automated column-level lineage mapping and reducing months of manual documentation to weeks.",
+          "Own end-to-end delivery of EDW data products on a PB-scale Snowflake warehouse serving 100K+ employees — gathering requirements from directors, translating them into development specs, and directing 10+ offshore engineers through code review, QA on restricted government data, and production deployment.",
+          "Serve as the primary technical liaison between business and engineering, communicating directly with directors on scope, timelines, and data quality, and converting evolving business requirements into SQL transformation logic across 10M+ row government datasets under strict compliance requirements.",
+          "Cut runtime of a critical transformation pipeline by 3x (1.5 hours to 30 minutes) after a major business-logic expansion by re-architecting a monolithic design view into a staged pattern — design view, staging table, design view, data model — with zero change to output data.",
+          "Developing an automated mapping-documentation pipeline on Snowflake Cortex that parses complex design-view SQL — often 100-300 columns per view — and generates business- and security-facing mapping documentation, on track to save 3+ hours of manual extraction per view previously done by offshore engineers.",
           "Architect and prototype an internal data lineage visualization tool using React, delivering an Atlan-like interactive flow diagram that demonstrates the feasibility of in-house data catalog tooling for enterprise leadership.",
           "Lead the design of a semantic layer and table/column lineage framework for the Enterprise Data Warehouse.",
         ],
@@ -614,7 +614,7 @@ export const enSite = {
     groups: [
       {
         title: "Data Engineering",
-        items: ["Snowflake EDW", "SQL transformation logic", "ETL / ELT pipelines", "Data modeling", "Lineage", "SQL Server", "SSIS", "Informatica", "Control-M"],
+        items: ["Snowflake EDW", "SQL transformation logic", "ETL / ELT pipelines", "Data modeling", "Data warehousing", "Power BI", "SQL Server", "SSIS", "Informatica", "Control-M"],
       },
       {
         title: "Technical Product",
@@ -622,7 +622,7 @@ export const enSite = {
       },
       {
         title: "AI Systems",
-        items: ["Multi-agent orchestration", "Prompt engineering", "LLM-assisted development", "Codex", "Claude", "GitHub Copilot", "Ollama", "Column lineage automation"],
+        items: ["Multi-agent orchestration", "Prompt & context engineering", "LLM-assisted development", "Vector search (pgvector)", "Snowflake Cortex", "Claude", "Codex", "GitHub Copilot", "Ollama"],
       },
       {
         title: "Delivery Leadership",
