@@ -22,7 +22,6 @@
   const lightboxZoomButton = lightboxLayer?.querySelector("[data-toggle-lightbox-zoom]") ?? null;
   const copyButton = document.querySelector("[data-copy-email]");
   const copyStatus = document.querySelector(".copy-status");
-  const careerCards = [...document.querySelectorAll("[data-career-track]")];
   const revealElements = [...document.querySelectorAll(".reveal")];
   const projectMap = new Map((site.modalProjects ?? []).map((project) => [project.id, project]));
   const storageKey = "portfolio-theme";
@@ -177,8 +176,6 @@
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
-      if (link.hasAttribute("data-role-nav")) return;
-
       const href = link.getAttribute("href");
       if (!href || href === "#") return;
 
@@ -200,114 +197,6 @@
   if (window.location.hash) {
     window.setTimeout(() => scrollToHash(window.location.hash, "auto"), 60);
   }
-
-  const setActiveCareer = (activeCard) => {
-    const activeTrack = activeCard.dataset.careerTrack || "data-engineer";
-    root.dataset.activeTrack = activeTrack;
-
-    careerCards.forEach((card) => {
-      const isActive = card === activeCard;
-      const status = card.querySelector(".panel-status");
-      const activationButton = card.querySelector("[data-panel-activate]");
-      const panelActions = card.querySelectorAll(".career-actions a, .career-actions button");
-      card.classList.toggle("is-active", isActive);
-      card.setAttribute("aria-current", String(isActive));
-      activationButton?.setAttribute("aria-pressed", String(isActive));
-      if (status) {
-        status.textContent = isActive ? card.dataset.activeStatus || "" : card.dataset.idleStatus || "";
-      }
-      panelActions.forEach((link) => {
-        link.tabIndex = isActive ? 0 : -1;
-        link.setAttribute("aria-hidden", String(!isActive));
-      });
-    });
-  };
-
-  const navigateToRole = (href, sourceCard = null) => {
-    if (!href || href === "#") return;
-
-    const isHashNavigation = href.startsWith("#");
-    const target = isHashNavigation ? document.querySelector(href) : null;
-    if (isHashNavigation && !(target instanceof HTMLElement)) return;
-
-    if (sourceCard) {
-      setActiveCareer(sourceCard);
-      root.classList.add("is-role-transitioning");
-    }
-
-    window.setTimeout(
-      () => {
-        if (isHashNavigation) {
-          window.history.pushState(null, "", href);
-          scrollToHash(href, prefersReducedMotion ? "auto" : "smooth");
-        } else {
-          window.location.href = href;
-        }
-        root.classList.remove("is-role-transitioning");
-        closeNav();
-      },
-      sourceCard && !prefersReducedMotion ? 260 : 0
-    );
-  };
-
-  if (careerCards.length) {
-    const initialCareer = careerCards.find((card) => card.classList.contains("is-active")) || careerCards[0];
-    setActiveCareer(initialCareer);
-  }
-
-  careerCards.forEach((card) => {
-    const roleLinks = [...card.querySelectorAll("[data-role-nav]")];
-    const activationButton = card.querySelector("[data-panel-activate]");
-
-    card.addEventListener("mouseenter", () => setActiveCareer(card));
-    card.addEventListener("focusin", () => setActiveCareer(card));
-    activationButton?.addEventListener("click", () => setActiveCareer(card));
-    card.addEventListener("keydown", (event) => {
-      if (event.target instanceof Element && event.target.closest(".career-actions")) return;
-
-      const currentIndex = careerCards.indexOf(card);
-      const nextKeys = ["ArrowRight", "ArrowDown"];
-      const previousKeys = ["ArrowLeft", "ArrowUp"];
-
-      if (![...nextKeys, ...previousKeys].includes(event.key)) return;
-
-      event.preventDefault();
-      const direction = nextKeys.includes(event.key) ? 1 : -1;
-      const nextIndex = (currentIndex + direction + careerCards.length) % careerCards.length;
-      const nextCard = careerCards[nextIndex];
-      const nextTarget = nextCard.querySelector("[data-panel-activate]") || nextCard.querySelector("[data-role-nav]");
-      if (nextTarget instanceof HTMLElement) {
-        nextTarget.focus({ preventScroll: true });
-      }
-      setActiveCareer(nextCard);
-    });
-
-    roleLinks.forEach((roleLink) => {
-      roleLink.addEventListener("click", (event) => {
-        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-          return;
-        }
-
-        const href = roleLink.getAttribute("href");
-        event.preventDefault();
-        navigateToRole(href, card);
-      });
-    });
-  });
-
-  document.querySelectorAll("[data-role-nav]").forEach((link) => {
-    if (link.closest("[data-career-track]")) return;
-
-    link.addEventListener("click", (event) => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-        return;
-      }
-
-      const href = link.getAttribute("href");
-      event.preventDefault();
-      navigateToRole(href);
-    });
-  });
 
   document.querySelectorAll(".accordion-toggle").forEach((toggle) => {
     const label = toggle.querySelector("span");

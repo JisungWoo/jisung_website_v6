@@ -64,8 +64,7 @@ const actionAttrs = (action, className = "link-chip") => {
   const external = /^https?:/i.test(action.href);
   const target = external || action.newTab ? ' target="_blank" rel="noreferrer"' : "";
   const download = action.download ? " download" : "";
-  const roleNav = action.roleNav ? ' data-role-nav="true"' : "";
-  return `href="${action.href}" class="${className}"${target}${download}${roleNav}`;
+  return `href="${action.href}" class="${className}"${target}${download}`;
 };
 
 const renderActions = (actions = [], className = "link-chip") =>
@@ -77,45 +76,39 @@ const renderActions = (actions = [], className = "link-chip") =>
     )
     .join("");
 
-const renderPanelActions = (actions = []) =>
-  actions
-    .map((action, index) => {
-      const className = `panel-cta ${index === 0 ? "is-primary" : "is-secondary"}`;
-      return action.kind === "modal"
-        ? `<button ${actionAttrs(action, className)}>${action.label}</button>`
-        : `<a ${actionAttrs(action, className)}>${action.label}</a>`;
-    })
-    .join("");
-
-const roleText = (site, role) => {
+const roleText = (site) => {
   const isKo = site.languageCode === "ko";
-  const isProduct = role.id === "product-manager";
   const featurePoints = isKo
-    ? ["Cortex 기반 설계 뷰 SQL 파싱", "비즈니스·보안용 매핑 문서 자동 생성", "뷰당 3시간 이상의 수작업 추출 절감 목표"]
-    : ["Cortex-driven parsing of complex design-view SQL", "Auto-generated business- and security-facing mapping docs", "On track to save 3+ hours of manual extraction per view"];
+    ? [
+        "디렉터와 VP급 경영진의 질문을 지표와 인수 기준으로 구체화",
+        "엔터프라이즈 데이터 아키텍트와 신규 Snowflake 데이터 모델 공동 설계",
+        "해외 개발팀의 구현을 조율하고 접근이 제한된 QA·운영 데이터로 결과 검증",
+        "대시보드에서 자연어 질문을 지원하도록 Snowflake Cortex Agent 구성",
+      ]
+    : [
+        "Translate director and VP questions into metrics and acceptance criteria",
+        "Co-design a greenfield Snowflake model with the enterprise data architect",
+        "Direct offshore implementation and validate results against restricted QA and production data",
+        "Configure a Snowflake Cortex Agent for natural-language questions inside the dashboard",
+      ];
 
   return {
-    back: isKo ? "역할 선택으로 돌아가기" : "Back to role selector",
-    path: isKo ? "선택한 프로필" : "Selected profile",
-    proof: isKo ? "역량 근거" : "Role proof",
+    path: isKo ? "시니어 데이터 엔지니어" : "Senior Data Engineer",
+    proof: isKo ? "핵심 역량" : "Role proof",
     selectedWork: isKo ? "주요 작업" : "Selected work",
-    method: isKo ? "작업 방식" : "How I work",
+    method: isKo ? "업무 방식" : "How I work",
     capability: isKo ? "기술 스택" : "Capability map",
-    experience: isKo ? "경력 흐름" : "Experience thread",
+    experience: isKo ? "경력" : "Experience thread",
     resume: isKo ? "이력서" : "Resume",
-    featureLabel: isKo ? "데이터 엔지니어링 사례" : "Data case",
-    featureTitle: isKo ? "Snowflake Cortex 매핑 문서화 자동화" : "Snowflake Cortex Mapping Documentation",
+    featureLabel: isKo ? "주요 작업" : "Featured work",
+    featureTitle: "Executive Cockpit + Cortex Agent",
     featureBody: isKo
-      ? "뷰당 100-300개 컬럼에 달하는 복잡한 설계 뷰 SQL을 Snowflake Cortex로 파싱해, 비즈니스·보안 검토용 매핑 문서를 자동 생성하는 파이프라인입니다."
-      : "An automated pipeline that uses Snowflake Cortex to parse complex design-view SQL — often 100-300 columns per view — and generate business- and security-facing mapping documentation.",
+      ? "거버넌스가 적용된 Snowflake 데이터와 대시보드, 자연어 질의 기능을 연결하는 경영진용 분석 환경을 구축하고 있습니다. 요구사항 정의와 신규 데이터 모델링부터 해외 개발팀 업무 조율, 접근 제한 데이터 검증, Cortex Agent 구성까지 담당합니다."
+      : "An in-progress executive analytics experience connecting governed Snowflake data, dashboard interaction, and natural-language questions. My role spans requirements, greenfield modeling, offshore delivery, restricted-data validation, and Cortex Agent configuration.",
     featurePoints,
-    heroNote: isProduct
-      ? isKo
-        ? "모호한 요구를 팀이 바로 범위를 정하고, 구현하고, 검증하고, 출시할 수 있는 제품 실행 흐름으로 정리합니다."
-        : "I turn ambiguity into technical product work teams can scope, build, QA, and ship."
-      : isKo
-        ? "엔터프라이즈 데이터 시스템을 안정적으로 운영하고, 설명하고, 인수인계할 수 있는 구조로 만듭니다."
-        : "I make enterprise data systems reliable enough to run, explain, and hand off.",
+    heroNote: isKo
+      ? "경영진과 현업의 핵심 과제를 데이터 거버넌스를 갖춘 Snowflake 솔루션으로 구현합니다."
+      : "I turn executive and business priorities into governed Snowflake solutions.",
   };
 };
 
@@ -139,14 +132,6 @@ const renderSkillRibbon = (items, label) => {
 };
 
 const roleProjectMedia = (role, index) => {
-  if (role.id === "product-manager") {
-    return [
-      { src: "Files/MelodyMap.ai/Dashboard.png", alt: "MelodyMap dashboard screenshot" },
-      { src: "Files/AI_Project_Screenshot/20260325_Overview.jpg", alt: "AI Agent Orchestration Platform overview screenshot" },
-      { src: "Files/Honeywell.png", alt: "Honeywell logo", contain: true },
-    ][index];
-  }
-
   return [
     { src: "Files/Honeywell.png", alt: "Honeywell logo", contain: true },
     { src: "Files/ASUEP.png", alt: "ASU Enterprise Partners logo", contain: true },
@@ -156,24 +141,24 @@ const roleProjectMedia = (role, index) => {
 
 const renderRoleActions = (actions = []) => `<div class="editorial-actions">${renderActions(actions, "editorial-button")}</div>`;
 
-const renderLineageVisual = (site) => {
+const renderExecutiveFlowVisual = (site) => {
   const isKo = site.languageCode === "ko";
   const rows = isKo
     ? [
-        ["Source", "설계 뷰 SQL (100-300 컬럼)"],
-        ["Parse", "Snowflake Cortex 파싱"],
-        ["Generate", "컬럼 매핑 로직 추출"],
-        ["Publish", "비즈니스·보안용 매핑 문서"],
+        ["Signal", "경영진 질문 + KPI 정의"],
+        ["Model", "거버넌스가 적용된 Snowflake 데이터 모델"],
+        ["Deliver", "대시보드, 필터, 데이터 검증"],
+        ["Ask", "Cortex Agent 자연어 분석"],
       ]
     : [
-        ["Source", "Design-view SQL (100-300 columns)"],
-        ["Parse", "Snowflake Cortex parsing"],
-        ["Generate", "Column mapping extraction"],
-        ["Publish", "Business & security mapping docs"],
+        ["Signal", "Executive questions + KPI definitions"],
+        ["Model", "Governed Snowflake data model"],
+        ["Deliver", "Dashboard, filters, and validation"],
+        ["Ask", "Cortex Agent natural-language analysis"],
       ];
 
   return `
-    <div class="lineage-visual" aria-label="${isKo ? "컬럼 계보 흐름" : "Column lineage flow"}">
+    <div class="lineage-visual" aria-label="${isKo ? "경영진 분석 제공 흐름" : "Executive analytics delivery flow"}">
       ${rows
         .map(
           ([label, value], index) => `
@@ -189,14 +174,14 @@ const renderLineageVisual = (site) => {
 const renderRoleHeroVisual = (site, role, copy) => {
   return `
     <figure class="role-portrait-proof">
-      <img src="Files/Profile_Pic_Graduation.jpg" alt="${site.hero.photoAlt}" />
+      <img src="${role.media}" alt="${role.mediaAlt ?? site.hero.photoAlt}" />
       <figcaption>
         <strong>${role.title}</strong>
       </figcaption>
     </figure>`;
 };
 
-const renderRoleFeatureVisual = (site) => renderLineageVisual(site);
+const renderRoleFeatureVisual = (site) => renderExecutiveFlowVisual(site);
 
 const renderZoomableImage = ({ src, alt, caption, imgClass = "" }) => {
   const classAttr = imgClass ? ` class="${escapeAttr(imgClass)}"` : "";
@@ -369,21 +354,16 @@ const renderEducationSection = (site) => `
       </section>`;
 
 const renderRoleEditorialPage = (site, shared, role) => {
-  const copy = roleText(site, role);
+  const copy = roleText(site);
   const ribbon = roleSkillRibbon(role);
   const experienceItems = role.profile.experienceItems ?? site.experience.items;
   const proofCards = role.profile.roleProof ?? role.profile.proof;
-  const showFeatureCase = role.id !== "product-manager";
-  const featureActions = showFeatureCase
-    ? role.profile.actions.filter((action) => action.label.toLowerCase().includes("deep") || action.href?.includes("column_lineage"))
-    : [];
   const archiveProjects = (role.profile.archiveProjectIds ?? []).map((projectId) => modalProjectCard(site, projectId)).filter(Boolean);
 
   return `
-    <div id="${role.id}" class="editorial-role-page ${role.tone === "product" ? "product-editorial" : "data-editorial"}">
+    <div id="${role.id}" class="editorial-role-page data-editorial">
       <section id="about" class="editorial-role-hero">
         <div class="editorial-hero-copy reveal">
-          <a class="path-return" href="${site.pagePath.includes("_kr") ? "index_kr.html" : "index.html"}">${copy.back}</a>
           <p class="editorial-kicker">${copy.path}</p>
           <h1>${role.title}</h1>
           <p class="editorial-lede">${copy.heroNote}</p>
@@ -414,23 +394,18 @@ const renderRoleEditorialPage = (site, shared, role) => {
         </div>
       </section>
 
-      ${
-        showFeatureCase
-          ? `<section id="projects" class="feature-case-study">
+      <section id="projects" class="feature-case-study">
         <div class="feature-media reveal">${renderRoleFeatureVisual(site)}</div>
         <div class="feature-copy reveal reveal-delay-1">
           <p class="editorial-kicker">${copy.featureLabel}</p>
           <h2>${copy.featureTitle}</h2>
           <p>${copy.featureBody}</p>
           <ul>${copy.featurePoints.map((item) => `<li>${item}</li>`).join("")}</ul>
-          ${featureActions.length ? renderRoleActions(featureActions) : ""}
         </div>
-      </section>`
-          : ""
-      }
+      </section>
 
       ${renderRoleProjectSection(role, {
-        id: showFeatureCase ? "" : "projects",
+        id: "selected-work",
         eyebrow: copy.selectedWork,
         title: role.profile.projectsTitle,
         projects: role.profile.projects,
@@ -508,129 +483,12 @@ const renderNav = (site, shared) => {
   </header>`;
 };
 
-const renderCareerTrack = (track, index, languageCode = "en") => `
-  <article class="career-card cinematic-panel ${track.tone === "product" ? "product-track" : "data-track"} ${
-    index === 0 ? "is-active" : ""
-  }" data-career-track="${track.id}" data-active-status="${track.activeStatus}" data-idle-status="${track.idleStatus}" aria-current="${index === 0 ? "true" : "false"}" aria-label="${track.title}">
-    <img class="panel-media" src="${track.media}" alt="" aria-hidden="true" width="1024" height="1536" decoding="async" loading="${index === 0 ? "eager" : "lazy"}"${index === 0 ? ' fetchpriority="high"' : ""} />
-    <div class="panel-vignette" aria-hidden="true"></div>
-    <div class="panel-noise" aria-hidden="true"></div>
-    <div class="panel-sweep" aria-hidden="true"></div>
-    <button class="panel-hit-button" type="button" data-panel-activate aria-label="${languageCode === "ko" ? `${track.title} 선택` : `Select ${track.title}`}"></button>
-      <div class="panel-inner">
-      <div class="panel-topline ${track.eyebrow ? "" : "panel-topline--status-only"}">
-        ${track.eyebrow ? `<span>${track.eyebrow}</span>` : ""}
-        <span class="panel-status">${index === 0 ? track.activeStatus : track.idleStatus}</span>
-      </div>
-      <div class="career-card-head">
-        <p>${track.mode}</p>
-        <h2>${track.title}</h2>
-      </div>
-      ${track.subtitle ? `<p class="career-subtitle">${track.subtitle}</p>` : ""}
-      <p class="career-summary">${track.summary}</p>
-      <div class="career-proof">
-        ${track.proof.map((item) => `<span>${item}</span>`).join("")}
-      </div>
-      <ul class="career-points">
-        ${track.points.map((point) => `<li>${point}</li>`).join("")}
-      </ul>
-      <div class="career-actions">${renderPanelActions(track.actions)}</div>
-    </div>
-  </article>`;
-
-const renderHero = (site, shared, { selectorOnly = false } = {}) => `
-  <section id="top" class="hero-section cinematic-hero ${selectorOnly ? "selector-landing-hero" : ""}">
-    ${
-      selectorOnly
-        ? `<a class="selector-lang-pill lang-pill" href="${site.localeSwitch.href}" hreflang="${
-            site.localeSwitch.href.endsWith("_kr.html") || site.localeSwitch.href.endsWith("index_kr.html") ? "ko" : "en"
-          }" lang="${site.localeSwitch.href.endsWith("_kr.html") || site.localeSwitch.href.endsWith("index_kr.html") ? "ko" : "en"}" aria-label="${site.localeSwitch.text}">${site.localeSwitch.label}</a>`
-        : ""
-    }
-    <div class="hero-shell cinematic-shell">
-      ${
-        selectorOnly
-          ? ""
-          : `<div class="selector-masthead reveal">
-        <div>
-          <h1 class="display-name">${site.hero.name}</h1>
-          <p class="role-line">${site.hero.role}</p>
-        </div>
-        <p class="hero-thesis">${site.hero.thesis}</p>
-      </div>`
-      }
-      <div id="paths" class="career-selector cinematic-selector reveal reveal-delay-1" aria-label="${site.career.bridgeTitle}">
-        ${
-        selectorOnly
-            ? `<h1 class="selector-nameplate"><span>${site.hero.name}</span></h1>`
-            : ""
-        }
-        ${site.career.tracks.map((track, index) => renderCareerTrack(track, index, site.languageCode)).join("")}
-      </div>
-      ${
-        selectorOnly
-          ? ""
-          : `<div class="selector-hud reveal reveal-delay-2" aria-hidden="true">
-        <div>
-          <span>${site.languageCode === "ko" ? "모드" : "Mode"}</span>
-          <strong>${site.languageCode === "ko" ? "역할 선택" : "Role selector"}</strong>
-        </div>
-        <div>
-          <span>${site.languageCode === "ko" ? "사용자" : "User"}</span>
-          <strong>${site.hero.name}</strong>
-        </div>
-        <div>
-          <span>${site.languageCode === "ko" ? "상태" : "Status"}</span>
-          <strong>${site.languageCode === "ko" ? "대기 중" : "Ready"}</strong>
-        </div>
-        <div class="hud-bars"><span></span><span></span><span></span><span></span><span></span></div>
-      </div>`
-      }
-      ${
-        selectorOnly
-          ? ""
-          : `<div class="career-bridge reveal reveal-delay-2">
-        <div>
-          <h2>${site.career.bridgeTitle}</h2>
-          <p>${site.career.bridgeCopy}</p>
-        </div>
-        <div class="bridge-steps">
-          ${site.career.milestones
-            .map(
-              (item, index) => `
-            <div class="bridge-step">
-              <span>${String(index + 1).padStart(2, "0")}</span>
-              <p>${item.label}</p>
-              <strong>${item.title}</strong>
-            </div>`
-            )
-            .join("")}
-        </div>
-      </div>`
-      }
-    </div>
-    ${
-      selectorOnly
-        ? ""
-        : `<div class="brand-rail reveal reveal-delay-3">
-      <p class="rail-label">${site.hero.logoLabel}</p>
-      <div class="logo-track">
-        ${shared.logos
-          .map((logo) => `<div class="logo-item"><img src="${logo.src}" alt="${logo.alt}" /></div>`)
-          .join("")}
-      </div>
-    </div>`
-    }
-  </section>`;
-
 const roleContactTitle = (site, role) => {
   if (site.languageCode !== "ko") {
     return `Let's talk about ${role.title} roles.`;
   }
 
-  return role.id === "product-manager"
-    ? "프로덕트 매니저 포지션에 대해 이야기 나누고 싶습니다."
-    : "데이터 엔지니어 포지션에 대해 이야기 나누고 싶습니다.";
+  return "시니어 데이터 엔지니어를 찾고 계시다면 이야기 나누고 싶습니다.";
 };
 
 const renderContact = (site, role = null) => {
@@ -739,17 +597,9 @@ const renderShell = (site, shared, { bodyClass, mainMarkup, mainId = "", alterna
 </html>`;
 };
 
-const renderLandingPage = (site, shared, alternates) =>
-  renderShell(site, shared, {
-    bodyClass: "landing-page",
-    mainMarkup: renderHero(site, shared, { selectorOnly: true }),
-    alternates,
-    includeNav: false,
-  });
-
 const renderRolePage = (site, shared, role, alternates) =>
   renderShell(site, shared, {
-    bodyClass: `profile-page ${role.tone === "product" ? "product-profile-page" : "data-profile-page"}`,
+    bodyClass: "profile-page data-profile-page",
     mainId: "top",
     mainMarkup: `
     ${renderRoleEditorialPage(site, shared, role)}
@@ -767,25 +617,24 @@ const shared = {
   githubHref: portfolioSite.githubHref,
   resumeHref: portfolioSite.resumeHref,
   dataResumeHref: portfolioSite.dataResumeHref,
-  productResumeHref: portfolioSite.productResumeHref,
 };
 
 const navLabels = {
   en: {
-    choose: "Select Role",
     profile: "Profile",
-    projects: "Projects",
-    archive: "Archive",
+    projects: "Featured Work",
+    aiWork: "Founder Work",
+    archive: "Earlier Work",
     capabilities: "How I Work",
     experience: "Experience",
     education: "Education",
     contact: "Contact",
   },
   ko: {
-    choose: "역할 선택",
     profile: "프로필",
-    projects: "프로젝트",
-    archive: "아카이브",
+    projects: "주요 작업",
+    aiWork: "창업 프로젝트",
+    archive: "이전 작업",
     capabilities: "작업 방식",
     experience: "경력",
     education: "학력",
@@ -795,8 +644,9 @@ const navLabels = {
 
 const pageVariants = [
   {
-    kind: "landing",
+    kind: "role",
     localeKey: "en",
+    roleId: "data-engineer",
     path: "index.html",
     switchHref: "index_kr.html",
     alternates: [
@@ -806,62 +656,15 @@ const pageVariants = [
     ],
   },
   {
-    kind: "landing",
+    kind: "role",
     localeKey: "ko",
+    roleId: "data-engineer",
     path: "index_kr.html",
     switchHref: "index.html",
     alternates: [
       { lang: "en", href: "index.html" },
       { lang: "ko", href: "index_kr.html" },
       { lang: "x-default", href: "index.html" },
-    ],
-  },
-  {
-    kind: "role",
-    localeKey: "en",
-    roleId: "data-engineer",
-    path: "data-engineer.html",
-    switchHref: "data-engineer_kr.html",
-    alternates: [
-      { lang: "en", href: "data-engineer.html" },
-      { lang: "ko", href: "data-engineer_kr.html" },
-      { lang: "x-default", href: "data-engineer.html" },
-    ],
-  },
-  {
-    kind: "role",
-    localeKey: "ko",
-    roleId: "data-engineer",
-    path: "data-engineer_kr.html",
-    switchHref: "data-engineer.html",
-    alternates: [
-      { lang: "en", href: "data-engineer.html" },
-      { lang: "ko", href: "data-engineer_kr.html" },
-      { lang: "x-default", href: "data-engineer.html" },
-    ],
-  },
-  {
-    kind: "role",
-    localeKey: "en",
-    roleId: "product-manager",
-    path: "product-manager.html",
-    switchHref: "product-manager_kr.html",
-    alternates: [
-      { lang: "en", href: "product-manager.html" },
-      { lang: "ko", href: "product-manager_kr.html" },
-      { lang: "x-default", href: "product-manager.html" },
-    ],
-  },
-  {
-    kind: "role",
-    localeKey: "ko",
-    roleId: "product-manager",
-    path: "product-manager_kr.html",
-    switchHref: "product-manager.html",
-    alternates: [
-      { lang: "en", href: "product-manager.html" },
-      { lang: "ko", href: "product-manager_kr.html" },
-      { lang: "x-default", href: "product-manager.html" },
     ],
   },
 ];
@@ -873,36 +676,22 @@ for (const page of pageVariants) {
   const site = {
     ...baseSite,
     pagePath: page.path,
-    title:
-      page.kind === "landing"
-        ? baseSite.languageCode === "ko"
-          ? "Jisung Woo | Data Engineer 또는 Product Manager"
-          : "Jisung Woo | Data Engineer or Product Manager"
-        : `${baseSite.hero.name} | ${role.title}`,
-    description:
-      page.kind === "landing"
-        ? baseSite.roleProfiles.body
-        : role.profile.summary,
+    title: `${baseSite.hero.name} | ${role.title}`,
+    description: role.profile.summary,
     localeSwitch: { ...baseSite.localeSwitch, href: page.switchHref },
-    nav:
-      page.kind === "landing"
-        ? []
-        : [
-            { label: labels.choose, href: page.localeKey === "ko" ? "index_kr.html" : "index.html" },
-            { label: labels.profile, href: `#${role.id}` },
-            { label: labels.projects, href: "#projects" },
-            { label: labels.archive, href: "#archive" },
-            { label: labels.capabilities, href: "#capabilities" },
-            { label: labels.experience, href: "#experience" },
-            { label: labels.education, href: "#education" },
-            { label: labels.contact, href: "#contact" },
-          ],
+    nav: [
+      { label: labels.profile, href: "#about" },
+      { label: labels.projects, href: "#projects" },
+      { label: labels.aiWork, href: "#ai-work" },
+      { label: labels.archive, href: "#archive" },
+      { label: labels.capabilities, href: "#capabilities" },
+      { label: labels.experience, href: "#experience" },
+      { label: labels.education, href: "#education" },
+      { label: labels.contact, href: "#contact" },
+    ],
   };
 
-  const html =
-    page.kind === "landing"
-      ? renderLandingPage(site, shared, page.alternates)
-      : renderRolePage(site, shared, role, page.alternates);
+  const html = renderRolePage(site, shared, role, page.alternates);
 
   writeFileSync(out(page.path), normalizeHtml(html), "utf8");
 }
