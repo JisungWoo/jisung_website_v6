@@ -80,9 +80,9 @@ const roleText = (site) => {
   const isKo = site.languageCode === "ko";
   const featurePoints = isKo
     ? [
-        "디렉터와 VP급 경영진의 질문을 지표와 인수 기준으로 구체화",
+        "디렉터와 VP급 경영진의 질문을 지표와 완료 기준으로 구체화",
         "엔터프라이즈 데이터 아키텍트와 신규 Snowflake 데이터 모델 공동 설계",
-        "해외 개발팀의 구현을 조율하고 접근이 제한된 QA·운영 데이터로 결과 검증",
+        "오프쇼어 개발팀의 구현을 조율하고 접근 권한이 제한된 QA·운영 데이터로 결과 검증",
         "대시보드에서 자연어 질문을 지원하도록 Snowflake Cortex Agent 구성",
       ]
     : [
@@ -103,11 +103,11 @@ const roleText = (site) => {
     featureLabel: isKo ? "주요 작업" : "Featured work",
     featureTitle: "Executive Cockpit + Cortex Agent",
     featureBody: isKo
-      ? "거버넌스가 적용된 Snowflake 데이터와 대시보드, 자연어 질의 기능을 연결하는 경영진용 분석 환경을 구축하고 있습니다. 요구사항 정의와 신규 데이터 모델링부터 해외 개발팀 업무 조율, 접근 제한 데이터 검증, Cortex Agent 구성까지 담당합니다."
+      ? "거버넌스가 적용된 Snowflake 데이터와 대시보드, 자연어 질의 기능을 연결하는 경영진용 분석 환경을 구축하고 있습니다. 요구사항 정의와 신규 데이터 모델링부터 오프쇼어 개발팀 조율, 접근 권한이 제한된 데이터 검증, Cortex Agent 구성까지 담당합니다."
       : "An in-progress executive analytics experience connecting governed Snowflake data, dashboard interaction, and natural-language questions. My role spans requirements, greenfield modeling, offshore delivery, restricted-data validation, and Cortex Agent configuration.",
     featurePoints,
     heroNote: isKo
-      ? "경영진과 현업의 핵심 과제를 데이터 거버넌스를 갖춘 Snowflake 솔루션으로 구현합니다."
+      ? "경영진과 비즈니스의 핵심 과제를 데이터 거버넌스를 갖춘 Snowflake 솔루션으로 구현합니다."
       : "I turn executive and business priorities into governed Snowflake solutions.",
   };
 };
