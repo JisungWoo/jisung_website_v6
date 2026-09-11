@@ -1,8 +1,0 @@
-{
-  "name": "jisung-website-v6",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "node scripts/generate-site.mjs"
-  }
-}

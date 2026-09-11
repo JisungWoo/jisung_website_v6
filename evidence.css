@@ -1,0 +1,33 @@
+.architecture-proof {margin:28px 0;padding:24px 0;border-block:1px solid var(--line)}
+.architecture-proof figcaption {font-size:1.125rem;font-weight:600;margin-bottom:20px}
+.pipeline-row {display:grid;grid-template-columns:95px 1fr;gap:18px;margin:18px 0}
+.pipeline-row>p {font-size:.875rem;font-weight:600;padding-top:12px}
+.pipeline-steps {list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0}
+.pipeline-steps li {padding:12px;border:1px solid var(--line);min-width:0;line-height:1.4}
+.pipeline-steps .stored-step {background:var(--lime,var(--mint));border-color:var(--ink)}
+.pipeline-steps strong {display:block;font-size:.875rem;font-weight:500}
+.step-number {display:block;font-size:.75rem;color:var(--muted);margin-bottom:8px}
+.pipeline-steps small {display:block;font-size:.75rem;margin-top:8px}
+.evidence-caption {font-size:.875rem!important;line-height:1.7;color:var(--muted);margin-top:20px;max-width:900px}
+.engineering-decisions {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:28px}
+.engineering-decisions h3,.engineering-decisions h4 {font-size:1.0625rem;line-height:1.4;margin:0 0 12px}
+.engineering-decisions p {font-size:1rem;color:var(--muted)}
+.leadership-proof {display:grid;grid-template-columns:1fr 1.25fr;gap:64px;margin:40px 0 56px;padding:32px 0;border-bottom:1px solid var(--line)}
+.leadership-intro h3 {font-size:clamp(1.6rem,2.4vw,2.25rem);font-weight:400;line-height:1.35;letter-spacing:-.035em;margin:16px 0 20px}
+.leadership-intro>p:last-child {color:var(--muted)}
+.leadership-steps {list-style:decimal-leading-zero;padding:0 0 0 28px;margin:0}
+.leadership-steps li {padding:0 0 24px 12px}
+.leadership-steps li+li {border-top:1px solid var(--line);padding-top:24px}
+.leadership-steps h4 {font-size:1.0625rem;line-height:1.5;margin:0 0 10px}
+.leadership-steps p {color:var(--muted);font-size:1rem}
+.case-context {padding:24px 0;border-top:1px solid currentColor;align-self:center}
+.case-context p {font-size:1rem;line-height:1.7;margin-top:12px}
+.case-context strong {font-size:2.2rem;font-weight:400;display:block}
+@media(max-width:800px){.pipeline-row{grid-template-columns:1fr;gap:8px}.engineering-decisions{grid-template-columns:1fr;gap:24px}.leadership-proof{grid-template-columns:1fr;gap:28px}.pipeline-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.leadership-proof,.architecture-proof{break-inside:avoid}.pipeline-steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+.delivery-example {grid-column:1/-1;max-width:900px;border-top:1px solid var(--line);padding-top:24px}
+.delivery-example h4 {font-size:1.125rem;line-height:1.5;margin:0 0 12px}
+.delivery-example p {color:var(--muted)}
+
+.diploma-link{display:inline-flex;align-items:center;min-height:44px;font-size:.875rem;text-underline-offset:4px;margin-top:4px}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Jisung Woo’s data engineering and product work through interactive exhibits.">
+  <title>Working Models — Jisung Woo</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="exhibits.css">
+  <link rel="stylesheet" href="transitions.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="evidence.css">
+  <script src="section-transition.js"></script>
+  <script src="gallery-transition.js"></script>
+  <script src="app.js" defer></script>
+  <script src="exhibits.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead wrap">
+  <a class="wordmark" href="entrance.html">Jisung Woo<span aria-hidden="true">.</span></a>
+  <nav aria-label="Main navigation"><a href="#work">Work</a><a href="index.html#top">Back to home <span aria-hidden="true">↗</span></a></nav>
+  <a class="language-link" href="exhibit-ko.html" lang="ko" hreflang="ko">한국어</a>
+  <a class="resume" href="assets/JisungWoo_Resume.pdf" download>Résumé <span aria-hidden="true">↗</span></a>
+</header>
+<main id="main">
+  <section class="intro wrap" aria-labelledby="intro-title">
+    <div><p class="eyebrow">JISUNG WOO / DATA ENGINEER &amp; PRODUCT BUILDER</p><h1 id="intro-title">Complex data.<br><em>Made useful.</em></h1></div>
+    <div class="intro-note"><p>I build Snowflake data models, untangle SQL, and work across teams to get dependable data into use. Then I use AI to explore what else I can build.</p><a href="index.html#contact">Let’s talk <span aria-hidden="true">↗</span></a></div>
+  </section>
+  <section class="work wrap" id="work" aria-labelledby="work-title">
+    <div class="shelf-heading"><h2 id="work-title">Working models</h2><p>Choose a project. Look inside.</p></div>
+    <div class="gallery">
+      <article class="exhibit-card snowflake-card">
+        <a class="case-jump poster-link" href="#snowflake-details" aria-labelledby="snowflake-card-title snowflake-card-action">
+          <div class="poster specimen-sql" aria-hidden="true"><div class="poster-top"><span>01 / SNOWFLAKE</span><span>SQL</span></div><div class="sql-layers"><span>DESIGN VIEW</span><span>FACT TABLE</span><span>DATA MART</span><span>REPORTING</span></div><div class="poster-result">SQL, rethought</div><span class="poster-bottom">STAGED PROCESSING</span></div>
+          <div class="card-caption"><span class="eyebrow">ENTERPRISE DATA</span><h3 id="snowflake-card-title">Find the work<br>behind the wait.</h3><p>A view-heavy pipeline, redesigned around stored intermediate results.</p><span class="card-action" id="snowflake-card-action">Explore the engineering <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </article>
+      <article class="exhibit-card melody-card">
+        <a class="case-jump poster-link" href="#melodymap-details" aria-labelledby="melody-card-title melody-card-action">
+          <div class="poster specimen-product"><div class="poster-top"><span>02 / MELODYMAP</span><span>IN DEVELOPMENT</span></div><div class="product-crop"><img src="assets/melodymap-plan.png" alt="MelodyMap Plan Studio showing a structured therapy session plan." width="2557" height="1269"></div><span class="product-question">More time<br>for therapy.</span><span class="poster-bottom">A PERSONAL REASON TO BUILD</span></div>
+          <div class="card-caption"><span class="eyebrow">INDEPENDENT PRODUCT</span><h3 id="melody-card-title">A real person.<br>A real planning problem.</h3><p>From my partner’s workflow to a product.</p><span class="card-action" id="melody-card-action">Open the product story <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </article>
+      <article class="exhibit-card cortex-card">
+        <a class="case-jump poster-link" href="#cortex-details" aria-labelledby="cortex-card-title cortex-card-action">
+          <div class="poster specimen-map" aria-hidden="true"><div class="poster-top"><span>03 / CORTEX</span><span>AI</span></div><div class="map-graphic"><span>SOURCE</span><i></i><span>MODEL</span><i></i><span>REPORT</span></div><div class="map-caption">Every column<br>has a history.</div><span class="poster-bottom">DRAFT → HUMAN REVIEW</span></div>
+          <div class="card-caption"><span class="eyebrow">APPLIED AI PROTOTYPE</span><h3 id="cortex-card-title">Follow the data.<br>Question the draft.</h3><p>Mapping across layers, with human review.</p><span class="card-action" id="cortex-card-action">Trace the scope <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </article>
+    </div>
+  </section>
+  <section class="case-stages wrap" aria-label="Inside the projects">
+    <details class="case-details" id="snowflake-details">
+      <summary><span>01 / Snowflake</span><span>How I investigate a slow or incorrect query</span><b aria-hidden="true">+</b></summary>
+      <div class="stage">
+        <div class="stage-heading"><img class="technology-logo" src="assets/snowflake-logo.svg" alt="Snowflake" width="610" height="139" loading="lazy"><p class="eyebrow">THE ENGINEERING ACCOUNT</p><h2>Redesign where the work happens.</h2></div>
+        <figure class="architecture-proof"><figcaption>Where the processing changed</figcaption><div class="pipeline-row"><p>Before</p><ol class="pipeline-steps"><li><span class="step-number" aria-hidden="true">01</span><strong>Source</strong></li><li><span class="step-number" aria-hidden="true">02</span><strong>Design view</strong></li><li><span class="step-number" aria-hidden="true">03</span><strong>Data model</strong></li><li><span class="step-number" aria-hidden="true">04</span><strong>Reporting view</strong></li></ol></div><div class="pipeline-row"><p>Revised</p><ol class="pipeline-steps"><li><span class="step-number" aria-hidden="true">01</span><strong>Source</strong></li><li><span class="step-number" aria-hidden="true">02</span><strong>Design view 1</strong></li><li class="stored-step"><span class="step-number" aria-hidden="true">03</span><strong>Staging table</strong><small>Stored intermediate result</small></li><li><span class="step-number" aria-hidden="true">04</span><strong>Design view 2</strong></li><li><span class="step-number" aria-hidden="true">05</span><strong>Data model</strong></li><li><span class="step-number" aria-hidden="true">06</span><strong>Data mart design view</strong></li><li class="stored-step"><span class="step-number" aria-hidden="true">07</span><strong>Data mart table</strong><small>Stored intermediate result</small></li><li><span class="step-number" aria-hidden="true">08</span><strong>Reporting view</strong></li></ol></div><p class="evidence-caption">Simplified from my project account, not an exact production dependency graph. Company identifiers are omitted.</p></figure><div class="engineering-decisions"><div><h3>Diagnose before rewriting</h3><p>A simple SELECT against a design view took 2–3 hours to complete. I used Snowflake Query History to investigate slow execution, then worked through nested CTEs, subqueries and dozens of joins to narrow down the expensive parts.</p></div><div><h3>Change the SQL and the processing structure</h3><p>I reorganized CTEs and WHERE conditions to filter earlier where appropriate, selected specific columns instead of SELECT *, and used suitable data models or reporting views in place of design-view inputs. I also initiated the investigation into additional views and staging tables; the team restructured the pipeline to store intermediate results.</p></div><div><h3>Make the tradeoff explicit</h3><p>The revised flow adds stored results between transformation layers. That creates a reuse boundary, but also adds storage and load dependencies. I worked with the data architect to agree on the refresh order and frequency. Recovery after a failed load remains a design consideration, not a documented implementation claim here. A CTE alone is not a stored intermediate table.</p></div></div><p class="evidence-caption">The full data refresh now completes in approximately 30 minutes. I compared before-and-after row counts and used MINUS queries to check differences between results. Shorter refreshes also reduced the wait when validating logic changes. These are self-reported project results: the earlier 2–3 hours measured a SELECT, so the two timings are not a like-for-like benchmark.</p>
+        <div class="demo-grid">
+          <div><h3>A small illustration of my investigation method</h3><p>Two line items match one order. When only order fields are selected, the joined result looks duplicated. Remove the unused join and compare the rows.</p><fieldset class="choice"><legend>Query shape</legend><label><input type="radio" name="join-mode" value="joined" checked>Include the line-item join</label><label><input type="radio" name="join-mode" value="base">Read orders only</label></fieldset><p class="evidence-note">Synthetic teaching example. These identifiers and rows are invented, not Honeywell data. This demonstrates an investigation method; it is not the production defect or the timed optimization.</p></div>
+          <div class="query-result"><pre><code data-query>SELECT o.order_id, o.status
+FROM demo_orders o
+LEFT JOIN demo_lines l
+  ON o.order_id = l.order_id;</code></pre><table><caption>Illustrative query output</caption><thead><tr><th scope="col">order_id</th><th scope="col">status</th></tr></thead><tbody data-rows><tr><td>EX-101</td><td>open</td></tr><tr><td>EX-101</td><td>open</td></tr></tbody></table><p class="result-count" data-count role="status">2 rows · one order appears twice</p></div>
+        </div>
+        <p class="evidence-note">The baseline SELECT execution time is self-reported. Company SQL and model names are not shared.</p><a class="back-link" href="#work">Back to projects ↑</a>
+      </div>
+    </details>
+    <details class="case-details" id="melodymap-details">
+      <summary><span>02 / MelodyMap</span><span>A product shaped by a therapist’s day</span><b aria-hidden="true">+</b></summary>
+      <div class="stage">
+        <div class="stage-heading"><p class="eyebrow">IN DEVELOPMENT</p><h2>Start with someone you understand.</h2><p>My partner is a music therapist. Seeing how much unpaid time goes into planning led me to build MelodyMap: a workspace for session planning and the context around it.</p></div>
+        <a class="full-product" href="assets/melodymap-plan.png" target="_blank" rel="noopener" aria-label="Open the full MelodyMap screenshot in a new tab"><img src="assets/melodymap-plan.png" alt="Full MelodyMap planning interface with a session outline and structured activities." width="2557" height="1269" loading="lazy"></a>
+        <div class="architecture"><div><span>01</span><h3>Interface</h3><p>Next.js</p></div><div><span>02</span><h3>Application logic</h3><p>FastAPI · Gemini</p></div><div><span>03</span><h3>Structured records</h3><p>PostgreSQL</p></div></div>
+        <p>The image is a product screenshot. Open the QA site below to use the actual application; an invitation may be required. Customer time savings have not been measured.</p><div class="stage-links"><a href="https://qa.melodymap.ai" target="_blank" rel="noopener">Visit MelodyMap QA · new tab ↗</a><a href="assets/melodymap-plan.png" target="_blank" rel="noopener">Full screenshot · new tab ↗</a></div><a class="back-link" href="#work">Back to projects ↑</a>
+      </div>
+    </details>
+    <details class="case-details" id="cortex-details">
+      <summary><span>03 / Cortex</span><span>The mapping target changes the scope</span><b aria-hidden="true">+</b></summary>
+      <div class="stage">
+        <div class="stage-heading"><p class="eyebrow">PROTOTYPE / HUMAN REVIEW REQUIRED</p><h2>One view is not the whole story.</h2><p>The Cortex prototype drafts definitions and mappings for hundreds of columns. A model’s upstream logic is one scope; a reporting view also needs the transformations between that model and the report.</p></div>
+        <fieldset class="choice"><legend>Choose a mapping target</legend><label><input type="radio" name="lineage-target" value="model" checked>Data model</label><label><input type="radio" name="lineage-target" value="report">Reporting view</label></fieldset>
+        <ol class="lineage"><li><span>01</span><strong>Staging &amp; design logic</strong></li><li><span>02</span><strong>Fact / data model</strong><small data-model-target>Selected target</small></li><li class="outside-scope" data-downstream><span>03</span><strong>Mart transformations</strong></li><li class="outside-scope" data-downstream><span>04</span><strong>Reporting view</strong><small data-report-target hidden>Selected target</small></li></ol>
+        <p class="scope-result" data-scope role="status">Model scope: inspect staging and design logic through the fact/model layer.</p><p class="evidence-note">Illustrative layer groups from the project account, not the exact production graph. No corporate model names, SQL, or generated mappings are displayed.</p>
+        <div class="prototype-evidence"><div><h3>4+ hours manually</h3><p>The baseline for one complex model. Automated drafts were reported in minutes; end-to-end review time has not been measured.</p></div><div><h3>Presented, not yet adopted</h3><p>Shared with senior leadership. No adoption outside the team and no reproducible accuracy evaluation yet.</p></div></div><a class="back-link" href="#work">Back to projects ↑</a>
+      </div>
+    </details>
+  </section>
+  <section class="closing wrap"><p class="eyebrow">BEYOND THE PROJECTS</p><h2>The work is technical.<br>The collaboration is human.</h2><p>I clarify requirements and calculations with business stakeholders, partner with the data architect, and give offshore engineers detailed implementation steps with visuals, Excel examples and code. When QA or production-data access blocks an investigation, I take it on directly.</p><div class="stage-links"><a href="index.html#experience">How I lead technical delivery ↗</a><a href="mailto:jisungwoo9@gmail.com">jisungwoo9@gmail.com ↗</a></div></section>
+</main>
+<footer class="wrap"><span>© 2026 Jisung Woo</span><a href="index.html">Engineering Journal version ↗</a></footer>
+</body></html>

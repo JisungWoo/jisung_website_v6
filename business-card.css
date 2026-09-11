@@ -1,0 +1,46 @@
+.card-trigger{display:block;margin-bottom:24px;padding:13px 22px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;cursor:pointer}.club-open{overflow:hidden}.club-dialog{width:min(850px,calc(100% - 28px));max-height:calc(100dvh - 28px);padding:0;border:0;background:#f4f3e9;color:#25483c;box-shadow:0 25px 100px #0005;transition:opacity .35s,transform .35s}.club-dialog::backdrop{background:#172e29d9;backdrop-filter:blur(7px)}.club-shell{padding:28px}.club-shell h2{font:400 clamp(23px,4vw,35px)/1.3 Georgia,serif;margin:0 0 24px}.club-dialog button{font:inherit;cursor:pointer}.club-dialog :focus-visible{outline:3px solid #ae573a;outline-offset:5px}.club-dialog [hidden]{display:none!important}.card-table{--handoff-travel:494.5px;height:430px;position:relative;overflow:clip;background:repeating-linear-gradient(0deg,transparent 0 69px,#442a2026 69px 72px),repeating-linear-gradient(3deg,#976543 0 3px,#a87550 3px 13px,#a2704d 13px 26px);box-shadow:inset 0 0 80px #39271b55;isolation:isolate}.calling-card{position:absolute;z-index:2;left:50%;top:50%;width:min(310px,80%);min-height:175px;background:#fff9e7;box-shadow:7px 9px 0 #39271b44;transform:translate(-50%,-50%);transition:transform .65s cubic-bezier(.22,1,.36,1);}.calling-card strong{display:block;font:700 30px/1.2 Georgia,serif;letter-spacing:-1px}.calling-card strong span{color:#ae573a}.card-reveal{width:100%;min-height:175px;border:0;padding:24px;text-align:left;color:#25483c;background:none}.card-reveal small{display:block;font:9px monospace;letter-spacing:1px;margin:10px 0 27px}.card-reveal>span{font-size:13px}.card-details{padding:24px}.card-details p{font:9px monospace;margin:9px 0 20px}.card-details a{display:block;color:#25483c;font:14px/1.4 Arial,sans-serif;padding:9px 0;text-underline-offset:4px}.zoomed .calling-card{transform:translate(-50%,-50%) scale(1.08)}.fading{opacity:0;transform:translateY(14px)}.club-controls{display:flex;justify-content:space-between;gap:16px;margin-top:24px}.club-controls button,.club-return{min-height:48px;padding:12px 17px;border:1px solid #25483c;background:transparent;color:#25483c}.club-leave,.club-return{background:#25483c!important;color:#fff9e7!important}.club-farewell{text-align:center}.club-farewell h3{font:400 32px Georgia,serif;margin:24px 0 12px}.club-street{position:relative;height:280px;background:#b9c6b4;overflow:hidden;border:10px solid #25483c}.street-car{position:absolute;bottom:10px;left:15%;width:90px;height:28px;background:#ae573a;box-shadow:13px 12px #25483c,-13px 12px #25483c}.street-car:before{content:'';position:absolute;left:15px;top:-18px;width:57px;height:20px;background:#e8c98d;border:6px solid #ae573a}.departing .street-car{animation:car-pass 7s linear forwards}@keyframes car-pass{to{left:110%}}@media(max-width:550px){.club-shell{padding:20px}.card-table{--handoff-travel:460px;height:400px}.club-controls{flex-direction:column;gap:10px}.club-shell h2{word-break:keep-all}.calling-card{width:260px;max-width:85%}.card-details{padding:20px}.card-details a{font-size:13px}.zoomed .calling-card{transform:translate(-50%,-50%)}}@media(prefers-reduced-motion:reduce){.club-dialog,.club-dialog *{animation:none!important;transition:none!important}.departing .exit-door{display:none}}
+/* One shared carrier keeps the card resting on the palms throughout entry and return. */
+.card-carrier{position:absolute;inset:0;animation:offer-together 1.4s cubic-bezier(.22,.7,.3,1) backwards}
+.card-hands,.customer-hands{position:absolute;inset:0;z-index:1;pointer-events:none}
+.card-hands i,.customer-hands i{position:absolute;width:58px;height:65%;left:calc(50% - 165px);top:calc(50% + 95px);background:#e8e9df;box-shadow:inset -10px 0 #bdc9c2;border-top:24px solid #fffaf0}
+.card-hands i+i,.customer-hands i+i{left:auto;right:calc(50% - 165px)}
+.card-hands i:before,.customer-hands i:before{content:'';position:absolute;left:-2px;top:-82px;width:62px;height:62px;background:#c99065;clip-path:polygon(0 22%,12% 22%,12% 0,85% 0,85% 17%,100% 17%,100% 100%,0 100%);box-shadow:inset -9px 0 #ae7451}
+.card-hands i:after{content:'';position:absolute;top:-17px;right:7px;width:5px;height:5px;background:#b3a383}
+.wristwatch{position:absolute;top:3px;left:-3px;width:64px;height:19px;background:#4d3e32;box-shadow:0 3px #c8c8bb}
+.wristwatch:after{content:'';position:absolute;left:19px;top:-6px;width:26px;height:29px;background:linear-gradient(90deg,transparent 46%,#cdb681 46% 54%,transparent 54%),#263b35;border:4px solid #c2b995}
+.calling-card{z-index:3;min-height:200px}.card-reveal{min-height:200px}
+.retracting .card-carrier{animation:return-together 1.4s cubic-bezier(.45,0,.65,.5) forwards}
+.customer-hands{z-index:2;transform:translateY(-115%)}
+.customer-hands i{top:auto;bottom:calc(50% + 32px);background:#354b60;border-top:0;border-bottom:22px solid #eff0e5;box-shadow:inset -10px 0 #243747}
+.customer-hands i:before{top:auto;bottom:-80px;transform:rotate(180deg);background:#d5a580}
+.collecting .customer-hands{animation:customer-collect 2.2s ease-in-out forwards}
+.collecting .calling-card{animation:card-collected 2.2s ease-in-out forwards}
+.collecting .card-hands{animation:host-release 2.2s ease-in-out forwards}
+.street-world{position:absolute;inset:0;transform-origin:50% 65%}.street-world img{display:block;width:100%;height:100%;object-fit:cover}
+.club-street{height:360px;border:0;background:#203b32;perspective:900px}
+.street-car{bottom:25%;width:70px;height:22px;background:#c29949}.street-car:before{border-color:#c29949;width:44px;left:12px}
+.door-frame{position:absolute;inset:0;border:solid #19352c;border-width:18px 100px 12px;perspective:900px;transform-origin:50% 65%}
+.exit-door{position:absolute;inset:0;background:#315648;border:8px solid #234537;transform-origin:right center;backface-visibility:hidden}
+.exit-door:before{content:'';position:absolute;inset:20px 22px 45%;background:#a9b7a5;border:8px solid #204234;box-shadow:inset 0 0 0 4px #c6ae76}
+.exit-door:after{content:'';position:absolute;inset:65% 22px 18px;border:5px solid #234537}
+.exit-door span{position:absolute;left:13px;top:55%;width:9px;height:40px;background:#d3ba7c}
+.departing .exit-door{animation:exit-outward 1.5s .1s ease-in-out forwards}
+.departing .door-frame{animation:step-through 1.6s 1.45s ease-in forwards}
+.departing .street-world{animation:street-approach 1.6s 1.45s ease-in-out forwards}
+@keyframes offer-together{from{transform:translateY(115%)}to{transform:translateY(0)}}
+@keyframes return-together{from{transform:translateY(0)}to{transform:translateY(115%)}}
+@keyframes customer-collect{0%{transform:translateY(-115%)}40%,52%{transform:translateY(0)}100%{transform:translateY(-115%)}}
+@keyframes card-collected{0%,52%{transform:translate(-50%,-50%)}100%{transform:translate(-50%,calc(-50% - var(--handoff-travel)))}}
+@keyframes host-release{0%,45%{transform:translateY(0)}100%{transform:translateY(115%)}}
+@keyframes exit-outward{to{transform:rotateY(108deg)}}
+@keyframes step-through{0%{transform:scale(1);opacity:1}85%{opacity:1}100%{transform:scale(3.8);opacity:0}}
+@keyframes street-approach{to{transform:scale(1.18) translateY(5px)}}
+@media(max-width:550px){.card-hands i,.customer-hands i{left:calc(50% - 139px);width:49px}.card-hands i+i,.customer-hands i+i{left:auto;right:calc(50% - 139px)}.card-hands i:before,.customer-hands i:before{width:53px}.wristwatch{width:55px}.door-frame{border-left-width:35px;border-right-width:35px}.club-street{height:330px}}
+@media(prefers-reduced-motion:reduce){.card-carrier,.collecting .customer-hands,.collecting .calling-card,.collecting .card-hands,.departing .exit-door,.departing .door-frame,.departing .street-world{animation:none!important}.departing .door-frame{display:none}}
+/* Walk back to the threshold, close the same door, then dismiss the scene. */
+.returning .door-frame{animation:walk-back 1.3s ease-in-out both}
+.returning .street-world{animation:street-return 1.3s ease-in-out both}
+.returning .exit-door{animation:door-close 1.2s 1.3s ease-in-out both}
+@keyframes walk-back{from{transform:var(--return-frame);opacity:var(--return-opacity)}to{transform:scale(1);opacity:1}}
+@keyframes street-return{from{transform:var(--return-street)}to{transform:scale(1)}}
+@keyframes door-close{from{transform:var(--return-door)}to{transform:rotateY(0)}}

@@ -1,0 +1,63 @@
+/* Native same-origin navigation: the preview stack becomes the exhibition. */
+@view-transition { navigation: auto; }
+.entry-sql, .specimen-sql { view-transition-name: project-sql; }
+.entry-product, .specimen-product { view-transition-name: project-product; }
+.entry-map, .specimen-map { view-transition-name: project-map; }
+::view-transition-group(*) {
+  animation-duration: 560ms;
+  animation-timing-function: cubic-bezier(.22, 1, .36, 1);
+}
+::view-transition-old(root) { animation: 90ms ease-out both gallery-fade-out; }
+::view-transition-new(root) { animation: 180ms 90ms ease-out both gallery-fade-in; }
+::view-transition-old(project-sql),
+::view-transition-old(project-product),
+::view-transition-old(project-map) { animation: 100ms ease-out both gallery-fade-out; }
+::view-transition-new(project-sql),
+::view-transition-new(project-product),
+::view-transition-new(project-map) { animation: 220ms 80ms ease-out both gallery-fade-in; }
+::view-transition-image-pair(project-sql),
+::view-transition-image-pair(project-product),
+::view-transition-image-pair(project-map) { overflow: clip; }
+@keyframes gallery-fade-out { to { opacity: 0; } }
+@keyframes gallery-fade-in { from { opacity: 0; } }
+/* An angled page edge uncovers the next journal chapter at its reading position. */
+html.section-arrival { scroll-behavior: auto; }
+.section-arrival :is(.entry-sql,.entry-product,.entry-map,.specimen-sql,.specimen-product,.specimen-map) { view-transition-name: none; }
+html.section-arrival::view-transition-group(root) { animation: none; }
+html.section-arrival::view-transition-image-pair(root) { isolation: isolate; }
+html.section-arrival::view-transition-old(root) {
+  animation: 520ms cubic-bezier(.22,1,.36,1) both chapter-recede;
+  mix-blend-mode: normal;
+}
+html.section-arrival::view-transition-new(root) {
+  animation: 520ms cubic-bezier(.22,1,.36,1) both chapter-uncover;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+@keyframes chapter-recede {
+  to { filter: brightness(.88); }
+}
+@keyframes chapter-uncover {
+  from { clip-path: polygon(108% 0,100% 0,100% 100%,100% 100%); }
+  to { clip-path: polygon(0 0,100% 0,100% 100%,-8% 100%); }
+}
+.gallery-arriving .specimen-sql { animation: gallery-arrive-sql 520ms cubic-bezier(.22,1,.36,1) both; }
+.gallery-arriving .specimen-product { animation: gallery-arrive-product 520ms 40ms cubic-bezier(.22,1,.36,1) both; }
+.gallery-arriving .specimen-map { animation: gallery-arrive-map 520ms 80ms cubic-bezier(.22,1,.36,1) both; }
+@keyframes gallery-arrive-sql { from { opacity:0; transform:translateX(85%) rotate(-12deg) scale(.8); } }
+@keyframes gallery-arrive-product { from { opacity:0; transform:translateY(-28px) rotate(-3deg) scale(.86); } }
+@keyframes gallery-arrive-map { from { opacity:0; transform:translateX(-85%) rotate(12deg) scale(.8); } }
+@media (max-width:800px) {
+  html.section-arrival::view-transition-old(root),
+  html.section-arrival::view-transition-new(root) { animation-duration: 420ms; }
+  @keyframes gallery-arrive-sql { from { opacity:0; transform:translateY(24px) rotate(-5deg) scale(.94); } }
+  @keyframes gallery-arrive-product { from { opacity:0; transform:translateY(24px) rotate(3deg) scale(.94); } }
+  @keyframes gallery-arrive-map { from { opacity:0; transform:translateY(24px) rotate(5deg) scale(.94); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  ::view-transition-group(*) { animation: none !important; }
+  html.section-arrival::view-transition-old(root),
+  html.section-arrival::view-transition-new(root) { animation: none !important; }
+  .gallery-arriving .poster { animation: none !important; }
+}

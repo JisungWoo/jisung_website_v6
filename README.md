@@ -1,7 +1,16 @@
-﻿# jisung_website_v6
+# Jisung Woo — Portfolio
 
-Portfolio V6 is a bilingual, single-journey Senior Data Engineer portfolio.
+Bilingual data engineering portfolio with an interactive project gallery and pixel-art club entrance and contact scene.
 
-It positions Jisung Woo around executive and business requirements, governed Snowflake delivery, distributed team coordination, restricted-data validation, complex SQL debugging, and Snowflake Cortex Agent work. MelodyMap remains as founder work, while earlier student and web projects are retained in a clearly labeled archive.
+Live: https://jisungwoo.github.io/jisung_website_v6/
 
-Run `npm run build` to regenerate `index.html` and `index_kr.html` from `src/data`.
+## Publishing
+GitHub Pages publishes the repository root from main. Edit the HTML, CSS and JavaScript here, then push to main. No build step or dependencies are required. Links are relative to support the project URL.
+
+## Pages
+- index.html: English portfolio
+- ko.html: Korean portfolio
+- exhibit.html / exhibit-ko.html: project gallery
+- entrance.html / entrance-ko.html: club entrance
+
+The previous website remains available in Git history. Replacement source: portfolio v7, commit e36778e57160d5082df9a1f189fcabe809871fe4.
