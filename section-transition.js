@@ -2,7 +2,7 @@
 (() => {
   const root = document.documentElement;
   const isSection = url => url.origin === location.origin &&
-    ['', 'index.html', 'ko.html'].includes(url.pathname.slice(url.pathname.lastIndexOf('/') + 1)) &&
+    ['portfolio.html', 'ko.html'].includes(url.pathname.slice(url.pathname.lastIndexOf('/') + 1)) &&
     ['#experience', '#about', '#contact'].includes(url.hash);
   const arriving = isSection(new URL(location.href));
   let nativeTransition = false;
