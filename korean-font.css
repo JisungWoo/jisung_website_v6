@@ -1,0 +1,9 @@
+/* Korean typography: prefer the installed Windows Malgun Gothic family. */
+html[lang="ko"] body,
+html[lang="ko"] :is(h1,h2,h3,h4,h5,h6,p,a,button,input,select,textarea,label,summary,li,dt,dd,th,td,figcaption,blockquote,small,strong,em,span,text) {
+  font-family: "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+html[lang="ko"] :is(pre,code,kbd,samp),
+html[lang="ko"] :is(pre,code,kbd,samp) * {
+  font-family: Consolas, "Malgun Gothic", monospace;
+}
